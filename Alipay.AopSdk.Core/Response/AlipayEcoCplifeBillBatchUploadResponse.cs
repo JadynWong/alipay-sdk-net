@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 成功导入所有条目集合中的条目，则回传请求中的批次号
         /// </summary>
-        [XmlElement("batch_id")]
+        [Newtonsoft.Json.JsonProperty("batch_id")]
         public string BatchId { get; set; }
     }
 }

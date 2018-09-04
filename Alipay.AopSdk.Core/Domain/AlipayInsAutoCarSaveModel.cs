@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车牌号
         /// </summary>
-        [XmlElement("car_no")]
+        [Newtonsoft.Json.JsonProperty("car_no")]
         public string CarNo { get; set; }
 
         /// <summary>
         /// 用户ID,车主会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

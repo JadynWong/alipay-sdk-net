@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 风险描述
         /// </summary>
-        [XmlElement("risk_description")]
+        [Newtonsoft.Json.JsonProperty("risk_description")]
         public string RiskDescription { get; set; }
 
         /// <summary>
         /// 风险因素编码
         /// </summary>
-        [XmlElement("risk_factor_code")]
+        [Newtonsoft.Json.JsonProperty("risk_factor_code")]
         public string RiskFactorCode { get; set; }
 
         /// <summary>
         /// 风险因素名称
         /// </summary>
-        [XmlElement("risk_factor_name")]
+        [Newtonsoft.Json.JsonProperty("risk_factor_name")]
         public string RiskFactorName { get; set; }
 
         /// <summary>
         /// 风险度量，子特征风险分，范围 0-10，值越大表示风险越高
         /// </summary>
-        [XmlElement("risk_magnitude")]
+        [Newtonsoft.Json.JsonProperty("risk_magnitude")]
         public string RiskMagnitude { get; set; }
     }
 }

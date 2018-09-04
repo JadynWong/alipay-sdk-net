@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 营销活动ID
         /// </summary>
-        [XmlElement("active_id")]
+        [Newtonsoft.Json.JsonProperty("active_id")]
         public string ActiveId { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 卡券来源
         /// </summary>
-        [XmlElement("source_type")]
+        [Newtonsoft.Json.JsonProperty("source_type")]
         public string SourceType { get; set; }
     }
 }

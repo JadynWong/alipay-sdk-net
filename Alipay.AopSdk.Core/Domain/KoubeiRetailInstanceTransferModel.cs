@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 券或者电子DM单（VOUCHER、DM），如果字段为空默认为VOUCHER类型
         /// </summary>
-        [XmlElement("instance_type")]
+        [Newtonsoft.Json.JsonProperty("instance_type")]
         public string InstanceType { get; set; }
     }
 }

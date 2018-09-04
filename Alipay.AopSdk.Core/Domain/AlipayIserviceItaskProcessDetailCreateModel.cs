@@ -13,43 +13,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 接口服务端名称
         /// </summary>
-        [XmlElement("app_name")]
+        [Newtonsoft.Json.JsonProperty("app_name")]
         public string AppName { get; set; }
 
         /// <summary>
         /// 附件地址
         /// </summary>
-        [XmlElement("attachment")]
+        [Newtonsoft.Json.JsonProperty("attachment")]
         public string Attachment { get; set; }
 
         /// <summary>
         /// 接口客户端名称
         /// </summary>
-        [XmlElement("exapp_name")]
+        [Newtonsoft.Json.JsonProperty("exapp_name")]
         public string ExappName { get; set; }
 
         /// <summary>
         /// 外部工单创建人ID
         /// </summary>
-        [XmlElement("excreator_id")]
+        [Newtonsoft.Json.JsonProperty("excreator_id")]
         public string ExcreatorId { get; set; }
 
         /// <summary>
         /// 外部工单创建人名称
         /// </summary>
-        [XmlElement("excreator_name")]
+        [Newtonsoft.Json.JsonProperty("excreator_name")]
         public string ExcreatorName { get; set; }
 
         /// <summary>
         /// 外部工单创建人部门ID
         /// </summary>
-        [XmlElement("exsystem_department_id")]
+        [Newtonsoft.Json.JsonProperty("exsystem_department_id")]
         public string ExsystemDepartmentId { get; set; }
 
         /// <summary>
         /// BU名称（xspace填写对应的租户名称）
         /// </summary>
-        [XmlElement("exsystem_department_name")]
+        [Newtonsoft.Json.JsonProperty("exsystem_department_name")]
         public string ExsystemDepartmentName { get; set; }
 
         /// <summary>
@@ -62,13 +62,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 工单流程编号
         /// </summary>
-        [XmlElement("process_no")]
+        [Newtonsoft.Json.JsonProperty("process_no")]
         public string ProcessNo { get; set; }
 
         /// <summary>
         /// 工单流程编号_服务端提供给消费端流程模板code
         /// </summary>
-        [XmlElement("process_template_code")]
+        [Newtonsoft.Json.JsonProperty("process_template_code")]
         public string ProcessTemplateCode { get; set; }
     }
 }

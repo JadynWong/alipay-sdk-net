@@ -11,25 +11,25 @@ namespace Aop.Api.Response
         /// <summary>
         /// 结果码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 标签编码
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// 结果信息
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
 
         /// <summary>
         /// 标签名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
     }
 }

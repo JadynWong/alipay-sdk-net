@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 该小区下已上传的房间总数
         /// </summary>
-        [XmlElement("total_room_number")]
+        [Newtonsoft.Json.JsonProperty("total_room_number")]
         public long TotalRoomNumber { get; set; }
     }
 }

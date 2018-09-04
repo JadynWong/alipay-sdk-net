@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// IFAA服务端查询结果，true为支持指纹功能，false为不支持
         /// </summary>
-        [XmlElement("check_result")]
+        [Newtonsoft.Json.JsonProperty("check_result")]
         public bool CheckResult { get; set; }
     }
 }

@@ -13,25 +13,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保额默认值;单位分
         /// </summary>
-        [XmlElement("default_value")]
+        [Newtonsoft.Json.JsonProperty("default_value")]
         public long DefaultValue { get; set; }
 
         /// <summary>
         /// 保额最大值;单位分,当sum_insured_type=MONEY_RANGE时该值有效
         /// </summary>
-        [XmlElement("max_value")]
+        [Newtonsoft.Json.JsonProperty("max_value")]
         public long MaxValue { get; set; }
 
         /// <summary>
         /// 保额最小值;单位分,当sum_insured_type=MONEY_RANGE时该值有效
         /// </summary>
-        [XmlElement("min_value")]
+        [Newtonsoft.Json.JsonProperty("min_value")]
         public long MinValue { get; set; }
 
         /// <summary>
         /// 保额类型;MONEY_RANGE:金额范围,MONEY_LIST:金额可选值,ENUM_VALUE:枚举值
         /// </summary>
-        [XmlElement("sum_insured_type")]
+        [Newtonsoft.Json.JsonProperty("sum_insured_type")]
         public string SumInsuredType { get; set; }
 
         /// <summary>

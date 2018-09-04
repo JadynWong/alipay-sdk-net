@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户ID
         /// </summary>
-        [XmlElement("card_id")]
+        [Newtonsoft.Json.JsonProperty("card_id")]
         public string CardId { get; set; }
 
         /// <summary>
         /// qrcode地址
         /// </summary>
-        [XmlElement("qrcode_url")]
+        [Newtonsoft.Json.JsonProperty("qrcode_url")]
         public string QrcodeUrl { get; set; }
     }
 }

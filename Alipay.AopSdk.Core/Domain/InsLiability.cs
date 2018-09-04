@@ -13,49 +13,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保额
         /// </summary>
-        [XmlElement("coverage")]
+        [Newtonsoft.Json.JsonProperty("coverage")]
         public string Coverage { get; set; }
 
         /// <summary>
         /// 是否可以编辑,0-可选; 1-不可选,不支持; 2-必选,目前不打开
         /// </summary>
-        [XmlElement("disabled")]
+        [Newtonsoft.Json.JsonProperty("disabled")]
         public string Disabled { get; set; }
 
         /// <summary>
         /// 不计免赔 0，1，2
         /// </summary>
-        [XmlElement("iop")]
+        [Newtonsoft.Json.JsonProperty("iop")]
         public string Iop { get; set; }
 
         /// <summary>
         /// 不计免赔保费
         /// </summary>
-        [XmlElement("iop_premium")]
+        [Newtonsoft.Json.JsonProperty("iop_premium")]
         public string IopPremium { get; set; }
 
         /// <summary>
         /// 责任描述
         /// </summary>
-        [XmlElement("liability_desc")]
+        [Newtonsoft.Json.JsonProperty("liability_desc")]
         public string LiabilityDesc { get; set; }
 
         /// <summary>
         /// 责任名称
         /// </summary>
-        [XmlElement("liability_name")]
+        [Newtonsoft.Json.JsonProperty("liability_name")]
         public string LiabilityName { get; set; }
 
         /// <summary>
         /// 责任编码
         /// </summary>
-        [XmlElement("liability_no")]
+        [Newtonsoft.Json.JsonProperty("liability_no")]
         public string LiabilityNo { get; set; }
 
         /// <summary>
         /// 责任保费
         /// </summary>
-        [XmlElement("liability_premium")]
+        [Newtonsoft.Json.JsonProperty("liability_premium")]
         public string LiabilityPremium { get; set; }
 
         /// <summary>
@@ -68,13 +68,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 责任保费
         /// </summary>
-        [XmlElement("premium")]
+        [Newtonsoft.Json.JsonProperty("premium")]
         public string Premium { get; set; }
 
         /// <summary>
         /// 保额
         /// </summary>
-        [XmlElement("sum_insured")]
+        [Newtonsoft.Json.JsonProperty("sum_insured")]
         public InsSumInsured SumInsured { get; set; }
     }
 }

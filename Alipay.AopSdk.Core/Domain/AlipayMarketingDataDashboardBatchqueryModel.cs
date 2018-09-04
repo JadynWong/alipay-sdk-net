@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前页码
         /// </summary>
-        [XmlElement("page")]
+        [Newtonsoft.Json.JsonProperty("page")]
         public string Page { get; set; }
 
         /// <summary>
         /// 每页最大条数，最大每页30条
         /// </summary>
-        [XmlElement("size")]
+        [Newtonsoft.Json.JsonProperty("size")]
         public string Size { get; set; }
     }
 }

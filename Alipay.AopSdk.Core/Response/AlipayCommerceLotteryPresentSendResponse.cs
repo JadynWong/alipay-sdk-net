@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 是否赠送成功
         /// </summary>
-        [XmlElement("send_result")]
+        [Newtonsoft.Json.JsonProperty("send_result")]
         public bool SendResult { get; set; }
     }
 }

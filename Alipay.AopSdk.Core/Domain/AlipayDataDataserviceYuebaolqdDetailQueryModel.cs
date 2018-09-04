@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务入参，格式为yyyymmdd
         /// </summary>
-        [XmlElement("report_date")]
+        [Newtonsoft.Json.JsonProperty("report_date")]
         public string ReportDate { get; set; }
     }
 }

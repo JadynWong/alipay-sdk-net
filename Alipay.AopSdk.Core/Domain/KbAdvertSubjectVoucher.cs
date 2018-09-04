@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 品牌名称(支持模糊匹配)
         /// </summary>
-        [XmlElement("brand_name")]
+        [Newtonsoft.Json.JsonProperty("brand_name")]
         public string BrandName { get; set; }
 
         /// <summary>
@@ -26,31 +26,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商家名称(支持模糊匹配)
         /// </summary>
-        [XmlElement("merchant_name")]
+        [Newtonsoft.Json.JsonProperty("merchant_name")]
         public string MerchantName { get; set; }
 
         /// <summary>
         /// OBTAIN：认领（默认值）  BUY：购买
         /// </summary>
-        [XmlElement("purchase_mode")]
+        [Newtonsoft.Json.JsonProperty("purchase_mode")]
         public string PurchaseMode { get; set; }
 
         /// <summary>
         /// 券ID
         /// </summary>
-        [XmlElement("voucher_id")]
+        [Newtonsoft.Json.JsonProperty("voucher_id")]
         public string VoucherId { get; set; }
 
         /// <summary>
         /// 券名称(支持模糊匹配)
         /// </summary>
-        [XmlElement("voucher_name")]
+        [Newtonsoft.Json.JsonProperty("voucher_name")]
         public string VoucherName { get; set; }
 
         /// <summary>
         /// 券类型  LIMIT-单品券  NO_LIMIT_DISCOUNT-全场折扣券  NO_LIMIT_CASH-全场代金券
         /// </summary>
-        [XmlElement("voucher_type")]
+        [Newtonsoft.Json.JsonProperty("voucher_type")]
         public string VoucherType { get; set; }
     }
 }

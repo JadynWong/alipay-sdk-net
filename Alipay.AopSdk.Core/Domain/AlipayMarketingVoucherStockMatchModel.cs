@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 库存ID,创建库存时返回
         /// </summary>
-        [XmlElement("stock_id")]
+        [Newtonsoft.Json.JsonProperty("stock_id")]
         public string StockId { get; set; }
     }
 }

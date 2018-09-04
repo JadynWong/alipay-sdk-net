@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 菜单数量，包括默认菜单和个性化菜单
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public string Count { get; set; }
 
         /// <summary>

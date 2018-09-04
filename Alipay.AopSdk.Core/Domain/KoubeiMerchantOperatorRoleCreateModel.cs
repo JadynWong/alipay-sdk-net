@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作员ID
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
         /// 角色ID
         /// </summary>
-        [XmlElement("role_id")]
+        [Newtonsoft.Json.JsonProperty("role_id")]
         public string RoleId { get; set; }
 
         /// <summary>
         /// 角色名称，修改时必填
         /// </summary>
-        [XmlElement("role_name")]
+        [Newtonsoft.Json.JsonProperty("role_name")]
         public string RoleName { get; set; }
     }
 }

@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// isv回传的auth_code，通过auth_code校验当前操作人与商户的关系
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
         /// 员工管理场景下的商户部门名称，根目录为商户名称，下属部门由商户自己创建，例如可以创建下属部门为“华东大区”
         /// </summary>
-        [XmlElement("dept_name")]
+        [Newtonsoft.Json.JsonProperty("dept_name")]
         public string DeptName { get; set; }
 
         /// <summary>
         /// 组织部门标签，现在有PROCESSING_ROOM, DELIVER_CENTRE, CENTRAL_KITCHEN三种
         /// </summary>
-        [XmlElement("label_code")]
+        [Newtonsoft.Json.JsonProperty("label_code")]
         public string LabelCode { get; set; }
 
         /// <summary>
         /// 当前需要创建部门的上级部门id
         /// </summary>
-        [XmlElement("parent_dept_id")]
+        [Newtonsoft.Json.JsonProperty("parent_dept_id")]
         public string ParentDeptId { get; set; }
     }
 }

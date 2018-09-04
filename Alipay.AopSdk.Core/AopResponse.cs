@@ -13,10 +13,9 @@ namespace Aop.Api
         private string body;
 
         /// <summary>
-        /// 错误码
-        /// 对应 ErrCode
+        /// 错误码 对应 ErrCode
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code
         {
             get { return code; }
@@ -24,10 +23,9 @@ namespace Aop.Api
         }
 
         /// <summary>
-        /// 错误信息
-        /// 对应 ErrMsg
+        /// 错误信息 对应 ErrMsg
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg
         {
             get { return msg; }
@@ -35,10 +33,9 @@ namespace Aop.Api
         }
 
         /// <summary>
-        /// 子错误码
-        /// 对应 SubErrCode
+        /// 子错误码 对应 SubErrCode
         /// </summary>
-        [XmlElement("sub_code")]
+        [Newtonsoft.Json.JsonProperty("sub_code")]
         public string SubCode
         {
             get { return subCode; }
@@ -46,10 +43,9 @@ namespace Aop.Api
         }
 
         /// <summary>
-        /// 子错误信息
-        /// 对应 SubErrMsg
+        /// 子错误信息 对应 SubErrMsg
         /// </summary>
-        [XmlElement("sub_msg")]
+        [Newtonsoft.Json.JsonProperty("sub_msg")]
         public string SubMsg
         {
             get { return subMsg; }

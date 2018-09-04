@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 芝麻信用通过模型计算出的该用户的芝麻信用评分
         /// </summary>
-        [XmlElement("ali_trust_score")]
+        [Newtonsoft.Json.JsonProperty("ali_trust_score")]
         public AliTrustScore AliTrustScore { get; set; }
     }
 }

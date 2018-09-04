@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 预算名称
         /// </summary>
-        [XmlElement("budget_id")]
+        [Newtonsoft.Json.JsonProperty("budget_id")]
         public string BudgetId { get; set; }
     }
 }

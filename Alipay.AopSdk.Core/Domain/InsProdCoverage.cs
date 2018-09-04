@@ -13,25 +13,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 险种描述
         /// </summary>
-        [XmlElement("coverage_desc")]
+        [Newtonsoft.Json.JsonProperty("coverage_desc")]
         public string CoverageDesc { get; set; }
 
         /// <summary>
         /// 险种名称
         /// </summary>
-        [XmlElement("coverage_name")]
+        [Newtonsoft.Json.JsonProperty("coverage_name")]
         public string CoverageName { get; set; }
 
         /// <summary>
         /// 险种编号
         /// </summary>
-        [XmlElement("coverage_no")]
+        [Newtonsoft.Json.JsonProperty("coverage_no")]
         public string CoverageNo { get; set; }
 
         /// <summary>
         /// 是否定期险种
         /// </summary>
-        [XmlElement("is_fixed_period")]
+        [Newtonsoft.Json.JsonProperty("is_fixed_period")]
         public bool IsFixedPeriod { get; set; }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保额
         /// </summary>
-        [XmlElement("sum_insured")]
+        [Newtonsoft.Json.JsonProperty("sum_insured")]
         public InsSumInsured SumInsured { get; set; }
     }
 }

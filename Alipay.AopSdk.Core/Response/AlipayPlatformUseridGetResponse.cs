@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// id字典，key为openId，value为userId
         /// </summary>
-        [XmlElement("dict")]
+        [Newtonsoft.Json.JsonProperty("dict")]
         public string Dict { get; set; }
     }
 }

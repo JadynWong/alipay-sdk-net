@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账号名称
         /// </summary>
-        [XmlElement("account_name")]
+        [Newtonsoft.Json.JsonProperty("account_name")]
         public string AccountName { get; set; }
 
         /// <summary>
         /// 账号
         /// </summary>
-        [XmlElement("account_no")]
+        [Newtonsoft.Json.JsonProperty("account_no")]
         public string AccountNo { get; set; }
 
         /// <summary>
         /// 账号类型：ALIPAY(支付宝)，MYBK(网商银行卡)
         /// </summary>
-        [XmlElement("account_type")]
+        [Newtonsoft.Json.JsonProperty("account_type")]
         public string AccountType { get; set; }
 
         /// <summary>
         /// 金额：单位分
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public long Amount { get; set; }
 
         /// <summary>
         /// 账单备注
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
     }
 }

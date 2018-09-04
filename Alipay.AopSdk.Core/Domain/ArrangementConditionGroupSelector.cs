@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 是否选择最新的产品条件,默认为TRUE
         /// </summary>
-        [XmlElement("select_latest_pd_cd")]
+        [Newtonsoft.Json.JsonProperty("select_latest_pd_cd")]
         public bool SelectLatestPdCd { get; set; }
     }
 }

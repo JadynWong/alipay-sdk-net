@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 图片url，请先调用alipay.offline.material.image.upload 图片上传接口获得图片url
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

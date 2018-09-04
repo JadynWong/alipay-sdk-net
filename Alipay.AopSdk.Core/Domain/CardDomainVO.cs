@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 值域域名的描述值，固定为”金融”
         /// </summary>
-        [XmlElement("description")]
+        [Newtonsoft.Json.JsonProperty("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// 值域域名，固定为“FINANCE”
         /// </summary>
-        [XmlElement("domain_name")]
+        [Newtonsoft.Json.JsonProperty("domain_name")]
         public string DomainName { get; set; }
     }
 }

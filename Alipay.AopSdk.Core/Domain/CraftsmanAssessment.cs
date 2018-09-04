@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 单个手艺人的评价总条数。
         /// </summary>
-        [XmlElement("total_no")]
+        [Newtonsoft.Json.JsonProperty("total_no")]
         public long TotalNo { get; set; }
 
         /// <summary>
         /// 单个手艺人的总评分的均分
         /// </summary>
-        [XmlElement("total_score")]
+        [Newtonsoft.Json.JsonProperty("total_score")]
         public long TotalScore { get; set; }
     }
 }

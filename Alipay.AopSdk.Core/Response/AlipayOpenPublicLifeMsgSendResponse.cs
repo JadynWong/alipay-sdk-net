@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 生活号消息唯一标识
         /// </summary>
-        [XmlElement("alipay_msg_id")]
+        [Newtonsoft.Json.JsonProperty("alipay_msg_id")]
         public string AlipayMsgId { get; set; }
     }
 }

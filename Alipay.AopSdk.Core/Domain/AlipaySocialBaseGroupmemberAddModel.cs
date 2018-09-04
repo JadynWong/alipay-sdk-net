@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 加人的时候，是否需要校验加人者和被加的人的好友关系
         /// </summary>
-        [XmlElement("friend_validate")]
+        [Newtonsoft.Json.JsonProperty("friend_validate")]
         public bool FriendValidate { get; set; }
 
         /// <summary>
         /// 群的id
         /// </summary>
-        [XmlElement("group_id")]
+        [Newtonsoft.Json.JsonProperty("group_id")]
         public string GroupId { get; set; }
 
         /// <summary>

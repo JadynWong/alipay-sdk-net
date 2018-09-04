@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 自助售货机一级场景
         /// </summary>
-        [XmlElement("level_1")]
+        [Newtonsoft.Json.JsonProperty("level_1")]
         public string Level1 { get; set; }
 
         /// <summary>
         /// 自助售货机二级场景
         /// </summary>
-        [XmlElement("level_2")]
+        [Newtonsoft.Json.JsonProperty("level_2")]
         public string Level2 { get; set; }
     }
 }

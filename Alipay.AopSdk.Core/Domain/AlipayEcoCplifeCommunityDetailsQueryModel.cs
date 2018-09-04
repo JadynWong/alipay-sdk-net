@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝社区小区统一编号，必须在物业账号名下存在。
         /// </summary>
-        [XmlElement("community_id")]
+        [Newtonsoft.Json.JsonProperty("community_id")]
         public string CommunityId { get; set; }
     }
 }

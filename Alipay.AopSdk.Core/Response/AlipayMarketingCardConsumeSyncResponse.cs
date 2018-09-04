@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 外部卡号
         /// </summary>
-        [XmlElement("external_card_no")]
+        [Newtonsoft.Json.JsonProperty("external_card_no")]
         public string ExternalCardNo { get; set; }
     }
 }

@@ -12,37 +12,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 地址所属区代码
         /// </summary>
-        [XmlElement("area_code")]
+        [Newtonsoft.Json.JsonProperty("area_code")]
         public string AreaCode { get; set; }
 
         /// <summary>
         /// 地址所属区名称
         /// </summary>
-        [XmlElement("area_name")]
+        [Newtonsoft.Json.JsonProperty("area_name")]
         public string AreaName { get; set; }
 
         /// <summary>
         /// 地址所属市代码
         /// </summary>
-        [XmlElement("city_code")]
+        [Newtonsoft.Json.JsonProperty("city_code")]
         public string CityCode { get; set; }
 
         /// <summary>
         /// 地址所属市名称
         /// </summary>
-        [XmlElement("city_name")]
+        [Newtonsoft.Json.JsonProperty("city_name")]
         public string CityName { get; set; }
 
         /// <summary>
         /// 地址所属省份代码
         /// </summary>
-        [XmlElement("province_code")]
+        [Newtonsoft.Json.JsonProperty("province_code")]
         public string ProvinceCode { get; set; }
 
         /// <summary>
         /// 地址所属省份名称
         /// </summary>
-        [XmlElement("province_name")]
+        [Newtonsoft.Json.JsonProperty("province_name")]
         public string ProvinceName { get; set; }
     }
 }

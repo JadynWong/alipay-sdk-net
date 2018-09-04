@@ -20,25 +20,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 口碑订单号
         /// </summary>
-        [XmlElement("order_no")]
+        [Newtonsoft.Json.JsonProperty("order_no")]
         public string OrderNo { get; set; }
 
         /// <summary>
         /// 请求id，唯一标识一次请求
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
 
         /// <summary>
         /// 口碑商品发货单号
         /// </summary>
-        [XmlElement("send_order_no")]
+        [Newtonsoft.Json.JsonProperty("send_order_no")]
         public string SendOrderNo { get; set; }
 
         /// <summary>
         /// 口碑发码通知透传码商，码商需要跟发码通知获取到的参数一致
         /// </summary>
-        [XmlElement("send_token")]
+        [Newtonsoft.Json.JsonProperty("send_token")]
         public string SendToken { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 识别结果
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public AlipayCodeRecoResult Result { get; set; }
     }
 }

@@ -12,43 +12,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 资源ID
         /// </summary>
-        [XmlElement("content_id")]
+        [Newtonsoft.Json.JsonProperty("content_id")]
         public string ContentId { get; set; }
 
         /// <summary>
         /// 资源的来源
         /// </summary>
-        [XmlElement("content_source")]
+        [Newtonsoft.Json.JsonProperty("content_source")]
         public string ContentSource { get; set; }
 
         /// <summary>
         /// 资源类型
         /// </summary>
-        [XmlElement("content_type")]
+        [Newtonsoft.Json.JsonProperty("content_type")]
         public string ContentType { get; set; }
 
         /// <summary>
         /// 描述
         /// </summary>
-        [XmlElement("desc")]
+        [Newtonsoft.Json.JsonProperty("desc")]
         public string Desc { get; set; }
 
         /// <summary>
         /// 链接的缩略图
         /// </summary>
-        [XmlElement("thumb")]
+        [Newtonsoft.Json.JsonProperty("thumb")]
         public string Thumb { get; set; }
 
         /// <summary>
         /// 标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// linkurl
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

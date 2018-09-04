@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模型唯一查询标识符。参数值为调用batchquery接口后获取的model_uk参数值；用于标识模型的唯一性
         /// </summary>
-        [XmlElement("model_uk")]
+        [Newtonsoft.Json.JsonProperty("model_uk")]
         public string ModelUk { get; set; }
     }
 }

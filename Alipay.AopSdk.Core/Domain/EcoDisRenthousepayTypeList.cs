@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 押金
         /// </summary>
-        [XmlElement("foregift_amount")]
+        [Newtonsoft.Json.JsonProperty("foregift_amount")]
         public string ForegiftAmount { get; set; }
 
         /// <summary>
         /// 可租期（1：1个月，3：三个月，6：半年，12：一年及以上）
         /// </summary>
-        [XmlElement("lease_term")]
+        [Newtonsoft.Json.JsonProperty("lease_term")]
         public long LeaseTerm { get; set; }
 
         /// <summary>
@@ -32,25 +32,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 付款方式（1：付一，2：付二）
         /// </summary>
-        [XmlElement("pay_type")]
+        [Newtonsoft.Json.JsonProperty("pay_type")]
         public long PayType { get; set; }
 
         /// <summary>
         /// 租金
         /// </summary>
-        [XmlElement("room_amount")]
+        [Newtonsoft.Json.JsonProperty("room_amount")]
         public string RoomAmount { get; set; }
 
         /// <summary>
         /// 服务费
         /// </summary>
-        [XmlElement("service_amount")]
+        [Newtonsoft.Json.JsonProperty("service_amount")]
         public string ServiceAmount { get; set; }
 
         /// <summary>
         /// 服务费单位（m：月, y：年）
         /// </summary>
-        [XmlElement("service_type")]
+        [Newtonsoft.Json.JsonProperty("service_type")]
         public string ServiceType { get; set; }
     }
 }

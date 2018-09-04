@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 投保人
         /// </summary>
-        [XmlElement("applicant")]
+        [Newtonsoft.Json.JsonProperty("applicant")]
         public InsPerson Applicant { get; set; }
 
         /// <summary>
         /// 外部业务字段，幂等字段
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 保险产品码
         /// </summary>
-        [XmlElement("prod_code")]
+        [Newtonsoft.Json.JsonProperty("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
         /// 业务场景码
         /// </summary>
-        [XmlElement("source")]
+        [Newtonsoft.Json.JsonProperty("source")]
         public string Source { get; set; }
     }
 }

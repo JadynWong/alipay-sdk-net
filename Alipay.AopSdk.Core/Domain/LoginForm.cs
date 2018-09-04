@@ -12,49 +12,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 图片验证码
         /// </summary>
-        [XmlElement("captcha")]
+        [Newtonsoft.Json.JsonProperty("captcha")]
         public string Captcha { get; set; }
 
         /// <summary>
         /// 身份证号
         /// </summary>
-        [XmlElement("id_card_no")]
+        [Newtonsoft.Json.JsonProperty("id_card_no")]
         public string IdCardNo { get; set; }
 
         /// <summary>
         /// 姓名
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 手机号
         /// </summary>
-        [XmlElement("phone_no")]
+        [Newtonsoft.Json.JsonProperty("phone_no")]
         public string PhoneNo { get; set; }
 
         /// <summary>
         /// 查询密码
         /// </summary>
-        [XmlElement("query_password")]
+        [Newtonsoft.Json.JsonProperty("query_password")]
         public string QueryPassword { get; set; }
 
         /// <summary>
         /// 服务密码
         /// </summary>
-        [XmlElement("service_password")]
+        [Newtonsoft.Json.JsonProperty("service_password")]
         public string ServicePassword { get; set; }
 
         /// <summary>
         /// 短信验证码
         /// </summary>
-        [XmlElement("sms_code")]
+        [Newtonsoft.Json.JsonProperty("sms_code")]
         public string SmsCode { get; set; }
 
         /// <summary>
         /// 吉林电信短信验证码
         /// </summary>
-        [XmlElement("sms_code_jldx")]
+        [Newtonsoft.Json.JsonProperty("sms_code_jldx")]
         public string SmsCodeJldx { get; set; }
     }
 }

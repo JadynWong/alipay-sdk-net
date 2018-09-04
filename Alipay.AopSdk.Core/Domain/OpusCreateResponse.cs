@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 作品外部id
         /// </summary>
-        [XmlElement("external_opus_id")]
+        [Newtonsoft.Json.JsonProperty("external_opus_id")]
         public string ExternalOpusId { get; set; }
 
         /// <summary>
         /// 作品id
         /// </summary>
-        [XmlElement("opus_id")]
+        [Newtonsoft.Json.JsonProperty("opus_id")]
         public string OpusId { get; set; }
     }
 }

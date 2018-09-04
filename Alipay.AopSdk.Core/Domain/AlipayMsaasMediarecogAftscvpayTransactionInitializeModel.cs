@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 售卖设备编号
         /// </summary>
-        [XmlElement("terminal_id")]
+        [Newtonsoft.Json.JsonProperty("terminal_id")]
         public string TerminalId { get; set; }
 
         /// <summary>
         /// 云平台请求唯一标示,保证用户请求的幂等性.
         /// </summary>
-        [XmlElement("transaction_id")]
+        [Newtonsoft.Json.JsonProperty("transaction_id")]
         public string TransactionId { get; set; }
     }
 }

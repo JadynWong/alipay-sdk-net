@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 待删除的住户所在的小区ID(支付宝平台统一小区ID标识)
         /// </summary>
-        [XmlElement("community_id")]
+        [Newtonsoft.Json.JsonProperty("community_id")]
         public string CommunityId { get; set; }
 
         /// <summary>

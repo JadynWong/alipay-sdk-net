@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务窗id
         /// </summary>
-        [XmlElement("public_id")]
+        [Newtonsoft.Json.JsonProperty("public_id")]
         public string PublicId { get; set; }
 
         /// <summary>
         /// 用户id
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

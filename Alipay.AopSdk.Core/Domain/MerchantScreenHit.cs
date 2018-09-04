@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 送检的实体类型，如CEO，控股人，等
         /// </summary>
-        [XmlElement("input_type")]
+        [Newtonsoft.Json.JsonProperty("input_type")]
         public string InputType { get; set; }
 
         /// <summary>
         /// 命中详情
         /// </summary>
-        [XmlElement("risk_detail")]
+        [Newtonsoft.Json.JsonProperty("risk_detail")]
         public string RiskDetail { get; set; }
     }
 }

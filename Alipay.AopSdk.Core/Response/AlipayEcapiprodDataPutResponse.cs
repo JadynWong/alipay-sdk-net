@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 数据版本
         /// </summary>
-        [XmlElement("data_version")]
+        [Newtonsoft.Json.JsonProperty("data_version")]
         public string DataVersion { get; set; }
     }
 }

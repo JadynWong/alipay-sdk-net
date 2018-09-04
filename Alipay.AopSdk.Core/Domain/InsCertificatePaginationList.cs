@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前页数
         /// </summary>
-        [XmlElement("current_page")]
+        [Newtonsoft.Json.JsonProperty("current_page")]
         public long CurrentPage { get; set; }
 
         /// <summary>
@@ -26,19 +26,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 每页数量
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>
         /// 总记录数
         /// </summary>
-        [XmlElement("total_count")]
+        [Newtonsoft.Json.JsonProperty("total_count")]
         public long TotalCount { get; set; }
 
         /// <summary>
         /// 全部页数
         /// </summary>
-        [XmlElement("total_page_num")]
+        [Newtonsoft.Json.JsonProperty("total_page_num")]
         public long TotalPageNum { get; set; }
     }
 }

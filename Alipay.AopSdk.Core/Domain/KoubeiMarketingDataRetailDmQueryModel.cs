@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 内容ID，调用koubei.marketing.campaign.retail.dm.create创建内容时返回的内容ID
         /// </summary>
-        [XmlElement("content_id")]
+        [Newtonsoft.Json.JsonProperty("content_id")]
         public string ContentId { get; set; }
 
         /// <summary>

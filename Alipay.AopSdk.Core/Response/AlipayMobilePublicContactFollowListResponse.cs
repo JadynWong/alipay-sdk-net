@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回结果码，如200，标识成功
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>

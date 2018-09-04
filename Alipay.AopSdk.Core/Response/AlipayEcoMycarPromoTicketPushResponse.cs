@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 处理结果返回码
         /// </summary>
-        [XmlElement("sp_apply_no")]
+        [Newtonsoft.Json.JsonProperty("sp_apply_no")]
         public string SpApplyNo { get; set; }
     }
 }

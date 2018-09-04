@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 扩展结果
         /// </summary>
-        [XmlElement("extern_info")]
+        [Newtonsoft.Json.JsonProperty("extern_info")]
         public string ExternInfo { get; set; }
     }
 }

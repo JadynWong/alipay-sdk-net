@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前文字颜色
         /// </summary>
-        [XmlElement("color")]
+        [Newtonsoft.Json.JsonProperty("color")]
         public string Color { get; set; }
 
         /// <summary>
         /// 模板中占位符的值
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public string Value { get; set; }
     }
 }

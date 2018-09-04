@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 类目ID
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public string Id { get; set; }
 
         /// <summary>
         /// 是否是叶子节点
         /// </summary>
-        [XmlElement("is_leaf")]
+        [Newtonsoft.Json.JsonProperty("is_leaf")]
         public string IsLeaf { get; set; }
 
         /// <summary>
         /// 类目层级
         /// </summary>
-        [XmlElement("level")]
+        [Newtonsoft.Json.JsonProperty("level")]
         public string Level { get; set; }
 
         /// <summary>
         /// 类目层级路径
         /// </summary>
-        [XmlElement("link")]
+        [Newtonsoft.Json.JsonProperty("link")]
         public string Link { get; set; }
 
         /// <summary>
         /// 类目名称
         /// </summary>
-        [XmlElement("nm")]
+        [Newtonsoft.Json.JsonProperty("nm")]
         public string Nm { get; set; }
     }
 }

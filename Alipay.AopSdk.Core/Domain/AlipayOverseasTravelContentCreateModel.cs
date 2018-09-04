@@ -13,43 +13,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 内容作者
         /// </summary>
-        [XmlElement("author")]
+        [Newtonsoft.Json.JsonProperty("author")]
         public string Author { get; set; }
 
         /// <summary>
         /// 内容分类code
         /// </summary>
-        [XmlElement("category_code")]
+        [Newtonsoft.Json.JsonProperty("category_code")]
         public string CategoryCode { get; set; }
 
         /// <summary>
         /// 内容分类名称
         /// </summary>
-        [XmlElement("category_name")]
+        [Newtonsoft.Json.JsonProperty("category_name")]
         public string CategoryName { get; set; }
 
         /// <summary>
         /// 内容详情，不包含页面样式
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
 
         /// <summary>
         /// 内容id
         /// </summary>
-        [XmlElement("content_id")]
+        [Newtonsoft.Json.JsonProperty("content_id")]
         public string ContentId { get; set; }
 
         /// <summary>
         /// 内容封面
         /// </summary>
-        [XmlElement("cover")]
+        [Newtonsoft.Json.JsonProperty("cover")]
         public string Cover { get; set; }
 
         /// <summary>
         /// 内容详情H5链接
         /// </summary>
-        [XmlElement("detail_url")]
+        [Newtonsoft.Json.JsonProperty("detail_url")]
         public string DetailUrl { get; set; }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 内容修改时间，请确保本次修改的时间大于上一次修改的时间
         /// </summary>
-        [XmlElement("modified_date")]
+        [Newtonsoft.Json.JsonProperty("modified_date")]
         public long ModifiedDate { get; set; }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 内容发布时间
         /// </summary>
-        [XmlElement("publish_date")]
+        [Newtonsoft.Json.JsonProperty("publish_date")]
         public long PublishDate { get; set; }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 内容标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

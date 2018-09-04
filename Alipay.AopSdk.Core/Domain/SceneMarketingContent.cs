@@ -13,31 +13,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 美食 娱乐等分类条目
         /// </summary>
-        [XmlElement("category")]
+        [Newtonsoft.Json.JsonProperty("category")]
         public string Category { get; set; }
 
         /// <summary>
         /// 小图标地址
         /// </summary>
-        [XmlElement("icon")]
+        [Newtonsoft.Json.JsonProperty("icon")]
         public string Icon { get; set; }
 
         /// <summary>
         /// 营销图片地址
         /// </summary>
-        [XmlElement("image")]
+        [Newtonsoft.Json.JsonProperty("image")]
         public string Image { get; set; }
 
         /// <summary>
         /// 营销内容意义
         /// </summary>
-        [XmlElement("meaning")]
+        [Newtonsoft.Json.JsonProperty("meaning")]
         public string Meaning { get; set; }
 
         /// <summary>
         /// 优惠信息的html格式展示参考
         /// </summary>
-        [XmlElement("meaning_desc")]
+        [Newtonsoft.Json.JsonProperty("meaning_desc")]
         public string MeaningDesc { get; set; }
 
         /// <summary>
@@ -57,19 +57,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 营销内容标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 营销内容类型，例如优惠好店，商圈特惠
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
 
         /// <summary>
         /// 营销内容跳转地址
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

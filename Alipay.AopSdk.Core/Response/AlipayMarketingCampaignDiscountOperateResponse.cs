@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 123
         /// </summary>
-        [XmlElement("camp_id")]
+        [Newtonsoft.Json.JsonProperty("camp_id")]
         public string CampId { get; set; }
     }
 }

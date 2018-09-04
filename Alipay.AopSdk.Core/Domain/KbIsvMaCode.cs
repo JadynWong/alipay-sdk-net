@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 凭证码值
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 码的可核销份数
         /// </summary>
-        [XmlElement("num")]
+        [Newtonsoft.Json.JsonProperty("num")]
         public string Num { get; set; }
     }
 }

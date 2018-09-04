@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 反馈模板地址
         /// </summary>
-        [XmlElement("feedback_url")]
+        [Newtonsoft.Json.JsonProperty("feedback_url")]
         public string FeedbackUrl { get; set; }
     }
 }

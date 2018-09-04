@@ -20,13 +20,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 总页面数
         /// </summary>
-        [XmlElement("total_pages")]
+        [Newtonsoft.Json.JsonProperty("total_pages")]
         public long TotalPages { get; set; }
 
         /// <summary>
         /// 总记录数
         /// </summary>
-        [XmlElement("total_results")]
+        [Newtonsoft.Json.JsonProperty("total_results")]
         public long TotalResults { get; set; }
     }
 }

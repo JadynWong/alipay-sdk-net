@@ -13,55 +13,55 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 发动机号
         /// </summary>
-        [XmlElement("car_engine_no")]
+        [Newtonsoft.Json.JsonProperty("car_engine_no")]
         public string CarEngineNo { get; set; }
 
         /// <summary>
         /// 车架号
         /// </summary>
-        [XmlElement("car_frame_no")]
+        [Newtonsoft.Json.JsonProperty("car_frame_no")]
         public string CarFrameNo { get; set; }
 
         /// <summary>
         /// 品牌型号
         /// </summary>
-        [XmlElement("car_model_code")]
+        [Newtonsoft.Json.JsonProperty("car_model_code")]
         public string CarModelCode { get; set; }
 
         /// <summary>
         /// 车牌号
         /// </summary>
-        [XmlElement("car_no")]
+        [Newtonsoft.Json.JsonProperty("car_no")]
         public string CarNo { get; set; }
 
         /// <summary>
         /// 该车辆数据来源，1 来自 ISV，2来自保险师内部数据
         /// </summary>
-        [XmlElement("data_source")]
+        [Newtonsoft.Json.JsonProperty("data_source")]
         public string DataSource { get; set; }
 
         /// <summary>
         /// 初次登记日期
         /// </summary>
-        [XmlElement("first_register_date")]
+        [Newtonsoft.Json.JsonProperty("first_register_date")]
         public string FirstRegisterDate { get; set; }
 
         /// <summary>
         /// 天津地区行驶证地址
         /// </summary>
-        [XmlElement("license_address")]
+        [Newtonsoft.Json.JsonProperty("license_address")]
         public string LicenseAddress { get; set; }
 
         /// <summary>
         /// 是否过户车
         /// </summary>
-        [XmlElement("transfer_car")]
+        [Newtonsoft.Json.JsonProperty("transfer_car")]
         public string TransferCar { get; set; }
 
         /// <summary>
         /// 过户日期
         /// </summary>
-        [XmlElement("transfer_date")]
+        [Newtonsoft.Json.JsonProperty("transfer_date")]
         public string TransferDate { get; set; }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 天津地区行驶证车辆类型
         /// </summary>
-        [XmlElement("vehicle_type")]
+        [Newtonsoft.Json.JsonProperty("vehicle_type")]
         public string VehicleType { get; set; }
     }
 }

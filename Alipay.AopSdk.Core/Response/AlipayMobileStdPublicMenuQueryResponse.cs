@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 所有菜单列表json串
         /// </summary>
-        [XmlElement("all_menu_list")]
+        [Newtonsoft.Json.JsonProperty("all_menu_list")]
         public string AllMenuList { get; set; }
     }
 }

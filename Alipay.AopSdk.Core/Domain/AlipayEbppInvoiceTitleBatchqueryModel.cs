@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 查询起始时间，精确到天（按开票日期查询）  start_invoice_date和end_invoice_date传值要求  1.同时为空时，返回最近半年200条数据  2.其中一个值不能为空  3.结束日期不能大于当前日期  4.开始时间和结束时间跨度不能超过6个月
         /// </summary>
-        [XmlElement("end_invoice_date")]
+        [Newtonsoft.Json.JsonProperty("end_invoice_date")]
         public string EndInvoiceDate { get; set; }
 
         /// <summary>
@@ -33,25 +33,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 查询结果上限笔数；  不设置时默认200笔上限；  上限为500笔
         /// </summary>
-        [XmlElement("limit_size")]
+        [Newtonsoft.Json.JsonProperty("limit_size")]
         public long LimitSize { get; set; }
 
         /// <summary>
         /// 为空时默认第一页
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public long PageNum { get; set; }
 
         /// <summary>
         /// 查询起始时间，精确到天（按开票日期查询）  start_invoice_date和end_invoice_date传值要求  1.同时为空时，返回最近半年200条数据  2.其中一个值不能为空  3.结束日期不能大于当前日期  4.开始时间和结束时间跨度不能超过6个月
         /// </summary>
-        [XmlElement("start_invoice_date")]
+        [Newtonsoft.Json.JsonProperty("start_invoice_date")]
         public string StartInvoiceDate { get; set; }
 
         /// <summary>
         /// 抬头名称
         /// </summary>
-        [XmlElement("title_name")]
+        [Newtonsoft.Json.JsonProperty("title_name")]
         public string TitleName { get; set; }
     }
 }

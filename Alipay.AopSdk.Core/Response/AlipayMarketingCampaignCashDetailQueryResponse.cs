@@ -11,73 +11,73 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活动状态，CREATED: 已创建未打款  PAID:已打款  READY:活动已开始  PAUSE:活动已暂停  CLOSED:活动已结束  SETTLE:活动已清算
         /// </summary>
-        [XmlElement("camp_status")]
+        [Newtonsoft.Json.JsonProperty("camp_status")]
         public string CampStatus { get; set; }
 
         /// <summary>
         /// 红包名称
         /// </summary>
-        [XmlElement("coupon_name")]
+        [Newtonsoft.Json.JsonProperty("coupon_name")]
         public string CouponName { get; set; }
 
         /// <summary>
         /// 活动号
         /// </summary>
-        [XmlElement("crowd_no")]
+        [Newtonsoft.Json.JsonProperty("crowd_no")]
         public string CrowdNo { get; set; }
 
         /// <summary>
         /// 活动结束时间
         /// </summary>
-        [XmlElement("end_time")]
+        [Newtonsoft.Json.JsonProperty("end_time")]
         public string EndTime { get; set; }
 
         /// <summary>
         /// 原始活动号,商户排查问题时提供的活动依据
         /// </summary>
-        [XmlElement("origin_crowd_no")]
+        [Newtonsoft.Json.JsonProperty("origin_crowd_no")]
         public string OriginCrowdNo { get; set; }
 
         /// <summary>
         /// 活动文案,用户在账单中看到的红包描述
         /// </summary>
-        [XmlElement("prize_msg")]
+        [Newtonsoft.Json.JsonProperty("prize_msg")]
         public string PrizeMsg { get; set; }
 
         /// <summary>
         /// 现金红包的发放形式, fixed为固定金额,random为随机金额
         /// </summary>
-        [XmlElement("prize_type")]
+        [Newtonsoft.Json.JsonProperty("prize_type")]
         public string PrizeType { get; set; }
 
         /// <summary>
         /// 活动已发放金额
         /// </summary>
-        [XmlElement("send_amount")]
+        [Newtonsoft.Json.JsonProperty("send_amount")]
         public string SendAmount { get; set; }
 
         /// <summary>
         /// 活动开始时间
         /// </summary>
-        [XmlElement("start_time")]
+        [Newtonsoft.Json.JsonProperty("start_time")]
         public string StartTime { get; set; }
 
         /// <summary>
         /// 活动总金额
         /// </summary>
-        [XmlElement("total_amount")]
+        [Newtonsoft.Json.JsonProperty("total_amount")]
         public string TotalAmount { get; set; }
 
         /// <summary>
         /// 红包总个数
         /// </summary>
-        [XmlElement("total_count")]
+        [Newtonsoft.Json.JsonProperty("total_count")]
         public long TotalCount { get; set; }
 
         /// <summary>
         /// 红包总个数(废弃)
         /// </summary>
-        [XmlElement("total_num")]
+        [Newtonsoft.Json.JsonProperty("total_num")]
         public long TotalNum { get; set; }
     }
 }

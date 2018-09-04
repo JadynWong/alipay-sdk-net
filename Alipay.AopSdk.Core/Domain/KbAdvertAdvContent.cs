@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 二维码
         /// </summary>
-        [XmlElement("codec")]
+        [Newtonsoft.Json.JsonProperty("codec")]
         public string Codec { get; set; }
 
         /// <summary>
         /// 访问地址
         /// </summary>
-        [XmlElement("link_url")]
+        [Newtonsoft.Json.JsonProperty("link_url")]
         public string LinkUrl { get; set; }
     }
 }

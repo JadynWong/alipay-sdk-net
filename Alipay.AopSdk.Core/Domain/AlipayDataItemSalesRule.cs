@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 购买人群限制集合，开放平台暂时不支持此字段，如果需要使用，需要评估
         /// </summary>
-        [XmlElement("buyer_crowd_limit")]
+        [Newtonsoft.Json.JsonProperty("buyer_crowd_limit")]
         public string BuyerCrowdLimit { get; set; }
 
         /// <summary>
         /// 商品单日销售上限
         /// </summary>
-        [XmlElement("daily_sales_limit")]
+        [Newtonsoft.Json.JsonProperty("daily_sales_limit")]
         public long DailySalesLimit { get; set; }
 
         /// <summary>

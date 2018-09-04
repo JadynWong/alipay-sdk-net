@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 链接地址
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

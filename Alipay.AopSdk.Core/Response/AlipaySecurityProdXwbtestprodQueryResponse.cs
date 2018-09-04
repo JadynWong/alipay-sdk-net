@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 11000
         /// </summary>
-        [XmlElement("out_a")]
+        [Newtonsoft.Json.JsonProperty("out_a")]
         public string OutA { get; set; }
 
         /// <summary>
         /// xxxx
         /// </summary>
-        [XmlElement("out_b")]
+        [Newtonsoft.Json.JsonProperty("out_b")]
         public long OutB { get; set; }
     }
 }

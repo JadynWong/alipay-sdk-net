@@ -20,13 +20,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// isv创建的用户分组id
         /// </summary>
-        [XmlElement("crowd_group_id")]
+        [Newtonsoft.Json.JsonProperty("crowd_group_id")]
         public string CrowdGroupId { get; set; }
 
         /// <summary>
         /// 创建状态: success fail
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

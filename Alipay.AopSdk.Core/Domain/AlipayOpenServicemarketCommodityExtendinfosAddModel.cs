@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务插件ID
         /// </summary>
-        [XmlElement("commodity_id")]
+        [Newtonsoft.Json.JsonProperty("commodity_id")]
         public string CommodityId { get; set; }
 
         /// <summary>
         /// 应用ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

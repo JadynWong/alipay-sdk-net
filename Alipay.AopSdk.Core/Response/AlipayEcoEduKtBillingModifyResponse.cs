@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 如果成功，返回Y
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

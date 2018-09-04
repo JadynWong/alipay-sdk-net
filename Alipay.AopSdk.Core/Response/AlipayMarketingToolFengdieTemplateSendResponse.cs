@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 分配模板的操作是否成功
         /// </summary>
-        [XmlElement("data")]
+        [Newtonsoft.Json.JsonProperty("data")]
         public FengdieSuccessRespModel Data { get; set; }
     }
 }

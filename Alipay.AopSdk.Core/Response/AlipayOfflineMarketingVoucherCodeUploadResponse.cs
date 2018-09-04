@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 码库id
         /// </summary>
-        [XmlElement("code_inventory_id")]
+        [Newtonsoft.Json.JsonProperty("code_inventory_id")]
         public string CodeInventoryId { get; set; }
     }
 }

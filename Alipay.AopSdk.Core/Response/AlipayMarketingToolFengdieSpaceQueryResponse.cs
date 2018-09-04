@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 空间详情信息，比如空间名称、空间管理员等信息
         /// </summary>
-        [XmlElement("data")]
+        [Newtonsoft.Json.JsonProperty("data")]
         public FengdieSpaceDetailModel Data { get; set; }
     }
 }

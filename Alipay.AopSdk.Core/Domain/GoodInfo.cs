@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品的编号
         /// </summary>
-        [XmlElement("goods_id")]
+        [Newtonsoft.Json.JsonProperty("goods_id")]
         public string GoodsId { get; set; }
 
         /// <summary>
         /// 商品名称
         /// </summary>
-        [XmlElement("goods_name")]
+        [Newtonsoft.Json.JsonProperty("goods_name")]
         public string GoodsName { get; set; }
 
         /// <summary>
         /// 设备中该商品的剩余数量
         /// </summary>
-        [XmlElement("quantity")]
+        [Newtonsoft.Json.JsonProperty("quantity")]
         public string Quantity { get; set; }
 
         /// <summary>
         /// 商品重量,单位克
         /// </summary>
-        [XmlElement("weight")]
+        [Newtonsoft.Json.JsonProperty("weight")]
         public string Weight { get; set; }
     }
 }

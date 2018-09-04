@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 消息类型，text：文本消息，image-text：图文消息
         /// </summary>
-        [XmlElement("msg_type")]
+        [Newtonsoft.Json.JsonProperty("msg_type")]
         public string MsgType { get; set; }
 
         /// <summary>
         /// 文本消息内容，当msg_type为text，必须设置该值
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public Text Text { get; set; }
     }
 }

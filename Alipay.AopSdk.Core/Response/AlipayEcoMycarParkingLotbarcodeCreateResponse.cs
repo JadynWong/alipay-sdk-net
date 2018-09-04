@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回二维码链接地址
         /// </summary>
-        [XmlElement("qrcode_url")]
+        [Newtonsoft.Json.JsonProperty("qrcode_url")]
         public string QrcodeUrl { get; set; }
 
         /// <summary>
         /// 返回状态：1为成功，0为失败
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

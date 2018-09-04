@@ -41,7 +41,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// sadasff
         /// </summary>
-        [XmlElement("sdvsdv")]
+        [Newtonsoft.Json.JsonProperty("sdvsdv")]
         public string Sdvsdv { get; set; }
 
         /// <summary>

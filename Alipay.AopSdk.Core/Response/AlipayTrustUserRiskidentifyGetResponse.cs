@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 行业关注名单识别结果
         /// </summary>
-        [XmlElement("ali_trust_risk_identify")]
+        [Newtonsoft.Json.JsonProperty("ali_trust_risk_identify")]
         public AliTrustRiskIdentify AliTrustRiskIdentify { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// Z0-Z7
         /// </summary>
-        [XmlElement("level")]
+        [Newtonsoft.Json.JsonProperty("level")]
         public string Level { get; set; }
     }
 }

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 放款时间，精确到天
         /// </summary>
-        [XmlElement("date")]
+        [Newtonsoft.Json.JsonProperty("date")]
         public string Date { get; set; }
 
         /// <summary>
         /// 放款流水描述
         /// </summary>
-        [XmlElement("remark")]
+        [Newtonsoft.Json.JsonProperty("remark")]
         public string Remark { get; set; }
 
         /// <summary>
         /// 放款额度，精确到小数点2位，单位（元）
         /// </summary>
-        [XmlElement("total_amount")]
+        [Newtonsoft.Json.JsonProperty("total_amount")]
         public string TotalAmount { get; set; }
     }
 }

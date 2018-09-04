@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务扩展参数,用于商户的特 定业务信息的传递,json格式
         /// </summary>
-        [XmlElement("extend_param")]
+        [Newtonsoft.Json.JsonProperty("extend_param")]
         public string ExtendParam { get; set; }
 
         /// <summary>
         /// 蚂蚁统一会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 1
         /// </summary>
-        [XmlElement("a")]
+        [Newtonsoft.Json.JsonProperty("a")]
         public string A { get; set; }
 
         /// <summary>
         /// 1
         /// </summary>
-        [XmlElement("b")]
+        [Newtonsoft.Json.JsonProperty("b")]
         public string B { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 描述描述描述描述
         /// </summary>
-        [XmlElement("effect_date")]
+        [Newtonsoft.Json.JsonProperty("effect_date")]
         public string EffectDate { get; set; }
     }
 }

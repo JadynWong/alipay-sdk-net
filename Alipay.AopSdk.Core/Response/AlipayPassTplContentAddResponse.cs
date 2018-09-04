@@ -11,19 +11,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 业务结果
         /// </summary>
-        [XmlElement("biz_result")]
+        [Newtonsoft.Json.JsonProperty("biz_result")]
         public string BizResult { get; set; }
 
         /// <summary>
         /// 业务错误码
         /// </summary>
-        [XmlElement("error_code")]
+        [Newtonsoft.Json.JsonProperty("error_code")]
         public string ErrorCode { get; set; }
 
         /// <summary>
         /// 是否成功标识:T-成功；F-失败
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public string Success { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 日期
         /// </summary>
-        [XmlElement("date")]
+        [Newtonsoft.Json.JsonProperty("date")]
         public string Date { get; set; }
 
         /// <summary>
         /// 推广数据
         /// </summary>
-        [XmlElement("promote_data")]
+        [Newtonsoft.Json.JsonProperty("promote_data")]
         public PromoteDataModel PromoteData { get; set; }
     }
 }

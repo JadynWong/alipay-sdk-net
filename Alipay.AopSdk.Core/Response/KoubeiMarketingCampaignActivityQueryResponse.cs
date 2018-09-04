@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活动详情
         /// </summary>
-        [XmlElement("camp_detail")]
+        [Newtonsoft.Json.JsonProperty("camp_detail")]
         public CampDetail CampDetail { get; set; }
     }
 }

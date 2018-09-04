@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 出资方金额
         /// </summary>
-        [XmlElement("contribute_amount")]
+        [Newtonsoft.Json.JsonProperty("contribute_amount")]
         public string ContributeAmount { get; set; }
 
         /// <summary>
         /// 出资方类型，如品牌商出资、支付宝平台出资等
         /// </summary>
-        [XmlElement("contribute_type")]
+        [Newtonsoft.Json.JsonProperty("contribute_type")]
         public string ContributeType { get; set; }
     }
 }

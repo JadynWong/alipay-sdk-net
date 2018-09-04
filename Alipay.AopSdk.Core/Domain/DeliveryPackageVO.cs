@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 通知单id
         /// </summary>
-        [XmlElement("delivery_order_code")]
+        [Newtonsoft.Json.JsonProperty("delivery_order_code")]
         public string DeliveryOrderCode { get; set; }
 
         /// <summary>
         /// 菜鸟单号
         /// </summary>
-        [XmlElement("delivery_order_id")]
+        [Newtonsoft.Json.JsonProperty("delivery_order_id")]
         public string DeliveryOrderId { get; set; }
 
         /// <summary>
@@ -32,43 +32,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 货运单号
         /// </summary>
-        [XmlElement("express_code")]
+        [Newtonsoft.Json.JsonProperty("express_code")]
         public string ExpressCode { get; set; }
 
         /// <summary>
         /// 创建时间
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 修改时间
         /// </summary>
-        [XmlElement("gmt_modified")]
+        [Newtonsoft.Json.JsonProperty("gmt_modified")]
         public string GmtModified { get; set; }
 
         /// <summary>
         /// 物流公司编码
         /// </summary>
-        [XmlElement("logistics_code")]
+        [Newtonsoft.Json.JsonProperty("logistics_code")]
         public string LogisticsCode { get; set; }
 
         /// <summary>
         /// 包裹编码
         /// </summary>
-        [XmlElement("package_code")]
+        [Newtonsoft.Json.JsonProperty("package_code")]
         public string PackageCode { get; set; }
 
         /// <summary>
         /// 仓库编码
         /// </summary>
-        [XmlElement("warehouse_code")]
+        [Newtonsoft.Json.JsonProperty("warehouse_code")]
         public string WarehouseCode { get; set; }
 
         /// <summary>
         /// 作业id
         /// </summary>
-        [XmlElement("work_order_id")]
+        [Newtonsoft.Json.JsonProperty("work_order_id")]
         public string WorkOrderId { get; set; }
     }
 }

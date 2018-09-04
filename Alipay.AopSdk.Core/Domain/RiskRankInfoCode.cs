@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// infocode
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 此infocode在总的得分中的贡献度
         /// </summary>
-        [XmlElement("contribution_degree")]
+        [Newtonsoft.Json.JsonProperty("contribution_degree")]
         public long ContributionDegree { get; set; }
 
         /// <summary>
         /// 风险描述
         /// </summary>
-        [XmlElement("desc")]
+        [Newtonsoft.Json.JsonProperty("desc")]
         public string Desc { get; set; }
 
         /// <summary>
         /// 模型名称
         /// </summary>
-        [XmlElement("model_name")]
+        [Newtonsoft.Json.JsonProperty("model_name")]
         public string ModelName { get; set; }
     }
 }

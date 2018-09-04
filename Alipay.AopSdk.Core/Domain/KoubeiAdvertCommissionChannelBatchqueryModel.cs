@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 页码
         /// </summary>
-        [XmlElement("page_index")]
+        [Newtonsoft.Json.JsonProperty("page_index")]
         public string PageIndex { get; set; }
 
         /// <summary>
         /// 每页数量
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public string PageSize { get; set; }
     }
 }

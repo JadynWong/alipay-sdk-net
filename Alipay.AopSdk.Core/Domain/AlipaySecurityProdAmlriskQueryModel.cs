@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 办公地址
         /// </summary>
-        [XmlElement("business_address")]
+        [Newtonsoft.Json.JsonProperty("business_address")]
         public string BusinessAddress { get; set; }
 
         /// <summary>
         /// 标识该次反洗钱风险分析事件请求的id，商户应保证此id唯一。
         /// </summary>
-        [XmlElement("event_id")]
+        [Newtonsoft.Json.JsonProperty("event_id")]
         public string EventId { get; set; }
 
         /// <summary>
@@ -32,31 +32,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 公司名称、类型、性质
         /// </summary>
-        [XmlElement("legal_name")]
+        [Newtonsoft.Json.JsonProperty("legal_name")]
         public string LegalName { get; set; }
 
         /// <summary>
         /// 商户ID
         /// </summary>
-        [XmlElement("merchant_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_id")]
         public string MerchantId { get; set; }
 
         /// <summary>
         /// 该商户准入申请的id
         /// </summary>
-        [XmlElement("order_id")]
+        [Newtonsoft.Json.JsonProperty("order_id")]
         public string OrderId { get; set; }
 
         /// <summary>
         /// 公司注册地址
         /// </summary>
-        [XmlElement("registered_address")]
+        [Newtonsoft.Json.JsonProperty("registered_address")]
         public string RegisteredAddress { get; set; }
 
         /// <summary>
         /// 公司注册号
         /// </summary>
-        [XmlElement("registration_number")]
+        [Newtonsoft.Json.JsonProperty("registration_number")]
         public string RegistrationNumber { get; set; }
     }
 }

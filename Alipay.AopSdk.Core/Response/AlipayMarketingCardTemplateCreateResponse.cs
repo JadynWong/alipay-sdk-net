@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 支付宝卡模板ID
         /// </summary>
-        [XmlElement("template_id")]
+        [Newtonsoft.Json.JsonProperty("template_id")]
         public string TemplateId { get; set; }
     }
 }

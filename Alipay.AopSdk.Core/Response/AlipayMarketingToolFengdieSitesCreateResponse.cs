@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 创建站点的返回值模型
         /// </summary>
-        [XmlElement("data")]
+        [Newtonsoft.Json.JsonProperty("data")]
         public FengdieActivityCreateModel Data { get; set; }
     }
 }

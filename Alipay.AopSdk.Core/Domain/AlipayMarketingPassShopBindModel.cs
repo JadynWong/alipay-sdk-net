@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前操作是否为追加门店绑定，默认为true，代表为追加门店绑定，现有的门店列表不变，追加绑定本次传入的门店列表；  传值为false时，则为覆盖更新，先删除现有的门店列表，再绑定本次传入的门店列表；
         /// </summary>
-        [XmlElement("is_appending")]
+        [Newtonsoft.Json.JsonProperty("is_appending")]
         public bool IsAppending { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模板ID（编号），创建模板接口返回的模板ID
         /// </summary>
-        [XmlElement("tpl_id")]
+        [Newtonsoft.Json.JsonProperty("tpl_id")]
         public string TplId { get; set; }
     }
 }

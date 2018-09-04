@@ -20,25 +20,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 授信金额
         /// </summary>
-        [XmlElement("credit_amt")]
+        [Newtonsoft.Json.JsonProperty("credit_amt")]
         public string CreditAmt { get; set; }
 
         /// <summary>
         /// 授信编号
         /// </summary>
-        [XmlElement("credit_no")]
+        [Newtonsoft.Json.JsonProperty("credit_no")]
         public string CreditNo { get; set; }
 
         /// <summary>
         /// 授信期限长度，包含单位(年、月、日)
         /// </summary>
-        [XmlElement("credit_term")]
+        [Newtonsoft.Json.JsonProperty("credit_term")]
         public string CreditTerm { get; set; }
 
         /// <summary>
         /// 授信有效截止日期(日期精度为天,包含截止日)
         /// </summary>
-        [XmlElement("expire_date")]
+        [Newtonsoft.Json.JsonProperty("expire_date")]
         public string ExpireDate { get; set; }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 贷款期限长度，包含单位(年、月、日)
         /// </summary>
-        [XmlElement("loan_term")]
+        [Newtonsoft.Json.JsonProperty("loan_term")]
         public string LoanTerm { get; set; }
 
         /// <summary>
@@ -64,13 +64,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 授信有效起始日期(日期精度为天,包含起始日)
         /// </summary>
-        [XmlElement("start_date")]
+        [Newtonsoft.Json.JsonProperty("start_date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// 授信状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

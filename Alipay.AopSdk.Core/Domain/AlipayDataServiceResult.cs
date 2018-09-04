@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 错误码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 错误信息
         /// </summary>
-        [XmlElement("message")]
+        [Newtonsoft.Json.JsonProperty("message")]
         public string Message { get; set; }
 
         /// <summary>
         /// 调用结果，json格式
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public string Result { get; set; }
 
         /// <summary>
         /// 调用是否成功
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
     }
 }

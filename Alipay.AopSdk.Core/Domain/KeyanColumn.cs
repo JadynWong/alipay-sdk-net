@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 密码
         /// </summary>
-        [XmlElement("password")]
+        [Newtonsoft.Json.JsonProperty("password")]
         public string Password { get; set; }
     }
 }

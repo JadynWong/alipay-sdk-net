@@ -12,25 +12,25 @@ namespace Aop.Api.Response
         /// <summary>
         /// 发奖凭证
         /// </summary>
-        [XmlElement("certificate")]
+        [Newtonsoft.Json.JsonProperty("certificate")]
         public InsCertificate Certificate { get; set; }
 
         /// <summary>
         /// 活动ID
         /// </summary>
-        [XmlElement("compaign_id")]
+        [Newtonsoft.Json.JsonProperty("compaign_id")]
         public string CompaignId { get; set; }
 
         /// <summary>
         /// 发奖流水ID
         /// </summary>
-        [XmlElement("flow_id")]
+        [Newtonsoft.Json.JsonProperty("flow_id")]
         public string FlowId { get; set; }
 
         /// <summary>
         /// 保险产品
         /// </summary>
-        [XmlElement("product")]
+        [Newtonsoft.Json.JsonProperty("product")]
         public InsProduct Product { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品详情-菜品图片中的图片描述
         /// </summary>
-        [XmlElement("desc")]
+        [Newtonsoft.Json.JsonProperty("desc")]
         public string Desc { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 详情图片中，菜品标题。请勿超过15汉字，30个字符
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

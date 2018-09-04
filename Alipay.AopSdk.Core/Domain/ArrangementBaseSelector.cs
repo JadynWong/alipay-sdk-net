@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 产品外标类型:01：机构产品 02：借款人信息 03：主站产品 04： 标准机构产品  05：内部业务平台标准产品
         /// </summary>
-        [XmlElement("mark_type")]
+        [Newtonsoft.Json.JsonProperty("mark_type")]
         public string MarkType { get; set; }
 
         /// <summary>
@@ -40,13 +40,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 是否查询出产品外标
         /// </summary>
-        [XmlElement("select_pd_mark")]
+        [Newtonsoft.Json.JsonProperty("select_pd_mark")]
         public bool SelectPdMark { get; set; }
 
         /// <summary>
         /// 是否查询出产品名称
         /// </summary>
-        [XmlElement("select_pd_name")]
+        [Newtonsoft.Json.JsonProperty("select_pd_name")]
         public bool SelectPdName { get; set; }
     }
 }

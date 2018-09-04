@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户品牌信息
         /// </summary>
-        [XmlElement("merchant_base")]
+        [Newtonsoft.Json.JsonProperty("merchant_base")]
         public MerchantBaseEnterOpenModel MerchantBase { get; set; }
 
         /// <summary>
         /// 商户门店入驻产品公共信息
         /// </summary>
-        [XmlElement("sub_merchant_common_info")]
+        [Newtonsoft.Json.JsonProperty("sub_merchant_common_info")]
         public SubMerchantCommonEnterOpenModel SubMerchantCommonInfo { get; set; }
 
         /// <summary>

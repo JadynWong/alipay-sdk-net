@@ -11,19 +11,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回值为shop_code表示只返回了门店码 返回值为table_code表示返回了桌码跟门店码
         /// </summary>
-        [XmlElement("code_flag")]
+        [Newtonsoft.Json.JsonProperty("code_flag")]
         public string CodeFlag { get; set; }
 
         /// <summary>
         /// 门店id
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
 
         /// <summary>
         /// 桌码
         /// </summary>
-        [XmlElement("table_num")]
+        [Newtonsoft.Json.JsonProperty("table_num")]
         public string TableNum { get; set; }
     }
 }

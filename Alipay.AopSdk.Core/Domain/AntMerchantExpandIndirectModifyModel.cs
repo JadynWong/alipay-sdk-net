@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户简称
         /// </summary>
-        [XmlElement("alias_name")]
+        [Newtonsoft.Json.JsonProperty("alias_name")]
         public string AliasName { get; set; }
 
         /// <summary>
@@ -33,19 +33,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户证件编号（企业或者个体工商户提供营业执照，事业单位提供事证号）
         /// </summary>
-        [XmlElement("business_license")]
+        [Newtonsoft.Json.JsonProperty("business_license")]
         public string BusinessLicense { get; set; }
 
         /// <summary>
         /// 商户证件类型，取值范围：NATIONAL_LEGAL：营业执照；NATIONAL_LEGAL_MERGE:营业执照(多证合一)；INST_RGST_CTF：事业单位法人证书
         /// </summary>
-        [XmlElement("business_license_type")]
+        [Newtonsoft.Json.JsonProperty("business_license_type")]
         public string BusinessLicenseType { get; set; }
 
         /// <summary>
         /// 商户经营类目，参考文档：https://doc.open.alipay.com/doc2/detail?&docType=1&articleId=105444
         /// </summary>
-        [XmlElement("category_id")]
+        [Newtonsoft.Json.JsonProperty("category_id")]
         public string CategoryId { get; set; }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户编号，由机构定义，需要保证在机构下唯一，与sub_merchant_id二选一
         /// </summary>
-        [XmlElement("external_id")]
+        [Newtonsoft.Json.JsonProperty("external_id")]
         public string ExternalId { get; set; }
 
         /// <summary>
@@ -71,13 +71,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户备注信息，可填写额外信息
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 商户名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -90,19 +90,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户客服电话
         /// </summary>
-        [XmlElement("service_phone")]
+        [Newtonsoft.Json.JsonProperty("service_phone")]
         public string ServicePhone { get; set; }
 
         /// <summary>
         /// 商户来源机构标识，填写机构在支付宝的pid
         /// </summary>
-        [XmlElement("source")]
+        [Newtonsoft.Json.JsonProperty("source")]
         public string Source { get; set; }
 
         /// <summary>
         /// 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号，与external_id二选一
         /// </summary>
-        [XmlElement("sub_merchant_id")]
+        [Newtonsoft.Json.JsonProperty("sub_merchant_id")]
         public string SubMerchantId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户pid
         /// </summary>
-        [XmlElement("partner_id")]
+        [Newtonsoft.Json.JsonProperty("partner_id")]
         public string PartnerId { get; set; }
 
         /// <summary>

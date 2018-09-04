@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务扩展信息，比如外部卡码，格式为json格式
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 商品单ID
         /// </summary>
-        [XmlElement("item_order_no")]
+        [Newtonsoft.Json.JsonProperty("item_order_no")]
         public string ItemOrderNo { get; set; }
 
         /// <summary>
         /// 商品单价
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public string Price { get; set; }
 
         /// <summary>
         /// 商品数量
         /// </summary>
-        [XmlElement("quantity")]
+        [Newtonsoft.Json.JsonProperty("quantity")]
         public long Quantity { get; set; }
 
         /// <summary>
         /// 商品skuId
         /// </summary>
-        [XmlElement("sku_id")]
+        [Newtonsoft.Json.JsonProperty("sku_id")]
         public string SkuId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 菜品估清类型,estimated表示菜品估清
         /// </summary>
-        [XmlElement("biz_type")]
+        [Newtonsoft.Json.JsonProperty("biz_type")]
         public string BizType { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 同步类型,update会覆盖更新
         /// </summary>
-        [XmlElement("syn_type")]
+        [Newtonsoft.Json.JsonProperty("syn_type")]
         public string SynType { get; set; }
     }
 }

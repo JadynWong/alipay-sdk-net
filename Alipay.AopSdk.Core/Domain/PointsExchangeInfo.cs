@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 积分兑换内容的类型，比如券
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

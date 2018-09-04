@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 跳转URL，扫码关注服务窗后会直接跳转到此URL
         /// </summary>
-        [XmlElement("goto_url")]
+        [Newtonsoft.Json.JsonProperty("goto_url")]
         public string GotoUrl { get; set; }
 
         /// <summary>
         /// 场景信息
         /// </summary>
-        [XmlElement("scene")]
+        [Newtonsoft.Json.JsonProperty("scene")]
         public Scene Scene { get; set; }
     }
 }

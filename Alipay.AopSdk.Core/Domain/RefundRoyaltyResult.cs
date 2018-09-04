@@ -12,37 +12,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 退分润金额
         /// </summary>
-        [XmlElement("refund_amount")]
+        [Newtonsoft.Json.JsonProperty("refund_amount")]
         public string RefundAmount { get; set; }
 
         /// <summary>
         /// 退分润结果码
         /// </summary>
-        [XmlElement("result_code")]
+        [Newtonsoft.Json.JsonProperty("result_code")]
         public string ResultCode { get; set; }
 
         /// <summary>
         /// 转入人支付宝账号对应用户ID
         /// </summary>
-        [XmlElement("trans_in")]
+        [Newtonsoft.Json.JsonProperty("trans_in")]
         public string TransIn { get; set; }
 
         /// <summary>
         /// 转入人支付宝账号
         /// </summary>
-        [XmlElement("trans_in_email")]
+        [Newtonsoft.Json.JsonProperty("trans_in_email")]
         public string TransInEmail { get; set; }
 
         /// <summary>
         /// 转出人支付宝账号对应用户ID
         /// </summary>
-        [XmlElement("trans_out")]
+        [Newtonsoft.Json.JsonProperty("trans_out")]
         public string TransOut { get; set; }
 
         /// <summary>
         /// 转出人支付宝账号
         /// </summary>
-        [XmlElement("trans_out_email")]
+        [Newtonsoft.Json.JsonProperty("trans_out_email")]
         public string TransOutEmail { get; set; }
     }
 }

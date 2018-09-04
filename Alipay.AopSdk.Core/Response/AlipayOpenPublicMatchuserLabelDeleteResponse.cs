@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 用户打标失败数量
         /// </summary>
-        [XmlElement("error_count")]
+        [Newtonsoft.Json.JsonProperty("error_count")]
         public long ErrorCount { get; set; }
 
         /// <summary>

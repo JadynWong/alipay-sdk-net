@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 服务窗审核状态描述
         /// </summary>
-        [XmlElement("audit_desc")]
+        [Newtonsoft.Json.JsonProperty("audit_desc")]
         public string AuditDesc { get; set; }
 
         /// <summary>
         /// 服务窗审核状态，申请成功后返回AUDITING，等待风控审核
         /// </summary>
-        [XmlElement("audit_status")]
+        [Newtonsoft.Json.JsonProperty("audit_status")]
         public string AuditStatus { get; set; }
     }
 }

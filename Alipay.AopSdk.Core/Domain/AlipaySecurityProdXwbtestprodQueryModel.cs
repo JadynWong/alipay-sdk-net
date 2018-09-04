@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 省份编码，国标码
         /// </summary>
-        [XmlElement("province_code")]
+        [Newtonsoft.Json.JsonProperty("province_code")]
         public string ProvinceCode { get; set; }
 
         /// <summary>
         /// wert
         /// </summary>
-        [XmlElement("qwe_dfgfd")]
+        [Newtonsoft.Json.JsonProperty("qwe_dfgfd")]
         public string QweDfgfd { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 待发送的通知内容
         /// </summary>
-        [XmlElement("notice_details")]
+        [Newtonsoft.Json.JsonProperty("notice_details")]
         public CplifeNoticeDetail NoticeDetails { get; set; }
     }
 }

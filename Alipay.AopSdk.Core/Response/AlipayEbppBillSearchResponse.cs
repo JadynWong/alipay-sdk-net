@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 已经缓存的的key
         /// </summary>
-        [XmlElement("cachekey")]
+        [Newtonsoft.Json.JsonProperty("cachekey")]
         public string Cachekey { get; set; }
 
         /// <summary>

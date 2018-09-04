@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回删除云凤蝶站点成功与失败的结果
         /// </summary>
-        [XmlElement("data")]
+        [Newtonsoft.Json.JsonProperty("data")]
         public FengdieSuccessRespModel Data { get; set; }
     }
 }

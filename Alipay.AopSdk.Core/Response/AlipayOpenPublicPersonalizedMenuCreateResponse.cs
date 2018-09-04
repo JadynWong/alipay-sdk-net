@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 该套个性化菜单key
         /// </summary>
-        [XmlElement("menu_key")]
+        [Newtonsoft.Json.JsonProperty("menu_key")]
         public string MenuKey { get; set; }
     }
 }

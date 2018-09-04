@@ -12,13 +12,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 授权商户的appid
         /// </summary>
-        [XmlElement("auth_app_id")]
+        [Newtonsoft.Json.JsonProperty("auth_app_id")]
         public string AuthAppId { get; set; }
 
         /// <summary>
         /// 授权失效时间
         /// </summary>
-        [XmlElement("auth_end")]
+        [Newtonsoft.Json.JsonProperty("auth_end")]
         public string AuthEnd { get; set; }
 
         /// <summary>
@@ -31,25 +31,25 @@ namespace Aop.Api.Response
         /// <summary>
         /// 授权生效时间
         /// </summary>
-        [XmlElement("auth_start")]
+        [Newtonsoft.Json.JsonProperty("auth_start")]
         public string AuthStart { get; set; }
 
         /// <summary>
         /// 应用授权令牌失效时间，单位到秒
         /// </summary>
-        [XmlElement("expires_in")]
+        [Newtonsoft.Json.JsonProperty("expires_in")]
         public long ExpiresIn { get; set; }
 
         /// <summary>
         /// valid：有效状态；invalid：无效状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 授权商户的user_id
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

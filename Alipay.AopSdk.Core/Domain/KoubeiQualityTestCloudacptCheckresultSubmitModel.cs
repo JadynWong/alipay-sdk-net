@@ -12,43 +12,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 活动id
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public string ActivityId { get; set; }
 
         /// <summary>
         /// 付款码
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
         /// 批次ID
         /// </summary>
-        [XmlElement("batch_id")]
+        [Newtonsoft.Json.JsonProperty("batch_id")]
         public string BatchId { get; set; }
 
         /// <summary>
         /// 结束时间
         /// </summary>
-        [XmlElement("end_time")]
+        [Newtonsoft.Json.JsonProperty("end_time")]
         public string EndTime { get; set; }
 
         /// <summary>
         /// partenter id
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
 
         /// <summary>
         /// 开始时间
         /// </summary>
-        [XmlElement("start_time")]
+        [Newtonsoft.Json.JsonProperty("start_time")]
         public string StartTime { get; set; }
 
         /// <summary>
         /// user id
         /// </summary>
-        [XmlElement("uid")]
+        [Newtonsoft.Json.JsonProperty("uid")]
         public string Uid { get; set; }
     }
 }

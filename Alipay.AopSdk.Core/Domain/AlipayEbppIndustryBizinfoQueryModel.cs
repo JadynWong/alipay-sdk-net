@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务机构简称
         /// </summary>
-        [XmlElement("biz_inst")]
+        [Newtonsoft.Json.JsonProperty("biz_inst")]
         public string BizInst { get; set; }
 
         /// <summary>
         /// 业务类型，公服业务：IND
         /// </summary>
-        [XmlElement("biz_type")]
+        [Newtonsoft.Json.JsonProperty("biz_type")]
         public string BizType { get; set; }
 
         /// <summary>
         /// 业务数据码，标识业务场景
         /// </summary>
-        [XmlElement("data_code")]
+        [Newtonsoft.Json.JsonProperty("data_code")]
         public string DataCode { get; set; }
 
         /// <summary>
         /// 请求上下文，json格式
         /// </summary>
-        [XmlElement("request_context")]
+        [Newtonsoft.Json.JsonProperty("request_context")]
         public string RequestContext { get; set; }
     }
 }

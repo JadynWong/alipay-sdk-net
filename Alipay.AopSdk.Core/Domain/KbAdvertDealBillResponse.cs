@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账单下载地址(为空表示查无账单)
         /// </summary>
-        [XmlElement("download_url")]
+        [Newtonsoft.Json.JsonProperty("download_url")]
         public string DownloadUrl { get; set; }
     }
 }

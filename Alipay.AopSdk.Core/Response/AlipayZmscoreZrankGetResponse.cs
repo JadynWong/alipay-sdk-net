@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 芝麻分分段
         /// </summary>
-        [XmlElement("zm_score_zrank")]
+        [Newtonsoft.Json.JsonProperty("zm_score_zrank")]
         public AlipayZmScoreZrankResult ZmScoreZrank { get; set; }
     }
 }

@@ -13,31 +13,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 云凤蝶模板的最近修改日期
         /// </summary>
-        [XmlElement("gmt_modified")]
+        [Newtonsoft.Json.JsonProperty("gmt_modified")]
         public string GmtModified { get; set; }
 
         /// <summary>
         /// 云凤蝶模板ID
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public long Id { get; set; }
 
         /// <summary>
         /// 云凤蝶模板是否上线的状态
         /// </summary>
-        [XmlElement("is_online")]
+        [Newtonsoft.Json.JsonProperty("is_online")]
         public bool IsOnline { get; set; }
 
         /// <summary>
         /// 云凤蝶模板的下线日期
         /// </summary>
-        [XmlElement("offline_time")]
+        [Newtonsoft.Json.JsonProperty("offline_time")]
         public string OfflineTime { get; set; }
 
         /// <summary>
         /// 云凤蝶模板的负责人
         /// </summary>
-        [XmlElement("owner")]
+        [Newtonsoft.Json.JsonProperty("owner")]
         public FengdieSitesOwner Owner { get; set; }
 
         /// <summary>
@@ -50,25 +50,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 云凤蝶模板的当前状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 云凤蝶模板的名称
         /// </summary>
-        [XmlElement("template_name")]
+        [Newtonsoft.Json.JsonProperty("template_name")]
         public string TemplateName { get; set; }
 
         /// <summary>
         /// 云凤蝶模板的版本号
         /// </summary>
-        [XmlElement("template_version")]
+        [Newtonsoft.Json.JsonProperty("template_version")]
         public string TemplateVersion { get; set; }
 
         /// <summary>
         /// 云凤蝶模板的标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

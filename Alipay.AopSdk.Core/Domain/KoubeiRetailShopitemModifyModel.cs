@@ -12,43 +12,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 店铺商品的品牌名称
         /// </summary>
-        [XmlElement("brand_code")]
+        [Newtonsoft.Json.JsonProperty("brand_code")]
         public string BrandCode { get; set; }
 
         /// <summary>
         /// 店铺商品的商品类别
         /// </summary>
-        [XmlElement("category_code")]
+        [Newtonsoft.Json.JsonProperty("category_code")]
         public string CategoryCode { get; set; }
 
         /// <summary>
         /// 商品描述
         /// </summary>
-        [XmlElement("description")]
+        [Newtonsoft.Json.JsonProperty("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// 店铺商品SKU
         /// </summary>
-        [XmlElement("item_code")]
+        [Newtonsoft.Json.JsonProperty("item_code")]
         public string ItemCode { get; set; }
 
         /// <summary>
         /// 口碑门店id
         /// </summary>
-        [XmlElement("kb_shop_id")]
+        [Newtonsoft.Json.JsonProperty("kb_shop_id")]
         public string KbShopId { get; set; }
 
         /// <summary>
         /// 参考价格
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public string Price { get; set; }
 
         /// <summary>
         /// 店铺商品的名称
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 会员卡模板总数
         /// </summary>
-        [XmlElement("template_total")]
+        [Newtonsoft.Json.JsonProperty("template_total")]
         public long TemplateTotal { get; set; }
     }
 }

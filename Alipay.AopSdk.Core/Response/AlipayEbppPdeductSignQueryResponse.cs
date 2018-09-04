@@ -11,37 +11,37 @@ namespace Aop.Api.Response
         /// <summary>
         /// 协议ID
         /// </summary>
-        [XmlElement("agreement_id")]
+        [Newtonsoft.Json.JsonProperty("agreement_id")]
         public string AgreementId { get; set; }
 
         /// <summary>
         /// 户号
         /// </summary>
-        [XmlElement("bill_key")]
+        [Newtonsoft.Json.JsonProperty("bill_key")]
         public string BillKey { get; set; }
 
         /// <summary>
         /// 出账机构
         /// </summary>
-        [XmlElement("charge_inst")]
+        [Newtonsoft.Json.JsonProperty("charge_inst")]
         public string ChargeInst { get; set; }
 
         /// <summary>
         /// 朗新协议ID
         /// </summary>
-        [XmlElement("out_agreement_id")]
+        [Newtonsoft.Json.JsonProperty("out_agreement_id")]
         public string OutAgreementId { get; set; }
 
         /// <summary>
         /// 签约时间
         /// </summary>
-        [XmlElement("sign_date")]
+        [Newtonsoft.Json.JsonProperty("sign_date")]
         public string SignDate { get; set; }
 
         /// <summary>
         /// 用户ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

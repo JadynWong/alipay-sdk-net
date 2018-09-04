@@ -20,13 +20,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 车险询价申请号
         /// </summary>
-        [XmlElement("enquiry_biz_id")]
+        [Newtonsoft.Json.JsonProperty("enquiry_biz_id")]
         public string EnquiryBizId { get; set; }
 
         /// <summary>
         /// 外部询价申请业务单号（幂等字段）
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
     }
 }

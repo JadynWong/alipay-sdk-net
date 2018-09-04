@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// kaCode唯一标识
         /// </summary>
-        [XmlElement("ka_code")]
+        [Newtonsoft.Json.JsonProperty("ka_code")]
         public string KaCode { get; set; }
     }
 }

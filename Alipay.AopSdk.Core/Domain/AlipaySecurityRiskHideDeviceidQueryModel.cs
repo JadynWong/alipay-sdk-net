@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户的sdk客户端key
         /// </summary>
-        [XmlElement("app_key_client")]
+        [Newtonsoft.Json.JsonProperty("app_key_client")]
         public string AppKeyClient { get; set; }
 
         /// <summary>
         /// 商户使用的设备指纹服务端key
         /// </summary>
-        [XmlElement("app_key_server")]
+        [Newtonsoft.Json.JsonProperty("app_key_server")]
         public string AppKeyServer { get; set; }
 
         /// <summary>
         /// 商户应用名称
         /// </summary>
-        [XmlElement("app_name")]
+        [Newtonsoft.Json.JsonProperty("app_name")]
         public string AppName { get; set; }
 
         /// <summary>
         /// 设备指纹deviceid对应的token
         /// </summary>
-        [XmlElement("deviceid_token")]
+        [Newtonsoft.Json.JsonProperty("deviceid_token")]
         public string DeviceidToken { get; set; }
     }
 }

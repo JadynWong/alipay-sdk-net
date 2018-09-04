@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 表示数据传输是否成功
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public string Success { get; set; }
     }
 }

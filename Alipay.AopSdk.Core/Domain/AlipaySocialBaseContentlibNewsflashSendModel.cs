@@ -12,67 +12,67 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 作者
         /// </summary>
-        [XmlElement("author")]
+        [Newtonsoft.Json.JsonProperty("author")]
         public string Author { get; set; }
 
         /// <summary>
         /// 内容
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
 
         /// <summary>
         /// 扩展信息，json格式数据
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 配图地址
         /// </summary>
-        [XmlElement("images")]
+        [Newtonsoft.Json.JsonProperty("images")]
         public string Images { get; set; }
 
         /// <summary>
         /// 标签, 多个用逗号隔开
         /// </summary>
-        [XmlElement("opr_tags")]
+        [Newtonsoft.Json.JsonProperty("opr_tags")]
         public string OprTags { get; set; }
 
         /// <summary>
         /// 发布时间
         /// </summary>
-        [XmlElement("publish_date")]
+        [Newtonsoft.Json.JsonProperty("publish_date")]
         public string PublishDate { get; set; }
 
         /// <summary>
         /// 推荐权重，0：不可用，1：显示，2：加权
         /// </summary>
-        [XmlElement("recommend")]
+        [Newtonsoft.Json.JsonProperty("recommend")]
         public long Recommend { get; set; }
 
         /// <summary>
         /// 来源渠道
         /// </summary>
-        [XmlElement("source_channel_key")]
+        [Newtonsoft.Json.JsonProperty("source_channel_key")]
         public string SourceChannelKey { get; set; }
 
         /// <summary>
         /// 快讯来源id
         /// </summary>
-        [XmlElement("source_id")]
+        [Newtonsoft.Json.JsonProperty("source_id")]
         public string SourceId { get; set; }
 
         /// <summary>
         /// 摘要
         /// </summary>
-        [XmlElement("summary")]
+        [Newtonsoft.Json.JsonProperty("summary")]
         public string Summary { get; set; }
 
         /// <summary>
         /// 标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

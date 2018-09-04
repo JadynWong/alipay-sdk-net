@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 图片高度
         /// </summary>
-        [XmlElement("height")]
+        [Newtonsoft.Json.JsonProperty("height")]
         public string Height { get; set; }
 
         /// <summary>
         /// 图片地址
         /// </summary>
-        [XmlElement("src")]
+        [Newtonsoft.Json.JsonProperty("src")]
         public string Src { get; set; }
 
         /// <summary>
         /// 图片宽度
         /// </summary>
-        [XmlElement("width")]
+        [Newtonsoft.Json.JsonProperty("width")]
         public string Width { get; set; }
     }
 }

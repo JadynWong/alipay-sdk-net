@@ -12,91 +12,91 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前可用面额
         /// </summary>
-        [XmlElement("available_amount")]
+        [Newtonsoft.Json.JsonProperty("available_amount")]
         public string AvailableAmount { get; set; }
 
         /// <summary>
         /// 红包编号
         /// </summary>
-        [XmlElement("coupon_no")]
+        [Newtonsoft.Json.JsonProperty("coupon_no")]
         public string CouponNo { get; set; }
 
         /// <summary>
         /// 可优惠面额
         /// </summary>
-        [XmlElement("deduct_amount")]
+        [Newtonsoft.Json.JsonProperty("deduct_amount")]
         public string DeductAmount { get; set; }
 
         /// <summary>
         /// 有效期开始时间
         /// </summary>
-        [XmlElement("gmt_active")]
+        [Newtonsoft.Json.JsonProperty("gmt_active")]
         public string GmtActive { get; set; }
 
         /// <summary>
         /// 创建时间
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 有效期结束时间
         /// </summary>
-        [XmlElement("gmt_expired")]
+        [Newtonsoft.Json.JsonProperty("gmt_expired")]
         public string GmtExpired { get; set; }
 
         /// <summary>
         /// 红包使用说明
         /// </summary>
-        [XmlElement("instructions")]
+        [Newtonsoft.Json.JsonProperty("instructions")]
         public string Instructions { get; set; }
 
         /// <summary>
         /// 红包详情说明
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 商户id
         /// </summary>
-        [XmlElement("merchant_uniq_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_uniq_id")]
         public string MerchantUniqId { get; set; }
 
         /// <summary>
         /// 是否可叠加
         /// </summary>
-        [XmlElement("multi_use_flag")]
+        [Newtonsoft.Json.JsonProperty("multi_use_flag")]
         public string MultiUseFlag { get; set; }
 
         /// <summary>
         /// 红包名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 是否可退款标识
         /// </summary>
-        [XmlElement("refund_flag")]
+        [Newtonsoft.Json.JsonProperty("refund_flag")]
         public string RefundFlag { get; set; }
 
         /// <summary>
         /// 红包状态信息
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 红包模板编号
         /// </summary>
-        [XmlElement("template_no")]
+        [Newtonsoft.Json.JsonProperty("template_no")]
         public string TemplateNo { get; set; }
 
         /// <summary>
         /// 用户openid
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

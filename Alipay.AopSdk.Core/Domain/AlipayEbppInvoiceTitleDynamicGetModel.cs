@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 抬头动态码
         /// </summary>
-        [XmlElement("bar_code")]
+        [Newtonsoft.Json.JsonProperty("bar_code")]
         public string BarCode { get; set; }
     }
 }

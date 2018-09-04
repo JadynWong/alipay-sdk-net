@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 渠道ID
         /// </summary>
-        [XmlElement("channel_id")]
+        [Newtonsoft.Json.JsonProperty("channel_id")]
         public string ChannelId { get; set; }
 
         /// <summary>
         /// 备注
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 渠道名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 渠道状态  EFFECTIVE：有效  INVALID：无效
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// OFFLINE：线下推广
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

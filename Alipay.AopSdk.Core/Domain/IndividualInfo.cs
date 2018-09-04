@@ -12,37 +12,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 生日
         /// </summary>
-        [XmlElement("date_of_birth")]
+        [Newtonsoft.Json.JsonProperty("date_of_birth")]
         public string DateOfBirth { get; set; }
 
         /// <summary>
         /// 证件号码
         /// </summary>
-        [XmlElement("id_number")]
+        [Newtonsoft.Json.JsonProperty("id_number")]
         public string IdNumber { get; set; }
 
         /// <summary>
         /// 个人名字
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 国籍
         /// </summary>
-        [XmlElement("nationality")]
+        [Newtonsoft.Json.JsonProperty("nationality")]
         public string Nationality { get; set; }
 
         /// <summary>
         /// 个人居住地
         /// </summary>
-        [XmlElement("residential_address")]
+        [Newtonsoft.Json.JsonProperty("residential_address")]
         public string ResidentialAddress { get; set; }
 
         /// <summary>
         /// 该个体的类型
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

@@ -13,31 +13,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 菜谱大类
         /// </summary>
-        [XmlElement("catetory_big_id")]
+        [Newtonsoft.Json.JsonProperty("catetory_big_id")]
         public string CatetoryBigId { get; set; }
 
         /// <summary>
         /// 菜谱小类
         /// </summary>
-        [XmlElement("catetory_small_id")]
+        [Newtonsoft.Json.JsonProperty("catetory_small_id")]
         public string CatetorySmallId { get; set; }
 
         /// <summary>
         /// 菜谱id
         /// </summary>
-        [XmlElement("cook_id")]
+        [Newtonsoft.Json.JsonProperty("cook_id")]
         public string CookId { get; set; }
 
         /// <summary>
         /// 菜品id
         /// </summary>
-        [XmlElement("dish_id")]
+        [Newtonsoft.Json.JsonProperty("dish_id")]
         public string DishId { get; set; }
 
         /// <summary>
         /// 打标
         /// </summary>
-        [XmlElement("flag")]
+        [Newtonsoft.Json.JsonProperty("flag")]
         public string Flag { get; set; }
 
         /// <summary>
@@ -50,13 +50,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 排序值
         /// </summary>
-        [XmlElement("sort")]
+        [Newtonsoft.Json.JsonProperty("sort")]
         public string Sort { get; set; }
 
         /// <summary>
         /// 状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

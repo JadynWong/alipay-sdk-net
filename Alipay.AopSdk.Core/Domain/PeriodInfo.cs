@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 单位
         /// </summary>
-        [XmlElement("dimension")]
+        [Newtonsoft.Json.JsonProperty("dimension")]
         public string Dimension { get; set; }
 
         /// <summary>
         /// 周期值
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public long Value { get; set; }
     }
 }

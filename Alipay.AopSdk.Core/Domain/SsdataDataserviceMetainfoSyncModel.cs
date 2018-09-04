@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 元数据信息
         /// </summary>
-        [XmlElement("meta_info")]
+        [Newtonsoft.Json.JsonProperty("meta_info")]
         public string MetaInfo { get; set; }
     }
 }

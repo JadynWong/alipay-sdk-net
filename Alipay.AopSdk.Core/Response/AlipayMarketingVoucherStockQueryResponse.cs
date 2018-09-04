@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 剩余可用库存数量
         /// </summary>
-        [XmlElement("available_count")]
+        [Newtonsoft.Json.JsonProperty("available_count")]
         public long AvailableCount { get; set; }
 
         /// <summary>
         /// 库存总量
         /// </summary>
-        [XmlElement("total_count")]
+        [Newtonsoft.Json.JsonProperty("total_count")]
         public long TotalCount { get; set; }
     }
 }

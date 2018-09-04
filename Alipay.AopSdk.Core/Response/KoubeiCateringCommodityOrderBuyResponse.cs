@@ -19,19 +19,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// order_result为success时返回；order_result为fail的时候不返回
         /// </summary>
-        [XmlElement("order_id")]
+        [Newtonsoft.Json.JsonProperty("order_id")]
         public string OrderId { get; set; }
 
         /// <summary>
         /// success表示订购成功；fail表示订购失败
         /// </summary>
-        [XmlElement("order_result")]
+        [Newtonsoft.Json.JsonProperty("order_result")]
         public string OrderResult { get; set; }
 
         /// <summary>
         /// 描述订购结果信息
         /// </summary>
-        [XmlElement("order_result_msg")]
+        [Newtonsoft.Json.JsonProperty("order_result_msg")]
         public string OrderResultMsg { get; set; }
     }
 }

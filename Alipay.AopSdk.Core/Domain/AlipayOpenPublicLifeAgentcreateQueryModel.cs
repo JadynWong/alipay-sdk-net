@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 由开发者创建的外部入驻申请单据号
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
     }
 }

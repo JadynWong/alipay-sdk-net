@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 描述信息
         /// </summary>
-        [XmlElement("voucher_desc")]
+        [Newtonsoft.Json.JsonProperty("voucher_desc")]
         public string VoucherDesc { get; set; }
 
         /// <summary>
         /// 券id
         /// </summary>
-        [XmlElement("voucher_id")]
+        [Newtonsoft.Json.JsonProperty("voucher_id")]
         public string VoucherId { get; set; }
 
         /// <summary>
         /// 券名称
         /// </summary>
-        [XmlElement("voucher_name")]
+        [Newtonsoft.Json.JsonProperty("voucher_name")]
         public string VoucherName { get; set; }
 
         /// <summary>

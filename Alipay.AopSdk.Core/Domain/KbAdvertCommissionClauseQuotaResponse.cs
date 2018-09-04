@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 分佣定额(精度2位的非负小数)
         /// </summary>
-        [XmlElement("quota_amount")]
+        [Newtonsoft.Json.JsonProperty("quota_amount")]
         public string QuotaAmount { get; set; }
     }
 }

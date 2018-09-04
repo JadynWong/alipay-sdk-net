@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 图片在sfs中的标识
         /// </summary>
-        [XmlElement("image_id")]
+        [Newtonsoft.Json.JsonProperty("image_id")]
         public string ImageId { get; set; }
     }
 }

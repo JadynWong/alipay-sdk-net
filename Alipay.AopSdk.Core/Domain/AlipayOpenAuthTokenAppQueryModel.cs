@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 应用授权令牌
         /// </summary>
-        [XmlElement("app_auth_token")]
+        [Newtonsoft.Json.JsonProperty("app_auth_token")]
         public string AppAuthToken { get; set; }
     }
 }

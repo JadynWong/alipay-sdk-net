@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 部署单记录id
         /// </summary>
-        [XmlElement("record_id")]
+        [Newtonsoft.Json.JsonProperty("record_id")]
         public long RecordId { get; set; }
 
         /// <summary>

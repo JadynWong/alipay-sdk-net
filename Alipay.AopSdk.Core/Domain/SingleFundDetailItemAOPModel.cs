@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 消费记录主记录
         /// </summary>
-        [XmlElement("consume_record")]
+        [Newtonsoft.Json.JsonProperty("consume_record")]
         public ConsumeRecordAOPModel ConsumeRecord { get; set; }
     }
 }

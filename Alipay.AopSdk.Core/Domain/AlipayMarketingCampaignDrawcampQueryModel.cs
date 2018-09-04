@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 抽奖活动id，通过alipay.marketing.campaign.drawcamp.create接口返回
         /// </summary>
-        [XmlElement("camp_id")]
+        [Newtonsoft.Json.JsonProperty("camp_id")]
         public string CampId { get; set; }
     }
 }

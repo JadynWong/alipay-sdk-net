@@ -13,19 +13,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活动id
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public string ActivityId { get; set; }
 
         /// <summary>
         /// 批次id
         /// </summary>
-        [XmlElement("batch_id")]
+        [Newtonsoft.Json.JsonProperty("batch_id")]
         public string BatchId { get; set; }
 
         /// <summary>
         /// 批次状态  0，未检测  1，检测中  2，未通过  3，已通过
         /// </summary>
-        [XmlElement("batch_status")]
+        [Newtonsoft.Json.JsonProperty("batch_status")]
         public string BatchStatus { get; set; }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 失败数
         /// </summary>
-        [XmlElement("fail_num")]
+        [Newtonsoft.Json.JsonProperty("fail_num")]
         public string FailNum { get; set; }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 单品数
         /// </summary>
-        [XmlElement("item_num")]
+        [Newtonsoft.Json.JsonProperty("item_num")]
         public string ItemNum { get; set; }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 通过数
         /// </summary>
-        [XmlElement("pass_num")]
+        [Newtonsoft.Json.JsonProperty("pass_num")]
         public string PassNum { get; set; }
     }
 }

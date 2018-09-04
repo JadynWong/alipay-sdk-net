@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 类目编号
         /// </summary>
-        [XmlElement("category_id")]
+        [Newtonsoft.Json.JsonProperty("category_id")]
         public string CategoryId { get; set; }
 
         /// <summary>
         /// 类目层级,目前最多支持1、2、3三级
         /// </summary>
-        [XmlElement("category_level")]
+        [Newtonsoft.Json.JsonProperty("category_level")]
         public string CategoryLevel { get; set; }
 
         /// <summary>
         /// 类目名称
         /// </summary>
-        [XmlElement("category_name")]
+        [Newtonsoft.Json.JsonProperty("category_name")]
         public string CategoryName { get; set; }
     }
 }

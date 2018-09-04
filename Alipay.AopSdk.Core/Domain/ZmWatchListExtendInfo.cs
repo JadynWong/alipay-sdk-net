@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 对于这个key的描述
         /// </summary>
-        [XmlElement("description")]
+        [Newtonsoft.Json.JsonProperty("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// 对应的字段名
         /// </summary>
-        [XmlElement("key")]
+        [Newtonsoft.Json.JsonProperty("key")]
         public string Key { get; set; }
 
         /// <summary>
         /// 对应的值
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public string Value { get; set; }
     }
 }

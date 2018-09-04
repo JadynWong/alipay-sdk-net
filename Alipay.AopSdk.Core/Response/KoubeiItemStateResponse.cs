@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 口碑体系内部商品的唯一标识
         /// </summary>
-        [XmlElement("item_id")]
+        [Newtonsoft.Json.JsonProperty("item_id")]
         public string ItemId { get; set; }
 
         /// <summary>
         /// 即入参中的request_id
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

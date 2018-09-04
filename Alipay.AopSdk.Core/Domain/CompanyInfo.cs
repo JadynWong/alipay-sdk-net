@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 企业工商照面信息
         /// </summary>
-        [XmlElement("basic_info")]
+        [Newtonsoft.Json.JsonProperty("basic_info")]
         public EpInfo BasicInfo { get; set; }
 
         /// <summary>

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 1
         /// </summary>
-        [XmlElement("user_name")]
+        [Newtonsoft.Json.JsonProperty("user_name")]
         public string UserName { get; set; }
     }
 }

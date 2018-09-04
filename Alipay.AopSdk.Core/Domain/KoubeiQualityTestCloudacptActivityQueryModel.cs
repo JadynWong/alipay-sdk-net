@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// partener id
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
 
         /// <summary>
         /// user id
         /// </summary>
-        [XmlElement("uid")]
+        [Newtonsoft.Json.JsonProperty("uid")]
         public string Uid { get; set; }
     }
 }

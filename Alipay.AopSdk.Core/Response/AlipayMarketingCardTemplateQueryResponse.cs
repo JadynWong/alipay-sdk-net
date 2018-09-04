@@ -13,13 +13,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 业务卡号前缀，由商户指定  支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
         /// </summary>
-        [XmlElement("biz_no_prefix")]
+        [Newtonsoft.Json.JsonProperty("biz_no_prefix")]
         public string BizNoPrefix { get; set; }
 
         /// <summary>
         /// 业务卡号后缀的长度  支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
         /// </summary>
-        [XmlElement("biz_no_suffix_len")]
+        [Newtonsoft.Json.JsonProperty("biz_no_suffix_len")]
         public string BizNoSuffixLen { get; set; }
 
         /// <summary>
@@ -39,13 +39,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 卡特定标签，只供特定业务使用，通常接入无需关注
         /// </summary>
-        [XmlElement("card_spec_tag")]
+        [Newtonsoft.Json.JsonProperty("card_spec_tag")]
         public string CardSpecTag { get; set; }
 
         /// <summary>
         /// 会员卡类型：  OUT_MEMBER_CARD：外部权益卡
         /// </summary>
-        [XmlElement("card_type")]
+        [Newtonsoft.Json.JsonProperty("card_type")]
         public string CardType { get; set; }
 
         /// <summary>
@@ -65,13 +65,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商户动态码通知参数配置：  当write_off_type指定为商户动态码mdbarcode或mdqrcode时不为空；  在此字段配置用户打开会员卡时支付宝通知商户生成动态码（发码）的通知参数，如接收通知地址等。
         /// </summary>
-        [XmlElement("mdcode_notify_conf")]
+        [Newtonsoft.Json.JsonProperty("mdcode_notify_conf")]
         public TemplateMdcodeNotifyConfDTO MdcodeNotifyConf { get; set; }
 
         /// <summary>
         /// 会员卡用户领卡配置，在门店等渠道露出领卡入口时，需要部署的商户领卡H5页面地址
         /// </summary>
-        [XmlElement("open_card_conf")]
+        [Newtonsoft.Json.JsonProperty("open_card_conf")]
         public TemplateOpenCardConfDTO OpenCardConf { get; set; }
 
         /// <summary>
@@ -105,7 +105,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 模板样式信息(钱包展现效果)
         /// </summary>
-        [XmlElement("template_style_info")]
+        [Newtonsoft.Json.JsonProperty("template_style_info")]
         public TemplateStyleInfoDTO TemplateStyleInfo { get; set; }
     }
 }

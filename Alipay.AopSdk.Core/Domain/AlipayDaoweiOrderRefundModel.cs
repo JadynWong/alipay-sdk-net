@@ -13,25 +13,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 退款操作备注信息，用于详述退款单原因（使用该接口，必须要详细说明退款的原因），必填，长度不超过2000字符
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 到位业务订单号，全局唯一，由32位数字组成，用户在到位下单时系统生成并消息同步给商家，商户只能查自己同步到的订单号
         /// </summary>
-        [XmlElement("order_no")]
+        [Newtonsoft.Json.JsonProperty("order_no")]
         public string OrderNo { get; set; }
 
         /// <summary>
         /// 外部商户的退款id，用于控制退款操作的幂等，不同退款请求保证不同，最大长度不超过64字符
         /// </summary>
-        [XmlElement("out_refund_id")]
+        [Newtonsoft.Json.JsonProperty("out_refund_id")]
         public string OutRefundId { get; set; }
 
         /// <summary>
         /// 退款金额，单位是元，商户可以全额退款也可以部分，退款金额不大于订单实际支付金额
         /// </summary>
-        [XmlElement("refund_amount")]
+        [Newtonsoft.Json.JsonProperty("refund_amount")]
         public string RefundAmount { get; set; }
 
         /// <summary>

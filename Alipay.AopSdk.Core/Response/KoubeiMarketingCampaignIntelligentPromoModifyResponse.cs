@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 修改后返回的智能活动模型
         /// </summary>
-        [XmlElement("promo")]
+        [Newtonsoft.Json.JsonProperty("promo")]
         public IntelligentPromo Promo { get; set; }
     }
 }

@@ -12,61 +12,61 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 盘点单创建渠道 notify:菜鸟通知,daily:日常调度,manual:手动定制
         /// </summary>
-        [XmlElement("channel")]
+        [Newtonsoft.Json.JsonProperty("channel")]
         public string Channel { get; set; }
 
         /// <summary>
         /// 操作者id
         /// </summary>
-        [XmlElement("operator_id")]
+        [Newtonsoft.Json.JsonProperty("operator_id")]
         public string OperatorId { get; set; }
 
         /// <summary>
         /// 操作者类型，只会是system
         /// </summary>
-        [XmlElement("operator_type")]
+        [Newtonsoft.Json.JsonProperty("operator_type")]
         public string OperatorType { get; set; }
 
         /// <summary>
         /// 盘点单下单日期
         /// </summary>
-        [XmlElement("order_date")]
+        [Newtonsoft.Json.JsonProperty("order_date")]
         public string OrderDate { get; set; }
 
         /// <summary>
         /// 备注信息
         /// </summary>
-        [XmlElement("remark")]
+        [Newtonsoft.Json.JsonProperty("remark")]
         public string Remark { get; set; }
 
         /// <summary>
         /// 盘点单状态  INIT:未完成 FINISHED:已完成
         /// </summary>
-        [XmlElement("state")]
+        [Newtonsoft.Json.JsonProperty("state")]
         public string State { get; set; }
 
         /// <summary>
         /// 供货商id
         /// </summary>
-        [XmlElement("supplier_id")]
+        [Newtonsoft.Json.JsonProperty("supplier_id")]
         public string SupplierId { get; set; }
 
         /// <summary>
         /// 供货商盘点单id
         /// </summary>
-        [XmlElement("supplier_report_id")]
+        [Newtonsoft.Json.JsonProperty("supplier_report_id")]
         public string SupplierReportId { get; set; }
 
         /// <summary>
         /// 唯一约束
         /// </summary>
-        [XmlElement("unique_id")]
+        [Newtonsoft.Json.JsonProperty("unique_id")]
         public string UniqueId { get; set; }
 
         /// <summary>
         /// 仓库编码
         /// </summary>
-        [XmlElement("warehouse_code")]
+        [Newtonsoft.Json.JsonProperty("warehouse_code")]
         public string WarehouseCode { get; set; }
     }
 }

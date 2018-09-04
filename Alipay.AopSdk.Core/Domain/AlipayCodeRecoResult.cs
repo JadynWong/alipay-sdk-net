@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 识别的验证码内容
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
     }
 }

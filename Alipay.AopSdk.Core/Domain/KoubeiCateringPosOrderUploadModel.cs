@@ -27,7 +27,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// source_type+pos订单设备信息来源类型枚举+(isv回流数据: ISV, 设备商数据: MEMA)
         /// </summary>
-        [XmlElement("source_type")]
+        [Newtonsoft.Json.JsonProperty("source_type")]
         public string SourceType { get; set; }
     }
 }

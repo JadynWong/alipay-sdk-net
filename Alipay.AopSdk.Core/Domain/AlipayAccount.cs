@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝用户ID
         /// </summary>
-        [XmlElement("alipay_user_id")]
+        [Newtonsoft.Json.JsonProperty("alipay_user_id")]
         public string AlipayUserId { get; set; }
 
         /// <summary>
         /// 可用余额
         /// </summary>
-        [XmlElement("available_amount")]
+        [Newtonsoft.Json.JsonProperty("available_amount")]
         public string AvailableAmount { get; set; }
 
         /// <summary>
         /// 不可用余额
         /// </summary>
-        [XmlElement("freeze_amount")]
+        [Newtonsoft.Json.JsonProperty("freeze_amount")]
         public string FreezeAmount { get; set; }
 
         /// <summary>
         /// 余额总额
         /// </summary>
-        [XmlElement("total_amount")]
+        [Newtonsoft.Json.JsonProperty("total_amount")]
         public string TotalAmount { get; set; }
     }
 }

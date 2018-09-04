@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商品信息
         /// </summary>
-        [XmlElement("extitem")]
+        [Newtonsoft.Json.JsonProperty("extitem")]
         public ExtItem Extitem { get; set; }
     }
 }

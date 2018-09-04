@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 自定义报表的规则ID
         /// </summary>
-        [XmlElement("condition_key")]
+        [Newtonsoft.Json.JsonProperty("condition_key")]
         public string ConditionKey { get; set; }
     }
 }

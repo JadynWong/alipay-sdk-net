@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商户pid
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
     }
 }

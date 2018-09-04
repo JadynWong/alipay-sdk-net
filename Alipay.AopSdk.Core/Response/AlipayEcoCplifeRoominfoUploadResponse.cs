@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 业主所在物业小区ID(支付宝平台唯一小区ID标示)
         /// </summary>
-        [XmlElement("community_id")]
+        [Newtonsoft.Json.JsonProperty("community_id")]
         public string CommunityId { get; set; }
 
         /// <summary>

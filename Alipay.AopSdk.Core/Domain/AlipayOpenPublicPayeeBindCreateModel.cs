@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 收款账号，需要绑定的收款支付宝账号，跟pid不要同时传
         /// </summary>
-        [XmlElement("login_id")]
+        [Newtonsoft.Json.JsonProperty("login_id")]
         public string LoginId { get; set; }
 
         /// <summary>
         /// 支付宝用户id，2088开头的16位长度字符串，跟login_id不要同时传
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
     }
 }

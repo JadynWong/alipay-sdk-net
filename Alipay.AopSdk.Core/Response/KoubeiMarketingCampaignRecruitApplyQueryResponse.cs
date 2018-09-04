@@ -13,19 +13,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活动开始购买时间
         /// </summary>
-        [XmlElement("bought_time")]
+        [Newtonsoft.Json.JsonProperty("bought_time")]
         public string BoughtTime { get; set; }
 
         /// <summary>
         /// 活动结束时间
         /// </summary>
-        [XmlElement("end_time")]
+        [Newtonsoft.Json.JsonProperty("end_time")]
         public string EndTime { get; set; }
 
         /// <summary>
         /// 招商报名数据总数
         /// </summary>
-        [XmlElement("item_count")]
+        [Newtonsoft.Json.JsonProperty("item_count")]
         public string ItemCount { get; set; }
 
         /// <summary>
@@ -38,13 +38,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活动名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 预热开始时间 2016-12-12 10:10:10
         /// </summary>
-        [XmlElement("prehot_time")]
+        [Newtonsoft.Json.JsonProperty("prehot_time")]
         public string PrehotTime { get; set; }
     }
 }

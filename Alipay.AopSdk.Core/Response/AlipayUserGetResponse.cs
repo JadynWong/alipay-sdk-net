@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 支付宝用户信息
         /// </summary>
-        [XmlElement("alipay_user_detail")]
+        [Newtonsoft.Json.JsonProperty("alipay_user_detail")]
         public AlipayUserDetail AlipayUserDetail { get; set; }
     }
 }

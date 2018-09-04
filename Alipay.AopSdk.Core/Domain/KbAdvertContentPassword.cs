@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 红包口令
         /// </summary>
-        [XmlElement("password")]
+        [Newtonsoft.Json.JsonProperty("password")]
         public string Password { get; set; }
 
         /// <summary>
         /// 红包口令分享地址
         /// </summary>
-        [XmlElement("share_page_url")]
+        [Newtonsoft.Json.JsonProperty("share_page_url")]
         public string SharePageUrl { get; set; }
     }
 }

@@ -20,25 +20,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 广告id
         /// </summary>
-        [XmlElement("adv_id")]
+        [Newtonsoft.Json.JsonProperty("adv_id")]
         public string AdvId { get; set; }
 
         /// <summary>
         /// 渠道ID
         /// </summary>
-        [XmlElement("channel_id")]
+        [Newtonsoft.Json.JsonProperty("channel_id")]
         public string ChannelId { get; set; }
 
         /// <summary>
         /// 渠道名称
         /// </summary>
-        [XmlElement("channel_name")]
+        [Newtonsoft.Json.JsonProperty("channel_name")]
         public string ChannelName { get; set; }
 
         /// <summary>
         /// 渠道类型
         /// </summary>
-        [XmlElement("channel_type")]
+        [Newtonsoft.Json.JsonProperty("channel_type")]
         public string ChannelType { get; set; }
     }
 }

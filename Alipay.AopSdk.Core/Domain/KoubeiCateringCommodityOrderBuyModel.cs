@@ -13,25 +13,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 订购服务时订购人id(订购人是操作员的时候，agent_Id为操作员个人Id)
         /// </summary>
-        [XmlElement("agent_id")]
+        [Newtonsoft.Json.JsonProperty("agent_id")]
         public string AgentId { get; set; }
 
         /// <summary>
         /// merchant:表示订购人是商户，此时agentId和consumerCardNo是同一个;  operator: 表示订购人是操作员，此时agentId为操作员id，consumerCardNo是该操作员对应的主账户
         /// </summary>
-        [XmlElement("agent_type")]
+        [Newtonsoft.Json.JsonProperty("agent_type")]
         public string AgentType { get; set; }
 
         /// <summary>
         /// 订购服务时订购人的主账户
         /// </summary>
-        [XmlElement("consumer_card_no")]
+        [Newtonsoft.Json.JsonProperty("consumer_card_no")]
         public string ConsumerCardNo { get; set; }
 
         /// <summary>
         /// 订购的服务ID
         /// </summary>
-        [XmlElement("merchandise_id")]
+        [Newtonsoft.Json.JsonProperty("merchandise_id")]
         public string MerchandiseId { get; set; }
 
         /// <summary>

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 备注
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 处理人域账号
         /// </summary>
-        [XmlElement("operator")]
+        [Newtonsoft.Json.JsonProperty("operator")]
         public string Operator { get; set; }
 
         /// <summary>
         /// 流程全局唯一ID
         /// </summary>
-        [XmlElement("puid")]
+        [Newtonsoft.Json.JsonProperty("puid")]
         public string Puid { get; set; }
     }
 }

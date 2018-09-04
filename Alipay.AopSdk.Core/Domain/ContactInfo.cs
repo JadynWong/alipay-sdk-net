@@ -13,31 +13,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 电子邮箱
         /// </summary>
-        [XmlElement("email")]
+        [Newtonsoft.Json.JsonProperty("email")]
         public string Email { get; set; }
 
         /// <summary>
         /// 身份证号
         /// </summary>
-        [XmlElement("id_card_no")]
+        [Newtonsoft.Json.JsonProperty("id_card_no")]
         public string IdCardNo { get; set; }
 
         /// <summary>
         /// 手机号。必填与否参见外层对象描述，无特别说明认为是非必填
         /// </summary>
-        [XmlElement("mobile")]
+        [Newtonsoft.Json.JsonProperty("mobile")]
         public string Mobile { get; set; }
 
         /// <summary>
         /// 联系人名字
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 电话
         /// </summary>
-        [XmlElement("phone")]
+        [Newtonsoft.Json.JsonProperty("phone")]
         public string Phone { get; set; }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 联系人类型，取值范围：LEGAL_PERSON：法人；CONTROLLER：实际控制人；AGENT：代理人；OTHER：其他
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

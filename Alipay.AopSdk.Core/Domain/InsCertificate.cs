@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 发奖凭证ID
         /// </summary>
-        [XmlElement("certificate_id")]
+        [Newtonsoft.Json.JsonProperty("certificate_id")]
         public string CertificateId { get; set; }
 
         /// <summary>
         /// 发奖凭证类型;GIFT_INSURANCE:赠险
         /// </summary>
-        [XmlElement("certificate_type")]
+        [Newtonsoft.Json.JsonProperty("certificate_type")]
         public string CertificateType { get; set; }
 
         /// <summary>
         /// 发奖凭证值
         /// </summary>
-        [XmlElement("certificate_value")]
+        [Newtonsoft.Json.JsonProperty("certificate_value")]
         public string CertificateValue { get; set; }
     }
 }

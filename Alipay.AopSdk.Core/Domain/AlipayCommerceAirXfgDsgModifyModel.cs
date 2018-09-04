@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户年龄
         /// </summary>
-        [XmlElement("age")]
+        [Newtonsoft.Json.JsonProperty("age")]
         public string Age { get; set; }
 
         /// <summary>
         /// 用户名
         /// </summary>
-        [XmlElement("nam")]
+        [Newtonsoft.Json.JsonProperty("nam")]
         public string Nam { get; set; }
 
         /// <summary>
         /// 男
         /// </summary>
-        [XmlElement("sex")]
+        [Newtonsoft.Json.JsonProperty("sex")]
         public string Sex { get; set; }
 
         /// <summary>
         /// 1
         /// </summary>
-        [XmlElement("xbw")]
+        [Newtonsoft.Json.JsonProperty("xbw")]
         public string Xbw { get; set; }
     }
 }

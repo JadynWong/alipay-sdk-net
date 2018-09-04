@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 支付宝集分宝发放流水号
         /// </summary>
-        [XmlElement("alipay_order_no")]
+        [Newtonsoft.Json.JsonProperty("alipay_order_no")]
         public string AlipayOrderNo { get; set; }
     }
 }

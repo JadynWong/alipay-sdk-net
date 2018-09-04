@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 用户实付金额
         /// </summary>
-        [XmlElement("buyer_pay_amount")]
+        [Newtonsoft.Json.JsonProperty("buyer_pay_amount")]
         public string BuyerPayAmount { get; set; }
 
         /// <summary>
@@ -26,13 +26,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 储值卡信息
         /// </summary>
-        [XmlElement("m_card_detail")]
+        [Newtonsoft.Json.JsonProperty("m_card_detail")]
         public MCardDetail MCardDetail { get; set; }
 
         /// <summary>
         /// 请求中的request_id
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

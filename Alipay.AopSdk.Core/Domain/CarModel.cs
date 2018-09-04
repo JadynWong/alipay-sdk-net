@@ -12,67 +12,67 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 品牌名称
         /// </summary>
-        [XmlElement("brand_name")]
+        [Newtonsoft.Json.JsonProperty("brand_name")]
         public string BrandName { get; set; }
 
         /// <summary>
         /// 配置类型
         /// </summary>
-        [XmlElement("config_name")]
+        [Newtonsoft.Json.JsonProperty("config_name")]
         public string ConfigName { get; set; }
 
         /// <summary>
         /// 排量
         /// </summary>
-        [XmlElement("engine_desc")]
+        [Newtonsoft.Json.JsonProperty("engine_desc")]
         public string EngineDesc { get; set; }
 
         /// <summary>
         /// 车系名称
         /// </summary>
-        [XmlElement("family_short_name")]
+        [Newtonsoft.Json.JsonProperty("family_short_name")]
         public string FamilyShortName { get; set; }
 
         /// <summary>
         /// 车辆驾驶类型
         /// </summary>
-        [XmlElement("gear_box_type")]
+        [Newtonsoft.Json.JsonProperty("gear_box_type")]
         public string GearBoxType { get; set; }
 
         /// <summary>
         /// 新车购置价
         /// </summary>
-        [XmlElement("purchase_price")]
+        [Newtonsoft.Json.JsonProperty("purchase_price")]
         public string PurchasePrice { get; set; }
 
         /// <summary>
         /// 座位数
         /// </summary>
-        [XmlElement("seat")]
+        [Newtonsoft.Json.JsonProperty("seat")]
         public string Seat { get; set; }
 
         /// <summary>
         /// 车辆类型编码
         /// </summary>
-        [XmlElement("vehicle_class_code")]
+        [Newtonsoft.Json.JsonProperty("vehicle_class_code")]
         public string VehicleClassCode { get; set; }
 
         /// <summary>
         /// 车型代码
         /// </summary>
-        [XmlElement("vehicle_code")]
+        [Newtonsoft.Json.JsonProperty("vehicle_code")]
         public string VehicleCode { get; set; }
 
         /// <summary>
         /// 车型名称
         /// </summary>
-        [XmlElement("vehicle_name")]
+        [Newtonsoft.Json.JsonProperty("vehicle_name")]
         public string VehicleName { get; set; }
 
         /// <summary>
         /// 年份
         /// </summary>
-        [XmlElement("year_pattern")]
+        [Newtonsoft.Json.JsonProperty("year_pattern")]
         public string YearPattern { get; set; }
     }
 }

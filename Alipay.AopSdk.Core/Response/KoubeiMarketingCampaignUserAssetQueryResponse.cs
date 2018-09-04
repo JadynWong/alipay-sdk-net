@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 券资产数量
         /// </summary>
-        [XmlElement("voucher_asset_num")]
+        [Newtonsoft.Json.JsonProperty("voucher_asset_num")]
         public long VoucherAssetNum { get; set; }
     }
 }

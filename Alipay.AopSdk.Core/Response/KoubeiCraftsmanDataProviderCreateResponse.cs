@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 手艺人id
         /// </summary>
-        [XmlElement("craftsman_id")]
+        [Newtonsoft.Json.JsonProperty("craftsman_id")]
         public string CraftsmanId { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 修改后的活动状态, PAUSE或者READY或者CLOSED
         /// </summary>
-        [XmlElement("camp_status")]
+        [Newtonsoft.Json.JsonProperty("camp_status")]
         public string CampStatus { get; set; }
 
         /// <summary>
         /// 要修改的现金红包活动号
         /// </summary>
-        [XmlElement("crowd_no")]
+        [Newtonsoft.Json.JsonProperty("crowd_no")]
         public string CrowdNo { get; set; }
     }
 }

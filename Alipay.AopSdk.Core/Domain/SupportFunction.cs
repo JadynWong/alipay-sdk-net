@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 卡名称
         /// </summary>
-        [XmlElement("card_name")]
+        [Newtonsoft.Json.JsonProperty("card_name")]
         public string CardName { get; set; }
 
         /// <summary>
         /// 卡类型编码，为智能卡系统的内部编码规则
         /// </summary>
-        [XmlElement("card_type")]
+        [Newtonsoft.Json.JsonProperty("card_type")]
         public string CardType { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 智能卡的跳转地址
         /// </summary>
-        [XmlElement("goto_url")]
+        [Newtonsoft.Json.JsonProperty("goto_url")]
         public string GotoUrl { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 二维码广告内容
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

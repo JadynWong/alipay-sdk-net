@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 数据项Category
         /// </summary>
-        [XmlElement("category")]
+        [Newtonsoft.Json.JsonProperty("category")]
         public string Category { get; set; }
 
         /// <summary>

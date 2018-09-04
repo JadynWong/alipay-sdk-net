@@ -13,55 +13,55 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 凭证信息
         /// </summary>
-        [XmlElement("data_info")]
+        [Newtonsoft.Json.JsonProperty("data_info")]
         public string DataInfo { get; set; }
 
         /// <summary>
         /// 有效期结束时间
         /// </summary>
-        [XmlElement("end_date")]
+        [Newtonsoft.Json.JsonProperty("end_date")]
         public string EndDate { get; set; }
 
         /// <summary>
         /// 扩展信息
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 券创建时间
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 商品id
         /// </summary>
-        [XmlElement("item_id")]
+        [Newtonsoft.Json.JsonProperty("item_id")]
         public string ItemId { get; set; }
 
         /// <summary>
         /// 卡券第一行文字
         /// </summary>
-        [XmlElement("logo_text")]
+        [Newtonsoft.Json.JsonProperty("logo_text")]
         public string LogoText { get; set; }
 
         /// <summary>
         /// 商家名称
         /// </summary>
-        [XmlElement("mechant_name")]
+        [Newtonsoft.Json.JsonProperty("mechant_name")]
         public string MechantName { get; set; }
 
         /// <summary>
         /// 券ID
         /// </summary>
-        [XmlElement("pass_id")]
+        [Newtonsoft.Json.JsonProperty("pass_id")]
         public string PassId { get; set; }
 
         /// <summary>
         /// 卡券第二行文字
         /// </summary>
-        [XmlElement("second_logo_text")]
+        [Newtonsoft.Json.JsonProperty("second_logo_text")]
         public string SecondLogoText { get; set; }
 
         /// <summary>
@@ -74,13 +74,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 有效期开始时间
         /// </summary>
-        [XmlElement("start_date")]
+        [Newtonsoft.Json.JsonProperty("start_date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// 券状态,"can_use", "可使用";"used", "已使用";"expired", "已过期";"closed", "已失效"
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

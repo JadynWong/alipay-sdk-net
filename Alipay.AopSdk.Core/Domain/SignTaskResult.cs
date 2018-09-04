@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务流水号
         /// </summary>
-        [XmlElement("biz_id")]
+        [Newtonsoft.Json.JsonProperty("biz_id")]
         public string BizId { get; set; }
 
         /// <summary>
         /// 支付宝签约入口地址
         /// </summary>
-        [XmlElement("sign_enter_url")]
+        [Newtonsoft.Json.JsonProperty("sign_enter_url")]
         public string SignEnterUrl { get; set; }
 
         /// <summary>
         /// 签名任务流水号
         /// </summary>
-        [XmlElement("task_id")]
+        [Newtonsoft.Json.JsonProperty("task_id")]
         public string TaskId { get; set; }
     }
 }

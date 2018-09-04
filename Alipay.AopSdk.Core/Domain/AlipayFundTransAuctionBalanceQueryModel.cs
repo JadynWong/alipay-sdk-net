@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务id，唯一业务标识
         /// </summary>
-        [XmlElement("biz_id")]
+        [Newtonsoft.Json.JsonProperty("biz_id")]
         public string BizId { get; set; }
 
         /// <summary>
         /// 开户银行标识
         /// </summary>
-        [XmlElement("inst_id")]
+        [Newtonsoft.Json.JsonProperty("inst_id")]
         public string InstId { get; set; }
 
         /// <summary>
         /// 支付宝userId
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
 
         /// <summary>
         /// 核身id，用于验证是否已经核身成功
         /// </summary>
-        [XmlElement("verify_id")]
+        [Newtonsoft.Json.JsonProperty("verify_id")]
         public string VerifyId { get; set; }
     }
 }

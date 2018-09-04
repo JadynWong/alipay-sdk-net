@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户在调用产品的第一个接口时系统返回的业务流水号
         /// </summary>
-        [XmlElement("biz_no")]
+        [Newtonsoft.Json.JsonProperty("biz_no")]
         public string BizNo { get; set; }
     }
 }

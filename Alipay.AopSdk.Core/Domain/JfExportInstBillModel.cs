@@ -12,55 +12,55 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账单金额，单位为：RMB元。
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 余额，单位为：RMB元。
         /// </summary>
-        [XmlElement("balance")]
+        [Newtonsoft.Json.JsonProperty("balance")]
         public string Balance { get; set; }
 
         /// <summary>
         /// 账期
         /// </summary>
-        [XmlElement("bill_date")]
+        [Newtonsoft.Json.JsonProperty("bill_date")]
         public string BillDate { get; set; }
 
         /// <summary>
         /// 滞纳金，单位为：RMB元。
         /// </summary>
-        [XmlElement("bill_fines")]
+        [Newtonsoft.Json.JsonProperty("bill_fines")]
         public string BillFines { get; set; }
 
         /// <summary>
         /// 户号
         /// </summary>
-        [XmlElement("bill_key")]
+        [Newtonsoft.Json.JsonProperty("bill_key")]
         public string BillKey { get; set; }
 
         /// <summary>
         /// 拓展字段，json串(key-value对)
         /// </summary>
-        [XmlElement("extend_field")]
+        [Newtonsoft.Json.JsonProperty("extend_field")]
         public string ExtendField { get; set; }
 
         /// <summary>
         /// 机构流水号
         /// </summary>
-        [XmlElement("inst_bill_no")]
+        [Newtonsoft.Json.JsonProperty("inst_bill_no")]
         public string InstBillNo { get; set; }
 
         /// <summary>
         /// 账单拥有者姓名
         /// </summary>
-        [XmlElement("owner_name")]
+        [Newtonsoft.Json.JsonProperty("owner_name")]
         public string OwnerName { get; set; }
 
         /// <summary>
         /// 唯一标识，每次查询均保证唯一性，但是不保证幂等性
         /// </summary>
-        [XmlElement("uniq_id")]
+        [Newtonsoft.Json.JsonProperty("uniq_id")]
         public string UniqId { get; set; }
     }
 }

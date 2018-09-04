@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 待删除的通知ID,(见alipay.eco.cplife.notice.publish接口返回参数列表.)
         /// </summary>
-        [XmlElement("notice_id")]
+        [Newtonsoft.Json.JsonProperty("notice_id")]
         public string NoticeId { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// H5应用的唯一id
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public long ActivityId { get; set; }
     }
 }

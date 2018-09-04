@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 标的对象的业务ID，如果标的为商品，则subject_biz_id为商品ID
         /// </summary>
-        [XmlElement("subject_biz_id")]
+        [Newtonsoft.Json.JsonProperty("subject_biz_id")]
         public string SubjectBizId { get; set; }
 
         /// <summary>
         /// 标的类型  voucher-券
         /// </summary>
-        [XmlElement("subject_type")]
+        [Newtonsoft.Json.JsonProperty("subject_type")]
         public string SubjectType { get; set; }
     }
 }

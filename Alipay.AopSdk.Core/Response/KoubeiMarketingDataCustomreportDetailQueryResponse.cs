@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 自定义报表规则条件的详细信息
         /// </summary>
-        [XmlElement("report_condition_info")]
+        [Newtonsoft.Json.JsonProperty("report_condition_info")]
         public CustomReportCondition ReportConditionInfo { get; set; }
     }
 }

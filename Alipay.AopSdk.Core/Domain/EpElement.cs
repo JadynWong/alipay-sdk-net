@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 企业征信数据key
         /// </summary>
-        [XmlElement("key")]
+        [Newtonsoft.Json.JsonProperty("key")]
         public string Key { get; set; }
 
         /// <summary>
         /// 企业征信数据value，字段长度不定。
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public string Value { get; set; }
     }
 }

@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 优惠名称
         /// </summary>
-        [XmlElement("discount_name")]
+        [Newtonsoft.Json.JsonProperty("discount_name")]
         public string DiscountName { get; set; }
 
         /// <summary>
         /// 优惠类型
         /// </summary>
-        [XmlElement("discount_type")]
+        [Newtonsoft.Json.JsonProperty("discount_type")]
         public string DiscountType { get; set; }
 
         /// <summary>
         /// 扩展信息，存储优惠的详细模型。json对象格式，key和value都为字符串
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 商家出资优惠金额，以元为单位，精确到分
         /// </summary>
-        [XmlElement("mrt_discount")]
+        [Newtonsoft.Json.JsonProperty("mrt_discount")]
         public string MrtDiscount { get; set; }
 
         /// <summary>
         /// 平台出资优惠金额，以元为单位，精确到分
         /// </summary>
-        [XmlElement("rt_discount")]
+        [Newtonsoft.Json.JsonProperty("rt_discount")]
         public string RtDiscount { get; set; }
     }
 }

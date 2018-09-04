@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 通知id
         /// </summary>
-        [XmlElement("notify_id")]
+        [Newtonsoft.Json.JsonProperty("notify_id")]
         public string NotifyId { get; set; }
     }
 }

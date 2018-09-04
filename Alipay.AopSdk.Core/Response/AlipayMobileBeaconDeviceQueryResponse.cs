@@ -12,19 +12,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 蓝牙设备信息
         /// </summary>
-        [XmlElement("beacon_device_info")]
+        [Newtonsoft.Json.JsonProperty("beacon_device_info")]
         public BeaconDeviceInfo BeaconDeviceInfo { get; set; }
 
         /// <summary>
         /// 操作返回码，200为成功
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 请求处理结果
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
     }
 }

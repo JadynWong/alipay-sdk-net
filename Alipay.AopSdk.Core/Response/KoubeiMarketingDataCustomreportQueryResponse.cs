@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 数据量
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public string Count { get; set; }
 
         /// <summary>

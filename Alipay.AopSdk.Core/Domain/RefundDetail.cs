@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 交易退款金额
         /// </summary>
-        [XmlElement("refund_amount")]
+        [Newtonsoft.Json.JsonProperty("refund_amount")]
         public string RefundAmount { get; set; }
 
         /// <summary>
         /// 退款备注
         /// </summary>
-        [XmlElement("refund_memo")]
+        [Newtonsoft.Json.JsonProperty("refund_memo")]
         public string RefundMemo { get; set; }
 
         /// <summary>
@@ -32,19 +32,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 退补差金额
         /// </summary>
-        [XmlElement("refund_suppl_amount")]
+        [Newtonsoft.Json.JsonProperty("refund_suppl_amount")]
         public string RefundSupplAmount { get; set; }
 
         /// <summary>
         /// 退补差备注
         /// </summary>
-        [XmlElement("refund_suppl_memo")]
+        [Newtonsoft.Json.JsonProperty("refund_suppl_memo")]
         public string RefundSupplMemo { get; set; }
 
         /// <summary>
         /// 支付宝交易号
         /// </summary>
-        [XmlElement("trade_no")]
+        [Newtonsoft.Json.JsonProperty("trade_no")]
         public string TradeNo { get; set; }
     }
 }

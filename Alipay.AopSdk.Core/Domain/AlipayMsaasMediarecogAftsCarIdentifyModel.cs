@@ -12,49 +12,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 扩展入参
         /// </summary>
-        [XmlElement("ext")]
+        [Newtonsoft.Json.JsonProperty("ext")]
         public string Ext { get; set; }
 
         /// <summary>
         /// 高
         /// </summary>
-        [XmlElement("h")]
+        [Newtonsoft.Json.JsonProperty("h")]
         public long H { get; set; }
 
         /// <summary>
         /// 用户输入的里程数
         /// </summary>
-        [XmlElement("kilometres")]
+        [Newtonsoft.Json.JsonProperty("kilometres")]
         public long Kilometres { get; set; }
 
         /// <summary>
         /// 传入资源URL或djangoid或aftsid
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
 
         /// <summary>
         /// 蚂蚁统一会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
 
         /// <summary>
         /// 宽
         /// </summary>
-        [XmlElement("w")]
+        [Newtonsoft.Json.JsonProperty("w")]
         public long W { get; set; }
 
         /// <summary>
         /// 引导框左上角x
         /// </summary>
-        [XmlElement("x")]
+        [Newtonsoft.Json.JsonProperty("x")]
         public long X { get; set; }
 
         /// <summary>
         /// 引导框左上角y
         /// </summary>
-        [XmlElement("y")]
+        [Newtonsoft.Json.JsonProperty("y")]
         public long Y { get; set; }
     }
 }

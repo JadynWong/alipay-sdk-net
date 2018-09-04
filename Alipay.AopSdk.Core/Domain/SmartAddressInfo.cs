@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 行政区代码-区，使用国家行政区划代码，可参考http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/
         /// </summary>
-        [XmlElement("area_code")]
+        [Newtonsoft.Json.JsonProperty("area_code")]
         public long AreaCode { get; set; }
 
         /// <summary>
         /// 行政区代码-市，使用国家行政区划代码，可参考http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/
         /// </summary>
-        [XmlElement("city_code")]
+        [Newtonsoft.Json.JsonProperty("city_code")]
         public long CityCode { get; set; }
 
         /// <summary>
         /// 自助售货机地址
         /// </summary>
-        [XmlElement("machine_address")]
+        [Newtonsoft.Json.JsonProperty("machine_address")]
         public string MachineAddress { get; set; }
 
         /// <summary>
         /// 行政区代码-省，使用国家行政区划代码，可参考http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/
         /// </summary>
-        [XmlElement("province_code")]
+        [Newtonsoft.Json.JsonProperty("province_code")]
         public long ProvinceCode { get; set; }
     }
 }

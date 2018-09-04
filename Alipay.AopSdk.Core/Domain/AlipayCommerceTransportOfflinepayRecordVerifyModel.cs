@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 原始脱机记录信息
         /// </summary>
-        [XmlElement("record")]
+        [Newtonsoft.Json.JsonProperty("record")]
         public string Record { get; set; }
     }
 }

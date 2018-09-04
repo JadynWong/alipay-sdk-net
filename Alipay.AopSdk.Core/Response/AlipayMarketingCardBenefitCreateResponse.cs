@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 权益ID
         /// </summary>
-        [XmlElement("benefit_id")]
+        [Newtonsoft.Json.JsonProperty("benefit_id")]
         public string BenefitId { get; set; }
     }
 }

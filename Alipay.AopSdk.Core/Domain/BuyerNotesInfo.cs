@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 描述标题，不得超过15个中文字符
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

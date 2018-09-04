@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 券ID
         /// </summary>
-        [XmlElement("voucher_id")]
+        [Newtonsoft.Json.JsonProperty("voucher_id")]
         public string VoucherId { get; set; }
     }
 }

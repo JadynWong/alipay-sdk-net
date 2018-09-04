@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 查询离线变量的主键
         /// </summary>
-        [XmlElement("rowkeys")]
+        [Newtonsoft.Json.JsonProperty("rowkeys")]
         public string Rowkeys { get; set; }
     }
 }

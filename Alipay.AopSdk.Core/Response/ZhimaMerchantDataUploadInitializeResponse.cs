@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 行业模板
         /// </summary>
-        [XmlElement("template_url")]
+        [Newtonsoft.Json.JsonProperty("template_url")]
         public string TemplateUrl { get; set; }
     }
 }

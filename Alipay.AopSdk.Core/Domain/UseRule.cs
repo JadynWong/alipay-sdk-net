@@ -13,31 +13,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 扩展属性，无需设置
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 券的不可用时间
         /// </summary>
-        [XmlElement("forbidden_time")]
+        [Newtonsoft.Json.JsonProperty("forbidden_time")]
         public ForbbidenTime ForbiddenTime { get; set; }
 
         /// <summary>
         /// 优惠券的使用支付渠道限制规  则，  不受支付渠道限制  :USE_NO_LIMIT;  仅限口碑储值卡支付时可用  :USE_ON_CURRENT_PAY_C  HANNEL;  口碑储值卡支付时不可用  :NOT_ALLOWED_USE;  【备注】支付渠道限制不允许修改
         /// </summary>
-        [XmlElement("limit_rule")]
+        [Newtonsoft.Json.JsonProperty("limit_rule")]
         public string LimitRule { get; set; }
 
         /// <summary>
         /// 券核销的最低消费门槛，单位元
         /// </summary>
-        [XmlElement("min_consume")]
+        [Newtonsoft.Json.JsonProperty("min_consume")]
         public string MinConsume { get; set; }
 
         /// <summary>
         /// 券买单跳转链接
         /// </summary>
-        [XmlElement("pay_redirect_url")]
+        [Newtonsoft.Json.JsonProperty("pay_redirect_url")]
         public string PayRedirectUrl { get; set; }
 
         /// <summary>

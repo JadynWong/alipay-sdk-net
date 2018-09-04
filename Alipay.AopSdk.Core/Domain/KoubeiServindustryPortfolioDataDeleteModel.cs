@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 作品集id
         /// </summary>
-        [XmlElement("portfolio_id")]
+        [Newtonsoft.Json.JsonProperty("portfolio_id")]
         public string PortfolioId { get; set; }
 
         /// <summary>
         /// 操作人信息
         /// </summary>
-        [XmlElement("portfolio_operator_info")]
+        [Newtonsoft.Json.JsonProperty("portfolio_operator_info")]
         public PortfolioOperatorInfo PortfolioOperatorInfo { get; set; }
     }
 }

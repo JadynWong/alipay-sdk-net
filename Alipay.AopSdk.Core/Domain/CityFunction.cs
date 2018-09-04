@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 城市标准编码
         /// </summary>
-        [XmlElement("city_code")]
+        [Newtonsoft.Json.JsonProperty("city_code")]
         public string CityCode { get; set; }
 
         /// <summary>
         /// 城市名称
         /// </summary>
-        [XmlElement("city_name")]
+        [Newtonsoft.Json.JsonProperty("city_name")]
         public string CityName { get; set; }
 
         /// <summary>

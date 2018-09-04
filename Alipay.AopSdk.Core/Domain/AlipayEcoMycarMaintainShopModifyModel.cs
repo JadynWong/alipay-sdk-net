@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 门店详细地址，地址字符长度在4-50个字符，注：不含省市区。门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层，“四川北路1552号欢乐广场1楼”
         /// </summary>
-        [XmlElement("address")]
+        [Newtonsoft.Json.JsonProperty("address")]
         public string Address { get; set; }
 
         /// <summary>
         /// 支付宝帐号
         /// </summary>
-        [XmlElement("alipay_account")]
+        [Newtonsoft.Json.JsonProperty("alipay_account")]
         public string AlipayAccount { get; set; }
 
         /// <summary>
@@ -32,43 +32,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 城市编号（国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/AreaCodeList.zip">点此下载</a>）
         /// </summary>
-        [XmlElement("city_code")]
+        [Newtonsoft.Json.JsonProperty("city_code")]
         public string CityCode { get; set; }
 
         /// <summary>
         /// 门店营业结束时间（HH:mm）
         /// </summary>
-        [XmlElement("close_time")]
+        [Newtonsoft.Json.JsonProperty("close_time")]
         public string CloseTime { get; set; }
 
         /// <summary>
         /// 门店店长邮箱
         /// </summary>
-        [XmlElement("contact_email")]
+        [Newtonsoft.Json.JsonProperty("contact_email")]
         public string ContactEmail { get; set; }
 
         /// <summary>
         /// 门店店长移动电话号码； 不在客户端展示
         /// </summary>
-        [XmlElement("contact_mobile_phone")]
+        [Newtonsoft.Json.JsonProperty("contact_mobile_phone")]
         public string ContactMobilePhone { get; set; }
 
         /// <summary>
         /// 门店店长姓名
         /// </summary>
-        [XmlElement("contact_name")]
+        [Newtonsoft.Json.JsonProperty("contact_name")]
         public string ContactName { get; set; }
 
         /// <summary>
         /// 区编号（国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/AreaCodeList.zip">点此下载</a>）
         /// </summary>
-        [XmlElement("district_code")]
+        [Newtonsoft.Json.JsonProperty("district_code")]
         public string DistrictCode { get; set; }
 
         /// <summary>
         /// 扩展参数，json格式，可以存放营销信息，以及主营描述等扩展信息
         /// </summary>
-        [XmlElement("ext_param")]
+        [Newtonsoft.Json.JsonProperty("ext_param")]
         public string ExtParam { get; set; }
 
         /// <summary>
@@ -88,31 +88,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 高德地图纬度（经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确）
         /// </summary>
-        [XmlElement("lat")]
+        [Newtonsoft.Json.JsonProperty("lat")]
         public string Lat { get; set; }
 
         /// <summary>
         /// 高德地图经度（经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确）
         /// </summary>
-        [XmlElement("lon")]
+        [Newtonsoft.Json.JsonProperty("lon")]
         public string Lon { get; set; }
 
         /// <summary>
         /// 车主平台接口上传主图片地址，通过alipay.eco.mycar.image.upload接口上传。
         /// </summary>
-        [XmlElement("main_image")]
+        [Newtonsoft.Json.JsonProperty("main_image")]
         public string MainImage { get; set; }
 
         /// <summary>
         /// 分支机构编号，商户在车主平台自己创建的分支机构编码
         /// </summary>
-        [XmlElement("merchant_branch_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_branch_id")]
         public long MerchantBranchId { get; set; }
 
         /// <summary>
         /// 门店营业开始时间（HH:mm）
         /// </summary>
-        [XmlElement("open_time")]
+        [Newtonsoft.Json.JsonProperty("open_time")]
         public string OpenTime { get; set; }
 
         /// <summary>
@@ -125,49 +125,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 外部门店编号（与shop_id二选一，不能都为空）
         /// </summary>
-        [XmlElement("out_shop_id")]
+        [Newtonsoft.Json.JsonProperty("out_shop_id")]
         public string OutShopId { get; set; }
 
         /// <summary>
         /// 省编号（国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/AreaCodeList.zip">点此下载</a>）
         /// </summary>
-        [XmlElement("province_code")]
+        [Newtonsoft.Json.JsonProperty("province_code")]
         public string ProvinceCode { get; set; }
 
         /// <summary>
         /// 分店名称，比如：万塘路店，与主门店名合并在客户端显示为：爱特堡(益乐路店)
         /// </summary>
-        [XmlElement("shop_branch_name")]
+        [Newtonsoft.Json.JsonProperty("shop_branch_name")]
         public string ShopBranchName { get; set; }
 
         /// <summary>
         /// 车主平台门店编号（与out_shop_id二选一，不能都为空）
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public long ShopId { get; set; }
 
         /// <summary>
         /// 主门店名，比如：爱特堡；主店名里不要包含分店名，如“益乐路店”。主店名长度不能超过20个字符
         /// </summary>
-        [XmlElement("shop_name")]
+        [Newtonsoft.Json.JsonProperty("shop_name")]
         public string ShopName { get; set; }
 
         /// <summary>
         /// 门店电话号码；支持座机和手机，只支持数字和+-号，在客户端对用户展现
         /// </summary>
-        [XmlElement("shop_tel")]
+        [Newtonsoft.Json.JsonProperty("shop_tel")]
         public string ShopTel { get; set; }
 
         /// <summary>
         /// 门店类型：（shop_type_beauty：美容店，shop_type_repair：快修店，shop_type_maintenance：维修厂，shop_type_parkinglot：停车场，shop_type_gasstation：加油站，shop_type_4s：4s店）
         /// </summary>
-        [XmlElement("shop_type")]
+        [Newtonsoft.Json.JsonProperty("shop_type")]
         public string ShopType { get; set; }
 
         /// <summary>
         /// 门店状态（0：下线；1：上线）
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

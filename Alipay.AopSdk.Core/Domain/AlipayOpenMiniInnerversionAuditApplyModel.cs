@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 小程序版本
         /// </summary>
-        [XmlElement("app_version")]
+        [Newtonsoft.Json.JsonProperty("app_version")]
         public string AppVersion { get; set; }
 
         /// <summary>
         /// 小程序ID
         /// </summary>
-        [XmlElement("mini_app_id")]
+        [Newtonsoft.Json.JsonProperty("mini_app_id")]
         public string MiniAppId { get; set; }
     }
 }

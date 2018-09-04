@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 应用访问令牌
         /// </summary>
-        [XmlElement("app_access_token")]
+        [Newtonsoft.Json.JsonProperty("app_access_token")]
         public string AppAccessToken { get; set; }
 
         /// <summary>
         /// 应用访问凭证有效时间，单位：秒
         /// </summary>
-        [XmlElement("expires_in")]
+        [Newtonsoft.Json.JsonProperty("expires_in")]
         public long ExpiresIn { get; set; }
     }
 }

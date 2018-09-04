@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 自定义报表规则的KEY
         /// </summary>
-        [XmlElement("condition_key")]
+        [Newtonsoft.Json.JsonProperty("condition_key")]
         public string ConditionKey { get; set; }
     }
 }

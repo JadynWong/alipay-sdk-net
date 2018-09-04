@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 职位来源方编码
         /// </summary>
-        [XmlElement("source_code")]
+        [Newtonsoft.Json.JsonProperty("source_code")]
         public string SourceCode { get; set; }
 
         /// <summary>
         /// 职位在合作方的ID
         /// </summary>
-        [XmlElement("source_id")]
+        [Newtonsoft.Json.JsonProperty("source_id")]
         public string SourceId { get; set; }
     }
 }

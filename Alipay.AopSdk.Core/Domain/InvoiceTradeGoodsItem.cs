@@ -12,49 +12,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品类目
         /// </summary>
-        [XmlElement("category")]
+        [Newtonsoft.Json.JsonProperty("category")]
         public string Category { get; set; }
 
         /// <summary>
         /// 商品名称
         /// </summary>
-        [XmlElement("goods_name")]
+        [Newtonsoft.Json.JsonProperty("goods_name")]
         public string GoodsName { get; set; }
 
         /// <summary>
         /// 商户设置的商品编号
         /// </summary>
-        [XmlElement("goods_no")]
+        [Newtonsoft.Json.JsonProperty("goods_no")]
         public string GoodsNo { get; set; }
 
         /// <summary>
         /// 商品项支付金额
         /// </summary>
-        [XmlElement("goods_sum_amount")]
+        [Newtonsoft.Json.JsonProperty("goods_sum_amount")]
         public string GoodsSumAmount { get; set; }
 
         /// <summary>
         /// 商品单价，单位元，精确到小数点后两位
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public string Price { get; set; }
 
         /// <summary>
         /// 购买数量
         /// </summary>
-        [XmlElement("quantity")]
+        [Newtonsoft.Json.JsonProperty("quantity")]
         public string Quantity { get; set; }
 
         /// <summary>
         /// 购买商品规格型号描述
         /// </summary>
-        [XmlElement("specification")]
+        [Newtonsoft.Json.JsonProperty("specification")]
         public string Specification { get; set; }
 
         /// <summary>
         /// 购买商品单位描述
         /// </summary>
-        [XmlElement("unit")]
+        [Newtonsoft.Json.JsonProperty("unit")]
         public string Unit { get; set; }
     }
 }

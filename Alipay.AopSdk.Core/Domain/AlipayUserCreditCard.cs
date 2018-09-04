@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 信用卡卡号，显示前6后2
         /// </summary>
-        [XmlElement("card_no")]
+        [Newtonsoft.Json.JsonProperty("card_no")]
         public string CardNo { get; set; }
 
         /// <summary>
         /// 开户行代码
         /// </summary>
-        [XmlElement("inst_id")]
+        [Newtonsoft.Json.JsonProperty("inst_id")]
         public string InstId { get; set; }
     }
 }

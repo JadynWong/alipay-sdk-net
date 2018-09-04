@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 风险信息行业编码
         /// </summary>
-        [XmlElement("biz_code")]
+        [Newtonsoft.Json.JsonProperty("biz_code")]
         public string BizCode { get; set; }
 
         /// <summary>
         /// 风险编码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
@@ -32,37 +32,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 风险等级
         /// </summary>
-        [XmlElement("level")]
+        [Newtonsoft.Json.JsonProperty("level")]
         public long Level { get; set; }
 
         /// <summary>
         /// 数据刷新时间
         /// </summary>
-        [XmlElement("refresh_time")]
+        [Newtonsoft.Json.JsonProperty("refresh_time")]
         public string RefreshTime { get; set; }
 
         /// <summary>
         /// 结清状态
         /// </summary>
-        [XmlElement("settlement")]
+        [Newtonsoft.Json.JsonProperty("settlement")]
         public bool Settlement { get; set; }
 
         /// <summary>
         /// 当用户进行异议处理，并核查完毕之后，仍有异议时，给出的声明
         /// </summary>
-        [XmlElement("statement")]
+        [Newtonsoft.Json.JsonProperty("statement")]
         public string Statement { get; set; }
 
         /// <summary>
         /// 用户本人对该条负面记录有异议时，表示该异议处理流程的状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 行业名单风险类型
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

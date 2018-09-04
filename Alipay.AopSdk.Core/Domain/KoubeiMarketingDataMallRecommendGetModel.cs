@@ -13,25 +13,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 获取几条数据，最大值传入50，默认值10
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public long Count { get; set; }
 
         /// <summary>
         /// 获取的数据类型:big_item(商圈商品)、small_item(商圈下门店商品)、big_voucher(商圈券)、small_voucher(商圈下门店券)
         /// </summary>
-        [XmlElement("data_type")]
+        [Newtonsoft.Json.JsonProperty("data_type")]
         public string DataType { get; set; }
 
         /// <summary>
         /// 设备ID
         /// </summary>
-        [XmlElement("device_id")]
+        [Newtonsoft.Json.JsonProperty("device_id")]
         public string DeviceId { get; set; }
 
         /// <summary>
         /// 商圈ID
         /// </summary>
-        [XmlElement("mall_id")]
+        [Newtonsoft.Json.JsonProperty("mall_id")]
         public string MallId { get; set; }
 
         /// <summary>
@@ -44,13 +44,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 起始数据下标，默认值0
         /// </summary>
-        [XmlElement("start")]
+        [Newtonsoft.Json.JsonProperty("start")]
         public long Start { get; set; }
 
         /// <summary>
         /// 支付宝用户ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

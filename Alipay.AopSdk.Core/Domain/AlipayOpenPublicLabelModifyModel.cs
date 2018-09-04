@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 要修改的标签id
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public string Id { get; set; }
 
         /// <summary>
         /// 要修改成的标签名
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
     }
 }

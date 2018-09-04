@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活跃高价值用户返回
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public AlipayHighValueCustomerResult Result { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 云凤蝶站点的 id
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public long ActivityId { get; set; }
     }
 }

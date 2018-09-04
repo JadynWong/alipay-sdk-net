@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 菜单id
         /// </summary>
-        [XmlElement("cook_id")]
+        [Newtonsoft.Json.JsonProperty("cook_id")]
         public string CookId { get; set; }
 
         /// <summary>
         /// 菜品id
         /// </summary>
-        [XmlElement("dish_id")]
+        [Newtonsoft.Json.JsonProperty("dish_id")]
         public string DishId { get; set; }
 
         /// <summary>
         /// 会员价
         /// </summary>
-        [XmlElement("member_price")]
+        [Newtonsoft.Json.JsonProperty("member_price")]
         public string MemberPrice { get; set; }
 
         /// <summary>
         /// 售卖价格
         /// </summary>
-        [XmlElement("sell_price")]
+        [Newtonsoft.Json.JsonProperty("sell_price")]
         public string SellPrice { get; set; }
 
         /// <summary>
         /// skuid
         /// </summary>
-        [XmlElement("sku_id")]
+        [Newtonsoft.Json.JsonProperty("sku_id")]
         public string SkuId { get; set; }
     }
 }

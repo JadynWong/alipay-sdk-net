@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品编码
         /// </summary>
-        [XmlElement("item_code")]
+        [Newtonsoft.Json.JsonProperty("item_code")]
         public string ItemCode { get; set; }
     }
 }

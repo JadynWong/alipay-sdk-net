@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 登录的目标业务，目前已经分配的有autoins，代表车险业务
         /// </summary>
-        [XmlElement("login_target")]
+        [Newtonsoft.Json.JsonProperty("login_target")]
         public string LoginTarget { get; set; }
     }
 }

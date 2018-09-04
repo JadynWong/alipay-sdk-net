@@ -13,37 +13,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 背景图片
         /// </summary>
-        [XmlElement("bg_url")]
+        [Newtonsoft.Json.JsonProperty("bg_url")]
         public string BgUrl { get; set; }
 
         /// <summary>
         /// 发动机编号
         /// </summary>
-        [XmlElement("engine_no")]
+        [Newtonsoft.Json.JsonProperty("engine_no")]
         public string EngineNo { get; set; }
 
         /// <summary>
         /// 发动机类型
         /// </summary>
-        [XmlElement("engine_type")]
+        [Newtonsoft.Json.JsonProperty("engine_type")]
         public string EngineType { get; set; }
 
         /// <summary>
         /// 生产厂商
         /// </summary>
-        [XmlElement("manufacturer")]
+        [Newtonsoft.Json.JsonProperty("manufacturer")]
         public string Manufacturer { get; set; }
 
         /// <summary>
         /// 车主平台车型id
         /// </summary>
-        [XmlElement("model_id")]
+        [Newtonsoft.Json.JsonProperty("model_id")]
         public string ModelId { get; set; }
 
         /// <summary>
         /// 生产年份
         /// </summary>
-        [XmlElement("production_year")]
+        [Newtonsoft.Json.JsonProperty("production_year")]
         public string ProductionYear { get; set; }
 
         /// <summary>
@@ -56,67 +56,67 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 品牌Logo
         /// </summary>
-        [XmlElement("vi_brand_logo")]
+        [Newtonsoft.Json.JsonProperty("vi_brand_logo")]
         public string ViBrandLogo { get; set; }
 
         /// <summary>
         /// 品牌名称
         /// </summary>
-        [XmlElement("vi_brand_name")]
+        [Newtonsoft.Json.JsonProperty("vi_brand_name")]
         public string ViBrandName { get; set; }
 
         /// <summary>
         /// 车辆归属地id
         /// </summary>
-        [XmlElement("vi_city_id")]
+        [Newtonsoft.Json.JsonProperty("vi_city_id")]
         public string ViCityId { get; set; }
 
         /// <summary>
         /// 城市名称
         /// </summary>
-        [XmlElement("vi_city_name")]
+        [Newtonsoft.Json.JsonProperty("vi_city_name")]
         public string ViCityName { get; set; }
 
         /// <summary>
         /// 车辆图标URL
         /// </summary>
-        [XmlElement("vi_logo_url")]
+        [Newtonsoft.Json.JsonProperty("vi_logo_url")]
         public string ViLogoUrl { get; set; }
 
         /// <summary>
         /// 行驶里程
         /// </summary>
-        [XmlElement("vi_mileage")]
+        [Newtonsoft.Json.JsonProperty("vi_mileage")]
         public string ViMileage { get; set; }
 
         /// <summary>
         /// 车型名称
         /// </summary>
-        [XmlElement("vi_model_name")]
+        [Newtonsoft.Json.JsonProperty("vi_model_name")]
         public string ViModelName { get; set; }
 
         /// <summary>
         /// 车牌号
         /// </summary>
-        [XmlElement("vi_number")]
+        [Newtonsoft.Json.JsonProperty("vi_number")]
         public string ViNumber { get; set; }
 
         /// <summary>
         /// 车系名称
         /// </summary>
-        [XmlElement("vi_series_name")]
+        [Newtonsoft.Json.JsonProperty("vi_series_name")]
         public string ViSeriesName { get; set; }
 
         /// <summary>
         /// 上路日期
         /// </summary>
-        [XmlElement("vi_start_time")]
+        [Newtonsoft.Json.JsonProperty("vi_start_time")]
         public string ViStartTime { get; set; }
 
         /// <summary>
         /// 年款
         /// </summary>
-        [XmlElement("vi_style_name")]
+        [Newtonsoft.Json.JsonProperty("vi_style_name")]
         public string ViStyleName { get; set; }
 
         /// <summary>
@@ -129,7 +129,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 行驶证注册时间
         /// </summary>
-        [XmlElement("vl_start_time")]
+        [Newtonsoft.Json.JsonProperty("vl_start_time")]
         public string VlStartTime { get; set; }
     }
 }

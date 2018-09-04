@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 订单明细ID
         /// </summary>
-        [XmlElement("assign_item_id")]
+        [Newtonsoft.Json.JsonProperty("assign_item_id")]
         public string AssignItemId { get; set; }
 
         /// <summary>
         /// 错误码
         /// </summary>
-        [XmlElement("error_code")]
+        [Newtonsoft.Json.JsonProperty("error_code")]
         public string ErrorCode { get; set; }
 
         /// <summary>
         /// 错误描述
         /// </summary>
-        [XmlElement("error_desc")]
+        [Newtonsoft.Json.JsonProperty("error_desc")]
         public string ErrorDesc { get; set; }
 
         /// <summary>
         /// 是否处理成功
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
     }
 }

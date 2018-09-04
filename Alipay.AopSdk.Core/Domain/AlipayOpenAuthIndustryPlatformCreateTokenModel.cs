@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// isv的appid
         /// </summary>
-        [XmlElement("isv_appid")]
+        [Newtonsoft.Json.JsonProperty("isv_appid")]
         public string IsvAppid { get; set; }
 
         /// <summary>
         /// auth_mycar_violation
         /// </summary>
-        [XmlElement("scope")]
+        [Newtonsoft.Json.JsonProperty("scope")]
         public string Scope { get; set; }
     }
 }

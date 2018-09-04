@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 渠道编码
         /// </summary>
-        [XmlElement("item_code")]
+        [Newtonsoft.Json.JsonProperty("item_code")]
         public string ItemCode { get; set; }
 
         /// <summary>
         /// 渠道描述
         /// </summary>
-        [XmlElement("item_desc")]
+        [Newtonsoft.Json.JsonProperty("item_desc")]
         public string ItemDesc { get; set; }
 
         /// <summary>
         /// 渠道名称
         /// </summary>
-        [XmlElement("item_name")]
+        [Newtonsoft.Json.JsonProperty("item_name")]
         public string ItemName { get; set; }
 
         /// <summary>
         /// 渠道是否可用
         /// </summary>
-        [XmlElement("item_status")]
+        [Newtonsoft.Json.JsonProperty("item_status")]
         public string ItemStatus { get; set; }
     }
 }

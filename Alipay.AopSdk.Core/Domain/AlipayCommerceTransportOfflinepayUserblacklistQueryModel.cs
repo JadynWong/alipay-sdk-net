@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户黑名单分页ID，1开始
         /// </summary>
-        [XmlElement("page_index")]
+        [Newtonsoft.Json.JsonProperty("page_index")]
         public long PageIndex { get; set; }
 
         /// <summary>
         /// 脱机交易用户黑名单分页页大小，最大页大小不超过1000
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
     }
 }

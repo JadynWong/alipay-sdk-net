@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 接口的版本，当前版本是v1.0.0
         /// </summary>
-        [XmlElement("interface_version")]
+        [Newtonsoft.Json.JsonProperty("interface_version")]
         public string InterfaceVersion { get; set; }
 
         /// <summary>
         /// 监控产品码,用来区分当前接口调用传递数据属于哪种类型的产品.  商户可自定义.
         /// </summary>
-        [XmlElement("product_code")]
+        [Newtonsoft.Json.JsonProperty("product_code")]
         public string ProductCode { get; set; }
     }
 }

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 费用编码
         /// </summary>
-        [XmlElement("charge_code")]
+        [Newtonsoft.Json.JsonProperty("charge_code")]
         public string ChargeCode { get; set; }
 
         /// <summary>
         /// 费用名称
         /// </summary>
-        [XmlElement("charge_name")]
+        [Newtonsoft.Json.JsonProperty("charge_name")]
         public string ChargeName { get; set; }
 
         /// <summary>
         /// 分段费率
         /// </summary>
-        [XmlElement("instal_chrg_rate")]
+        [Newtonsoft.Json.JsonProperty("instal_chrg_rate")]
         public InstallmentValue InstalChrgRate { get; set; }
     }
 }

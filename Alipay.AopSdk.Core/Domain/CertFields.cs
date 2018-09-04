@@ -12,73 +12,73 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 地址
         /// </summary>
-        [XmlElement("address")]
+        [Newtonsoft.Json.JsonProperty("address")]
         public string Address { get; set; }
 
         /// <summary>
         /// 生日
         /// </summary>
-        [XmlElement("birth")]
+        [Newtonsoft.Json.JsonProperty("birth")]
         public string Birth { get; set; }
 
         /// <summary>
         /// 证件号码
         /// </summary>
-        [XmlElement("certno")]
+        [Newtonsoft.Json.JsonProperty("certno")]
         public string Certno { get; set; }
 
         /// <summary>
         /// 有效期
         /// </summary>
-        [XmlElement("expires")]
+        [Newtonsoft.Json.JsonProperty("expires")]
         public string Expires { get; set; }
 
         /// <summary>
         /// 有效期结束日期
         /// </summary>
-        [XmlElement("expiresend")]
+        [Newtonsoft.Json.JsonProperty("expiresend")]
         public string Expiresend { get; set; }
 
         /// <summary>
         /// 有效期开始时间
         /// </summary>
-        [XmlElement("expiresstart")]
+        [Newtonsoft.Json.JsonProperty("expiresstart")]
         public string Expiresstart { get; set; }
 
         /// <summary>
         /// 签发机关
         /// </summary>
-        [XmlElement("issuingauthority")]
+        [Newtonsoft.Json.JsonProperty("issuingauthority")]
         public string Issuingauthority { get; set; }
 
         /// <summary>
         /// 名字
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 编号
         /// </summary>
-        [XmlElement("number")]
+        [Newtonsoft.Json.JsonProperty("number")]
         public string Number { get; set; }
 
         /// <summary>
         /// 民族
         /// </summary>
-        [XmlElement("race")]
+        [Newtonsoft.Json.JsonProperty("race")]
         public string Race { get; set; }
 
         /// <summary>
         /// 换证次数
         /// </summary>
-        [XmlElement("renewalnum")]
+        [Newtonsoft.Json.JsonProperty("renewalnum")]
         public string Renewalnum { get; set; }
 
         /// <summary>
         /// 性别
         /// </summary>
-        [XmlElement("sex")]
+        [Newtonsoft.Json.JsonProperty("sex")]
         public string Sex { get; set; }
     }
 }

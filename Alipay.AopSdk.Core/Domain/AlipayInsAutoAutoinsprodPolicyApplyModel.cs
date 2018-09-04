@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 邮寄信息
         /// </summary>
-        [XmlElement("deliver_info")]
+        [Newtonsoft.Json.JsonProperty("deliver_info")]
         public DeliverInfo DeliverInfo { get; set; }
 
         /// <summary>
         /// 询价申请ID
         /// </summary>
-        [XmlElement("enquiry_biz_id")]
+        [Newtonsoft.Json.JsonProperty("enquiry_biz_id")]
         public string EnquiryBizId { get; set; }
 
         /// <summary>
         /// 指定保险公司支付宝收款账户,一般为保险公司收款账号登录ID
         /// </summary>
-        [XmlElement("income_account_no")]
+        [Newtonsoft.Json.JsonProperty("income_account_no")]
         public string IncomeAccountNo { get; set; }
 
         /// <summary>
         /// 报价ID
         /// </summary>
-        [XmlElement("quote_biz_id")]
+        [Newtonsoft.Json.JsonProperty("quote_biz_id")]
         public string QuoteBizId { get; set; }
 
         /// <summary>
         /// 付费方式,1-代理人付款，2-投保人付款
         /// </summary>
-        [XmlElement("who_payed")]
+        [Newtonsoft.Json.JsonProperty("who_payed")]
         public string WhoPayed { get; set; }
     }
 }

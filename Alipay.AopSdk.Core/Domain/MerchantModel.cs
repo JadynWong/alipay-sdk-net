@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户别名
         /// </summary>
-        [XmlElement("alias_name")]
+        [Newtonsoft.Json.JsonProperty("alias_name")]
         public string AliasName { get; set; }
 
         /// <summary>
         /// 联系人姓名
         /// </summary>
-        [XmlElement("contact_name")]
+        [Newtonsoft.Json.JsonProperty("contact_name")]
         public string ContactName { get; set; }
 
         /// <summary>
         /// 联系人电话
         /// </summary>
-        [XmlElement("contact_number")]
+        [Newtonsoft.Json.JsonProperty("contact_number")]
         public string ContactNumber { get; set; }
 
         /// <summary>
         /// 商户名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 商户或者isv的pid
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
     }
 }

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 是否是taomaomao好友关系
         /// </summary>
-        [XmlElement("maomao_friend")]
+        [Newtonsoft.Json.JsonProperty("maomao_friend")]
         public bool MaomaoFriend { get; set; }
 
         /// <summary>
         /// 是否注册taomaomao游戏
         /// </summary>
-        [XmlElement("maomao_register")]
+        [Newtonsoft.Json.JsonProperty("maomao_register")]
         public bool MaomaoRegister { get; set; }
 
         /// <summary>
         /// 支付宝对应的taobao_id
         /// </summary>
-        [XmlElement("taobao_id")]
+        [Newtonsoft.Json.JsonProperty("taobao_id")]
         public string TaobaoId { get; set; }
     }
 }

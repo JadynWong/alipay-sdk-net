@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品原价，单位元，精确到小数点后两位
         /// </summary>
-        [XmlElement("original_price")]
+        [Newtonsoft.Json.JsonProperty("original_price")]
         public string OriginalPrice { get; set; }
 
         /// <summary>
         /// 商品现价，即商品售价，单位为元，精确到小数点后两位
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public string Price { get; set; }
 
         /// <summary>
         /// 购买商品数量
         /// </summary>
-        [XmlElement("quantity")]
+        [Newtonsoft.Json.JsonProperty("quantity")]
         public long Quantity { get; set; }
 
         /// <summary>
         /// 商品skuId
         /// </summary>
-        [XmlElement("sku_id")]
+        [Newtonsoft.Json.JsonProperty("sku_id")]
         public string SkuId { get; set; }
     }
 }

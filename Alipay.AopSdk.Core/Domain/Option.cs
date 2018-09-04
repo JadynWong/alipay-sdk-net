@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 文本，通常用于理解对应的取值
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>
         /// 取值，通常使用简单的数字或字符串
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public string Value { get; set; }
     }
 }

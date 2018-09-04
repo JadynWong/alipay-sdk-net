@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 优惠后价格
         /// </summary>
-        [XmlElement("reduct_to_amt")]
+        [Newtonsoft.Json.JsonProperty("reduct_to_amt")]
         public string ReductToAmt { get; set; }
     }
 }

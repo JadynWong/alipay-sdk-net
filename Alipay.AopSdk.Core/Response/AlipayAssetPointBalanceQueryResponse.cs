@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 用户的集分宝余额
         /// </summary>
-        [XmlElement("point_amount")]
+        [Newtonsoft.Json.JsonProperty("point_amount")]
         public long PointAmount { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务流水号，即用户授信申请的单号，每次授信申请由借呗平台生成的唯一编号，通知估值时给到机构
         /// </summary>
-        [XmlElement("apply_no")]
+        [Newtonsoft.Json.JsonProperty("apply_no")]
         public string ApplyNo { get; set; }
     }
 }

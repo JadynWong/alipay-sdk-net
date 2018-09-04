@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 促销描述内容，有活动的情况下必填
         /// </summary>
-        [XmlElement("describe")]
+        [Newtonsoft.Json.JsonProperty("describe")]
         public string Describe { get; set; }
 
         /// <summary>
         /// 促销活动结束时间，有活动的情况下必填
         /// </summary>
-        [XmlElement("end_time")]
+        [Newtonsoft.Json.JsonProperty("end_time")]
         public string EndTime { get; set; }
 
         /// <summary>
         /// 促销活动开始时间，有活动的情况下必填
         /// </summary>
-        [XmlElement("start_time")]
+        [Newtonsoft.Json.JsonProperty("start_time")]
         public string StartTime { get; set; }
 
         /// <summary>
         /// 活动状态，0：有效；1：停用；默认状态0：有效。有活动的情况下必填
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

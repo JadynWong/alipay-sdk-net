@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 券余额(元)
         /// </summary>
-        [XmlElement("available_amount")]
+        [Newtonsoft.Json.JsonProperty("available_amount")]
         public long AvailableAmount { get; set; }
 
         /// <summary>
@@ -26,61 +26,61 @@ namespace Aop.Api.Response
         /// <summary>
         /// 扩展信息,JSON格式
         /// </summary>
-        [XmlElement("extend_info")]
+        [Newtonsoft.Json.JsonProperty("extend_info")]
         public string ExtendInfo { get; set; }
 
         /// <summary>
         /// 券激活时间(券可以使用起始时间)
         /// </summary>
-        [XmlElement("gmt_active")]
+        [Newtonsoft.Json.JsonProperty("gmt_active")]
         public string GmtActive { get; set; }
 
         /// <summary>
         /// 券创建时间(券发券时间)
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 券过期时间(券可以使用截止时间)
         /// </summary>
-        [XmlElement("gmt_expired")]
+        [Newtonsoft.Json.JsonProperty("gmt_expired")]
         public string GmtExpired { get; set; }
 
         /// <summary>
         /// 券名称(用户看到券名称)
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 券状态(ENABLED:可用,DISABLED:不可用,DELETE:删除状态,TRANS:发放中,TRANSFER:已转增,UNC:未领取,USED:已使用,USING:使用中,REFUNDED:已退款,REFUNDING:使用中,UNACTIVE:未激活,EXPIRED:已过期)
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 券模板ID(模板唯一标识,创建模板返回)
         /// </summary>
-        [XmlElement("template_id")]
+        [Newtonsoft.Json.JsonProperty("template_id")]
         public string TemplateId { get; set; }
 
         /// <summary>
         /// 券面额(元)
         /// </summary>
-        [XmlElement("total_amount")]
+        [Newtonsoft.Json.JsonProperty("total_amount")]
         public long TotalAmount { get; set; }
 
         /// <summary>
         /// 券所属用户ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
 
         /// <summary>
         /// 券ID(同入参券ID)
         /// </summary>
-        [XmlElement("voucher_id")]
+        [Newtonsoft.Json.JsonProperty("voucher_id")]
         public string VoucherId { get; set; }
     }
 }

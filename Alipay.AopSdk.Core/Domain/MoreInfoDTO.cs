@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 扩展参数，需要URL地址回带的值，JSON格式(openweb时填)
         /// </summary>
-        [XmlElement("params")]
+        [Newtonsoft.Json.JsonProperty("params")]
         public string Params { get; set; }
 
         /// <summary>
         /// 二级页面标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 超链接(选择openweb的时候必须填写url参数内容)
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

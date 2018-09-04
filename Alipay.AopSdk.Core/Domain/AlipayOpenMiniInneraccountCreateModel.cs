@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务类型
         /// </summary>
-        [XmlElement("client_type")]
+        [Newtonsoft.Json.JsonProperty("client_type")]
         public string ClientType { get; set; }
 
         /// <summary>
         /// 外部业务主体ID
         /// </summary>
-        [XmlElement("out_biz_id")]
+        [Newtonsoft.Json.JsonProperty("out_biz_id")]
         public string OutBizId { get; set; }
     }
 }

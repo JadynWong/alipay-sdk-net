@@ -19,13 +19,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回码.
         /// </summary>
-        [XmlElement("error_code")]
+        [Newtonsoft.Json.JsonProperty("error_code")]
         public string ErrorCode { get; set; }
 
         /// <summary>
         /// 是否发码成功的标识。
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
     }
 }

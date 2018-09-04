@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 凭证id
         /// </summary>
-        [XmlElement("lot_number")]
+        [Newtonsoft.Json.JsonProperty("lot_number")]
         public string LotNumber { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 10
         /// </summary>
-        [XmlElement("userid")]
+        [Newtonsoft.Json.JsonProperty("userid")]
         public string Userid { get; set; }
     }
 }

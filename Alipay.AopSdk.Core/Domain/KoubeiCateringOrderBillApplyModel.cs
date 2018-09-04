@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 应收金额
         /// </summary>
-        [XmlElement("bill_amount")]
+        [Newtonsoft.Json.JsonProperty("bill_amount")]
         public string BillAmount { get; set; }
 
         /// <summary>
@@ -33,25 +33,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 扩展信息,json对象格式 ,key和value都为字符串
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 是否享受会员价
         /// </summary>
-        [XmlElement("member_flag")]
+        [Newtonsoft.Json.JsonProperty("member_flag")]
         public bool MemberFlag { get; set; }
 
         /// <summary>
         /// 备注
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 付款金额
         /// </summary>
-        [XmlElement("pay_amount")]
+        [Newtonsoft.Json.JsonProperty("pay_amount")]
         public string PayAmount { get; set; }
 
         /// <summary>
@@ -64,25 +64,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 就餐人员列表，以英文逗号","分隔
         /// </summary>
-        [XmlElement("people_list")]
+        [Newtonsoft.Json.JsonProperty("people_list")]
         public string PeopleList { get; set; }
 
         /// <summary>
         /// pos业务订单外部主键信息
         /// </summary>
-        [XmlElement("pos_order_key")]
+        [Newtonsoft.Json.JsonProperty("pos_order_key")]
         public PosOrderKey PosOrderKey { get; set; }
 
         /// <summary>
         /// 实收金额
         /// </summary>
-        [XmlElement("receipt_amount")]
+        [Newtonsoft.Json.JsonProperty("receipt_amount")]
         public string ReceiptAmount { get; set; }
 
         /// <summary>
         /// 结账时间，格式yyyy-mm-dd hh:mm:ss
         /// </summary>
-        [XmlElement("settle_time")]
+        [Newtonsoft.Json.JsonProperty("settle_time")]
         public string SettleTime { get; set; }
     }
 }

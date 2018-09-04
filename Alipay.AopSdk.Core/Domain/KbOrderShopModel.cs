@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 门店ID
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
 
         /// <summary>
         /// 店铺名
         /// </summary>
-        [XmlElement("shop_name")]
+        [Newtonsoft.Json.JsonProperty("shop_name")]
         public string ShopName { get; set; }
 
         /// <summary>
         /// 00007
         /// </summary>
-        [XmlElement("store_id")]
+        [Newtonsoft.Json.JsonProperty("store_id")]
         public string StoreId { get; set; }
     }
 }

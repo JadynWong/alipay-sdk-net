@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 奖品ID
         /// </summary>
-        [XmlElement("prize_id")]
+        [Newtonsoft.Json.JsonProperty("prize_id")]
         public string PrizeId { get; set; }
 
         /// <summary>
         /// 外部流水号，保证业务幂等性
         /// </summary>
-        [XmlElement("req_id")]
+        [Newtonsoft.Json.JsonProperty("req_id")]
         public string ReqId { get; set; }
 
         /// <summary>
         /// 发奖用户ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

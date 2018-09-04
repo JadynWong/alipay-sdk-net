@@ -20,19 +20,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 当前页码
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public string PageNum { get; set; }
 
         /// <summary>
         /// 分页大小
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public string PageSize { get; set; }
 
         /// <summary>
         /// 总记录数
         /// </summary>
-        [XmlElement("total_size")]
+        [Newtonsoft.Json.JsonProperty("total_size")]
         public string TotalSize { get; set; }
     }
 }

@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 分组名称
         /// </summary>
-        [XmlElement("group_name")]
+        [Newtonsoft.Json.JsonProperty("group_name")]
         public string GroupName { get; set; }
 
         /// <summary>
         /// 简要描述
         /// </summary>
-        [XmlElement("summary")]
+        [Newtonsoft.Json.JsonProperty("summary")]
         public string Summary { get; set; }
     }
 }

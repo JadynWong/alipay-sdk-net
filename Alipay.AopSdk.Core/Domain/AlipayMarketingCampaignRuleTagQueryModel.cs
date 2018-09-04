@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 签约商户下属机构唯一编号
         /// </summary>
-        [XmlElement("mpid")]
+        [Newtonsoft.Json.JsonProperty("mpid")]
         public string Mpid { get; set; }
     }
 }

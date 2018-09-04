@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户的授权动作：auth授权，unAuth取消授权
         /// </summary>
-        [XmlElement("action")]
+        [Newtonsoft.Json.JsonProperty("action")]
         public string Action { get; set; }
 
         /// <summary>
         /// 蚂蚁统一会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

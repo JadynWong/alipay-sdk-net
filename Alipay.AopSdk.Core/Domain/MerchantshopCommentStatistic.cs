@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 评论总数
         /// </summary>
-        [XmlElement("comment_count")]
+        [Newtonsoft.Json.JsonProperty("comment_count")]
         public long CommentCount { get; set; }
 
         /// <summary>
         /// 评分（平均分），两位小数
         /// </summary>
-        [XmlElement("score")]
+        [Newtonsoft.Json.JsonProperty("score")]
         public long Score { get; set; }
     }
 }

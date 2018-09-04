@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// pos设备序列号
         /// </summary>
-        [XmlElement("dv_sn")]
+        [Newtonsoft.Json.JsonProperty("dv_sn")]
         public string DvSn { get; set; }
 
         /// <summary>
         /// 商户pid
         /// </summary>
-        [XmlElement("merchant_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_id")]
         public string MerchantId { get; set; }
 
         /// <summary>
         /// 订单版本号
         /// </summary>
-        [XmlElement("order_version")]
+        [Newtonsoft.Json.JsonProperty("order_version")]
         public long OrderVersion { get; set; }
 
         /// <summary>
         /// pos本地的订单号,同一个商户下唯一标识一笔订单的编号。
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
     }
 }

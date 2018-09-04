@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 精度
         /// </summary>
-        [XmlElement("accuracy")]
+        [Newtonsoft.Json.JsonProperty("accuracy")]
         public string Accuracy { get; set; }
 
         /// <summary>
         /// 海拔
         /// </summary>
-        [XmlElement("altitude")]
+        [Newtonsoft.Json.JsonProperty("altitude")]
         public string Altitude { get; set; }
 
         /// <summary>
         /// 维度
         /// </summary>
-        [XmlElement("latitude")]
+        [Newtonsoft.Json.JsonProperty("latitude")]
         public string Latitude { get; set; }
 
         /// <summary>
         /// 经度
         /// </summary>
-        [XmlElement("longitude")]
+        [Newtonsoft.Json.JsonProperty("longitude")]
         public string Longitude { get; set; }
 
         /// <summary>
         /// 时间ms
         /// </summary>
-        [XmlElement("time")]
+        [Newtonsoft.Json.JsonProperty("time")]
         public string Time { get; set; }
     }
 }

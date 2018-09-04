@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 用户是否关注，T代表已关注，F代表未关注
         /// </summary>
-        [XmlElement("is_follow")]
+        [Newtonsoft.Json.JsonProperty("is_follow")]
         public string IsFollow { get; set; }
     }
 }

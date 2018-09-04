@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回商户正在进行中的活动记录数，注意：如果入参query_type不传递或者传递错误值，该参数将不会返回。
         /// </summary>
-        [XmlElement("camp_num")]
+        [Newtonsoft.Json.JsonProperty("camp_num")]
         public long CampNum { get; set; }
 
         /// <summary>

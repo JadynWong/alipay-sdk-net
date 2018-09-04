@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 数据发送业务处理结果码
         /// </summary>
-        [XmlElement("biz_code")]
+        [Newtonsoft.Json.JsonProperty("biz_code")]
         public string BizCode { get; set; }
 
         /// <summary>
         /// 数据发送业务处理结果描述
         /// </summary>
-        [XmlElement("biz_msg")]
+        [Newtonsoft.Json.JsonProperty("biz_msg")]
         public string BizMsg { get; set; }
     }
 }

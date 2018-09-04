@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 协议服务商用于唯一标识该设备的设备id(协议服务商定义)
         /// </summary>
-        [XmlElement("device_id")]
+        [Newtonsoft.Json.JsonProperty("device_id")]
         public string DeviceId { get; set; }
 
         /// <summary>
         /// 设备备注
         /// </summary>
-        [XmlElement("remark")]
+        [Newtonsoft.Json.JsonProperty("remark")]
         public string Remark { get; set; }
     }
 }

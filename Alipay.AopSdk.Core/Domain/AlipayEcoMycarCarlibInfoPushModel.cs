@@ -12,49 +12,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 品牌
         /// </summary>
-        [XmlElement("brand")]
+        [Newtonsoft.Json.JsonProperty("brand")]
         public string Brand { get; set; }
 
         /// <summary>
         /// 排量
         /// </summary>
-        [XmlElement("cc")]
+        [Newtonsoft.Json.JsonProperty("cc")]
         public string Cc { get; set; }
 
         /// <summary>
         /// 厂商
         /// </summary>
-        [XmlElement("company")]
+        [Newtonsoft.Json.JsonProperty("company")]
         public string Company { get; set; }
 
         /// <summary>
         /// 发动机型号
         /// </summary>
-        [XmlElement("engine")]
+        [Newtonsoft.Json.JsonProperty("engine")]
         public string Engine { get; set; }
 
         /// <summary>
         /// 销售名字
         /// </summary>
-        [XmlElement("marker")]
+        [Newtonsoft.Json.JsonProperty("marker")]
         public string Marker { get; set; }
 
         /// <summary>
         /// 生产年份
         /// </summary>
-        [XmlElement("prod_year")]
+        [Newtonsoft.Json.JsonProperty("prod_year")]
         public string ProdYear { get; set; }
 
         /// <summary>
         /// 车系
         /// </summary>
-        [XmlElement("serie")]
+        [Newtonsoft.Json.JsonProperty("serie")]
         public string Serie { get; set; }
 
         /// <summary>
         /// 车款
         /// </summary>
-        [XmlElement("style")]
+        [Newtonsoft.Json.JsonProperty("style")]
         public string Style { get; set; }
     }
 }

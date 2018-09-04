@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 文章正文描述
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public string Text { get; set; }
     }
 }

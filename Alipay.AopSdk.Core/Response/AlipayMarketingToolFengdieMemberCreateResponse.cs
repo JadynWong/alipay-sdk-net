@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 凤蝶业务空间创建成功后，返回该成员的基本信息
         /// </summary>
-        [XmlElement("data")]
+        [Newtonsoft.Json.JsonProperty("data")]
         public FengdieSpaceMemberCreateModel Data { get; set; }
     }
 }

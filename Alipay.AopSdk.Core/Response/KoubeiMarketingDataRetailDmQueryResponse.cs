@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 内容ID
         /// </summary>
-        [XmlElement("content_id")]
+        [Newtonsoft.Json.JsonProperty("content_id")]
         public string ContentId { get; set; }
 
         /// <summary>
@@ -26,13 +26,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商品码
         /// </summary>
-        [XmlElement("item_code")]
+        [Newtonsoft.Json.JsonProperty("item_code")]
         public string ItemCode { get; set; }
 
         /// <summary>
         /// 商品名称
         /// </summary>
-        [XmlElement("item_name")]
+        [Newtonsoft.Json.JsonProperty("item_name")]
         public string ItemName { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作人信息
         /// </summary>
-        [XmlElement("portfolio_operator_info")]
+        [Newtonsoft.Json.JsonProperty("portfolio_operator_info")]
         public PortfolioOperatorInfo PortfolioOperatorInfo { get; set; }
     }
 }

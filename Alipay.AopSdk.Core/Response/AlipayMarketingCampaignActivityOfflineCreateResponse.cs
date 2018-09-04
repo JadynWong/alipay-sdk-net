@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 创建成功的活动id
         /// </summary>
-        [XmlElement("camp_id")]
+        [Newtonsoft.Json.JsonProperty("camp_id")]
         public string CampId { get; set; }
 
         /// <summary>
         /// 创建成功的券模版id
         /// </summary>
-        [XmlElement("prize_id")]
+        [Newtonsoft.Json.JsonProperty("prize_id")]
         public string PrizeId { get; set; }
     }
 }

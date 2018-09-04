@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 需要识别的音频转换后的数据，不要包含特殊字符以及双引号等可能引起json格式化错误问题的字符.
         /// </summary>
-        [XmlElement("audio_content")]
+        [Newtonsoft.Json.JsonProperty("audio_content")]
         public string AudioContent { get; set; }
 
         /// <summary>
         /// 表明用户上传的音频数据格式
         /// </summary>
-        [XmlElement("audio_type")]
+        [Newtonsoft.Json.JsonProperty("audio_type")]
         public string AudioType { get; set; }
 
         /// <summary>
         /// 调用识别服务的用户id，与使用ssdata.dataservice.risk.audio.set的creator一致
         /// </summary>
-        [XmlElement("checker")]
+        [Newtonsoft.Json.JsonProperty("checker")]
         public string Checker { get; set; }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 表明用户上传的音频数据采样率
         /// </summary>
-        [XmlElement("sample_rate")]
+        [Newtonsoft.Json.JsonProperty("sample_rate")]
         public string SampleRate { get; set; }
     }
 }

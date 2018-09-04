@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车险订单号
         /// </summary>
-        [XmlElement("trade_biz_id")]
+        [Newtonsoft.Json.JsonProperty("trade_biz_id")]
         public string TradeBizId { get; set; }
     }
 }

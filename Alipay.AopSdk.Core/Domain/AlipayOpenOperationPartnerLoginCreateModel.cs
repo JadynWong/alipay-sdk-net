@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 三方合作服务商的员工支付宝UID，要求唯一。需要三方员工通过授权操作提供。
         /// </summary>
-        [XmlElement("staff_user_id")]
+        [Newtonsoft.Json.JsonProperty("staff_user_id")]
         public string StaffUserId { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 菜单详情
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>
         /// 菜单名称
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

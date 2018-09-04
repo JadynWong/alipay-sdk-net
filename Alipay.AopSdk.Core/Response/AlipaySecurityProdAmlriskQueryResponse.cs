@@ -13,19 +13,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 事件ID，由入参得来
         /// </summary>
-        [XmlElement("event_id")]
+        [Newtonsoft.Json.JsonProperty("event_id")]
         public string EventId { get; set; }
 
         /// <summary>
         /// 根据反洗钱风险检查，该商户是否有风险，有风险则为Yes，无风险则为No
         /// </summary>
-        [XmlElement("has_risk")]
+        [Newtonsoft.Json.JsonProperty("has_risk")]
         public string HasRisk { get; set; }
 
         /// <summary>
         /// 商户ID，由入参得来
         /// </summary>
-        [XmlElement("merchant_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_id")]
         public string MerchantId { get; set; }
 
         /// <summary>

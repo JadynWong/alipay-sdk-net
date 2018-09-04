@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 查询后返回的分页信息
         /// </summary>
-        [XmlElement("page_result")]
+        [Newtonsoft.Json.JsonProperty("page_result")]
         public PromoPageResult PageResult { get; set; }
     }
 }

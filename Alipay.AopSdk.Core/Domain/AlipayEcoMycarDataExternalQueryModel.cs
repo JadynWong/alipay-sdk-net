@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// external_system_name
         /// </summary>
-        [XmlElement("external_system_name")]
+        [Newtonsoft.Json.JsonProperty("external_system_name")]
         public string ExternalSystemName { get; set; }
 
         /// <summary>
         /// is_transfer_uid
         /// </summary>
-        [XmlElement("is_transfer_uid")]
+        [Newtonsoft.Json.JsonProperty("is_transfer_uid")]
         public bool IsTransferUid { get; set; }
 
         /// <summary>
         /// operate_type
         /// </summary>
-        [XmlElement("operate_type")]
+        [Newtonsoft.Json.JsonProperty("operate_type")]
         public string OperateType { get; set; }
 
         /// <summary>
         /// query_condition
         /// </summary>
-        [XmlElement("query_condition")]
+        [Newtonsoft.Json.JsonProperty("query_condition")]
         public string QueryCondition { get; set; }
     }
 }

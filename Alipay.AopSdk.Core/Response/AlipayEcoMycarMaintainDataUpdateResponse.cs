@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 具体返回的处理结果
         /// </summary>
-        [XmlElement("info")]
+        [Newtonsoft.Json.JsonProperty("info")]
         public string Info { get; set; }
     }
 }

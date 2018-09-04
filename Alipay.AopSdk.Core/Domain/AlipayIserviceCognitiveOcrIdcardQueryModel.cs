@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 身份证图片base64编码内容
         /// </summary>
-        [XmlElement("image_content")]
+        [Newtonsoft.Json.JsonProperty("image_content")]
         public string ImageContent { get; set; }
     }
 }

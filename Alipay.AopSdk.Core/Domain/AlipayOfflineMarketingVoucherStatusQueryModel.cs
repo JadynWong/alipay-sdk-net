@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 外部流水号
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 券模板id
         /// </summary>
-        [XmlElement("voucher_id")]
+        [Newtonsoft.Json.JsonProperty("voucher_id")]
         public string VoucherId { get; set; }
     }
 }

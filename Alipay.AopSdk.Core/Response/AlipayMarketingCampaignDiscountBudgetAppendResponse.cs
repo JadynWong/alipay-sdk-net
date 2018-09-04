@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 预算ID
         /// </summary>
-        [XmlElement("budget_id")]
+        [Newtonsoft.Json.JsonProperty("budget_id")]
         public string BudgetId { get; set; }
     }
 }

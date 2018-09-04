@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 机构在蚂蚁平台上的惟一标识
         /// </summary>
-        [XmlElement("inst_id")]
+        [Newtonsoft.Json.JsonProperty("inst_id")]
         public string InstId { get; set; }
     }
 }

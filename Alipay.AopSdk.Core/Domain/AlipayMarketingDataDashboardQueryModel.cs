@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 仪表盘ID
         /// </summary>
-        [XmlElement("dashboard_id")]
+        [Newtonsoft.Json.JsonProperty("dashboard_id")]
         public string DashboardId { get; set; }
 
         /// <summary>

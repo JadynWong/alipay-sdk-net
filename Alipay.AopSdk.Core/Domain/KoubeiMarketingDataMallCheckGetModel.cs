@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 数据源:USER--C端，MERCHANT--B端
         /// </summary>
-        [XmlElement("data_source")]
+        [Newtonsoft.Json.JsonProperty("data_source")]
         public string DataSource { get; set; }
     }
 }

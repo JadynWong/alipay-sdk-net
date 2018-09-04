@@ -12,37 +12,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 设备类型
         /// </summary>
-        [XmlElement("actiontype")]
+        [Newtonsoft.Json.JsonProperty("actiontype")]
         public string Actiontype { get; set; }
 
         /// <summary>
         /// 设备是否可用
         /// </summary>
-        [XmlElement("inuse")]
+        [Newtonsoft.Json.JsonProperty("inuse")]
         public bool Inuse { get; set; }
 
         /// <summary>
         /// 设备说明
         /// </summary>
-        [XmlElement("remark")]
+        [Newtonsoft.Json.JsonProperty("remark")]
         public string Remark { get; set; }
 
         /// <summary>
         /// 设备序列号
         /// </summary>
-        [XmlElement("sn")]
+        [Newtonsoft.Json.JsonProperty("sn")]
         public string Sn { get; set; }
 
         /// <summary>
         /// 蓝牙设备关联的模板信息
         /// </summary>
-        [XmlElement("template")]
+        [Newtonsoft.Json.JsonProperty("template")]
         public BeaconTemplate Template { get; set; }
 
         /// <summary>
         /// 设备ID
         /// </summary>
-        [XmlElement("uuid")]
+        [Newtonsoft.Json.JsonProperty("uuid")]
         public string Uuid { get; set; }
     }
 }

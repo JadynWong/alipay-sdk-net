@@ -11,43 +11,43 @@ namespace Aop.Api.Response
         /// <summary>
         /// 精确度
         /// </summary>
-        [XmlElement("accuracy")]
+        [Newtonsoft.Json.JsonProperty("accuracy")]
         public string Accuracy { get; set; }
 
         /// <summary>
         /// 经纬度所在位置
         /// </summary>
-        [XmlElement("city")]
+        [Newtonsoft.Json.JsonProperty("city")]
         public string City { get; set; }
 
         /// <summary>
         /// 结果码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 纬度信息
         /// </summary>
-        [XmlElement("latitude")]
+        [Newtonsoft.Json.JsonProperty("latitude")]
         public string Latitude { get; set; }
 
         /// <summary>
         /// 经度信息
         /// </summary>
-        [XmlElement("longitude")]
+        [Newtonsoft.Json.JsonProperty("longitude")]
         public string Longitude { get; set; }
 
         /// <summary>
         /// 结果信息
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
 
         /// <summary>
         /// 经纬度对应位置所在的省份
         /// </summary>
-        [XmlElement("province")]
+        [Newtonsoft.Json.JsonProperty("province")]
         public string Province { get; set; }
     }
 }

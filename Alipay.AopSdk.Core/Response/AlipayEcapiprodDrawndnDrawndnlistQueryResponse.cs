@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 唯一一次请求标示
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

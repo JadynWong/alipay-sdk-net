@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 返回的分页数据信息，包括项目总数、当前页数、总页数等信息
         /// </summary>
-        [XmlElement("paginator")]
+        [Newtonsoft.Json.JsonProperty("paginator")]
         public FengdieListPaginator Paginator { get; set; }
     }
 }

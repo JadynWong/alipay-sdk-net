@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回tablelistresult列表
         /// </summary>
-        [XmlElement("tableinfo_result")]
+        [Newtonsoft.Json.JsonProperty("tableinfo_result")]
         public TableInfoResult TableinfoResult { get; set; }
     }
 }

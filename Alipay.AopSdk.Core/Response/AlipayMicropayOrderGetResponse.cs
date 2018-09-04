@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 冻结订单详情
         /// </summary>
-        [XmlElement("micro_pay_order_detail")]
+        [Newtonsoft.Json.JsonProperty("micro_pay_order_detail")]
         public MicroPayOrderDetail MicroPayOrderDetail { get; set; }
     }
 }

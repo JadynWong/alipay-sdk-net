@@ -11,19 +11,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 结果码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 菜单唯一标识
         /// </summary>
-        [XmlElement("menu_key")]
+        [Newtonsoft.Json.JsonProperty("menu_key")]
         public string MenuKey { get; set; }
 
         /// <summary>
         /// 结果码描述
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
     }
 }

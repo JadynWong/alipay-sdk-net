@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 投保订单号
         /// </summary>
-        [XmlElement("application_no")]
+        [Newtonsoft.Json.JsonProperty("application_no")]
         public string ApplicationNo { get; set; }
     }
 }

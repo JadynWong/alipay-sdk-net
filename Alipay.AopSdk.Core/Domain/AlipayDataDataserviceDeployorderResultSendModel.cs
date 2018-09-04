@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 部署单记录id
         /// </summary>
-        [XmlElement("record_id")]
+        [Newtonsoft.Json.JsonProperty("record_id")]
         public string RecordId { get; set; }
 
         /// <summary>
         /// 处理结果
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public string Result { get; set; }
 
         /// <summary>
         /// 是否成功
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
     }
 }

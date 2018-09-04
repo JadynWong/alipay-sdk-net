@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 权益ID
         /// </summary>
-        [XmlElement("benefit_id")]
+        [Newtonsoft.Json.JsonProperty("benefit_id")]
         public string BenefitId { get; set; }
 
         /// <summary>
         /// 会员卡模板外部权益
         /// </summary>
-        [XmlElement("mcard_template_benefit")]
+        [Newtonsoft.Json.JsonProperty("mcard_template_benefit")]
         public McardTemplateBenefit McardTemplateBenefit { get; set; }
     }
 }

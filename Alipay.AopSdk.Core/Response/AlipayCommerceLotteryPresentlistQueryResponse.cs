@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回的列表的大小
         /// </summary>
-        [XmlElement("total_result")]
+        [Newtonsoft.Json.JsonProperty("total_result")]
         public long TotalResult { get; set; }
     }
 }

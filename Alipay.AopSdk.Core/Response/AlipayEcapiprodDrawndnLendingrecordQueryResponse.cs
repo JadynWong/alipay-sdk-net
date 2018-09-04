@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 代表一次请求的唯一编号，用于追溯问题，多方联调查询问题时，ISV 可以提供该RequestId给网关，网关用来查询本次请求的具体日志
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

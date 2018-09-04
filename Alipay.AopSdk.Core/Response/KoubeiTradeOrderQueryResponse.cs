@@ -20,13 +20,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 购买用户UID，对应买家登陆的支付宝账号
         /// </summary>
-        [XmlElement("buyer_id")]
+        [Newtonsoft.Json.JsonProperty("buyer_id")]
         public string BuyerId { get; set; }
 
         /// <summary>
         /// 联系方式，买家下单时写入，便于卖家联系买家
         /// </summary>
-        [XmlElement("contact")]
+        [Newtonsoft.Json.JsonProperty("contact")]
         public string Contact { get; set; }
 
         /// <summary>
@@ -39,67 +39,67 @@ namespace Aop.Api.Response
         /// <summary>
         /// 订单创建时间
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 订单最后修改时间(支付/核销/过期退款||用户主动退款)
         /// </summary>
-        [XmlElement("gmt_modified")]
+        [Newtonsoft.Json.JsonProperty("gmt_modified")]
         public string GmtModified { get; set; }
 
         /// <summary>
         /// 口碑订单号
         /// </summary>
-        [XmlElement("order_no")]
+        [Newtonsoft.Json.JsonProperty("order_no")]
         public string OrderNo { get; set; }
 
         /// <summary>
         /// 外部业务流水编号,推荐:yyyymmddhhmmssSSS99999999(年月日时分秒+8位随机码)，开发者可根据该编号与口碑订单一一对应。
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 购买门店所属商家PID
         /// </summary>
-        [XmlElement("partner_id")]
+        [Newtonsoft.Json.JsonProperty("partner_id")]
         public string PartnerId { get; set; }
 
         /// <summary>
         /// 实付金额，单位为元，消费者实际支付金额
         /// </summary>
-        [XmlElement("real_amount")]
+        [Newtonsoft.Json.JsonProperty("real_amount")]
         public string RealAmount { get; set; }
 
         /// <summary>
         /// 卖家用户收款账号识别码
         /// </summary>
-        [XmlElement("seller_id")]
+        [Newtonsoft.Json.JsonProperty("seller_id")]
         public string SellerId { get; set; }
 
         /// <summary>
         /// 购买店铺信息，详细字段如下：  shop_id:门店ID;   store_id:外部门店ID,即ISV系统中的门店ID，用于与口碑的对应;  shop_name:门店名称;
         /// </summary>
-        [XmlElement("shop")]
+        [Newtonsoft.Json.JsonProperty("shop")]
         public KbOrderShopModel Shop { get; set; }
 
         /// <summary>
         /// UNPAY：未支付／待支付  PAY：已支付  FINISH:已完成  CLOSE：已关闭
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 总金额，单位为元，此金额为交易创建金额，为商品优惠前价格*数量。
         /// </summary>
-        [XmlElement("total_amount")]
+        [Newtonsoft.Json.JsonProperty("total_amount")]
         public string TotalAmount { get; set; }
 
         /// <summary>
         /// 订单支付流水号
         /// </summary>
-        [XmlElement("trans_no")]
+        [Newtonsoft.Json.JsonProperty("trans_no")]
         public string TransNo { get; set; }
 
         /// <summary>

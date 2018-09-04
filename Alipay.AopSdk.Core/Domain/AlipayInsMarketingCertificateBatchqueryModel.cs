@@ -12,73 +12,73 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 32
         /// </summary>
-        [XmlElement("certificate_no")]
+        [Newtonsoft.Json.JsonProperty("certificate_no")]
         public string CertificateNo { get; set; }
 
         /// <summary>
         /// 凭证类型
         /// </summary>
-        [XmlElement("certificate_type")]
+        [Newtonsoft.Json.JsonProperty("certificate_type")]
         public string CertificateType { get; set; }
 
         /// <summary>
         /// 当前页码
         /// </summary>
-        [XmlElement("current_page_no")]
+        [Newtonsoft.Json.JsonProperty("current_page_no")]
         public long CurrentPageNo { get; set; }
 
         /// <summary>
         /// 生效时间
         /// </summary>
-        [XmlElement("effect_time")]
+        [Newtonsoft.Json.JsonProperty("effect_time")]
         public string EffectTime { get; set; }
 
         /// <summary>
         /// 机构id
         /// </summary>
-        [XmlElement("inst_id")]
+        [Newtonsoft.Json.JsonProperty("inst_id")]
         public string InstId { get; set; }
 
         /// <summary>
         /// 是否失效
         /// </summary>
-        [XmlElement("is_enabled")]
+        [Newtonsoft.Json.JsonProperty("is_enabled")]
         public string IsEnabled { get; set; }
 
         /// <summary>
         /// 订单id
         /// </summary>
-        [XmlElement("order_id")]
+        [Newtonsoft.Json.JsonProperty("order_id")]
         public string OrderId { get; set; }
 
         /// <summary>
         /// 订单来源
         /// </summary>
-        [XmlElement("order_source")]
+        [Newtonsoft.Json.JsonProperty("order_source")]
         public string OrderSource { get; set; }
 
         /// <summary>
         /// 外部业务单号
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 拥有人uid
         /// </summary>
-        [XmlElement("owner_uid")]
+        [Newtonsoft.Json.JsonProperty("owner_uid")]
         public string OwnerUid { get; set; }
 
         /// <summary>
         /// 每页记录数量
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>
         /// 凭证状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public long Status { get; set; }
     }
 }

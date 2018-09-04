@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 二维码图片地址，可跳转到实际图片
         /// </summary>
-        [XmlElement("code_img")]
+        [Newtonsoft.Json.JsonProperty("code_img")]
         public string CodeImg { get; set; }
 
         /// <summary>
         /// 二维码有效时间，单位（秒）。永久码暂时忽略该信息
         /// </summary>
-        [XmlElement("expire_second")]
+        [Newtonsoft.Json.JsonProperty("expire_second")]
         public string ExpireSecond { get; set; }
     }
 }

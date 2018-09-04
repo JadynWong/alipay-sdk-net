@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 权益删除结果；true成功，false失败
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public bool Result { get; set; }
     }
 }

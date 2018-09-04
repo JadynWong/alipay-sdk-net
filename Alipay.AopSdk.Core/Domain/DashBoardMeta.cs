@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 授权状态，值为true或者false
         /// </summary>
-        [XmlElement("auth_status")]
+        [Newtonsoft.Json.JsonProperty("auth_status")]
         public bool AuthStatus { get; set; }
 
         /// <summary>
         /// 仪表盘创建时间
         /// </summary>
-        [XmlElement("create_time")]
+        [Newtonsoft.Json.JsonProperty("create_time")]
         public string CreateTime { get; set; }
 
         /// <summary>
         /// 仪表盘ID
         /// </summary>
-        [XmlElement("dashboard_id")]
+        [Newtonsoft.Json.JsonProperty("dashboard_id")]
         public string DashboardId { get; set; }
 
         /// <summary>
         /// 仪表盘名称
         /// </summary>
-        [XmlElement("dashboard_name")]
+        [Newtonsoft.Json.JsonProperty("dashboard_name")]
         public string DashboardName { get; set; }
     }
 }

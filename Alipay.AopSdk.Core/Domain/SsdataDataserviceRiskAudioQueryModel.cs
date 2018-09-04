@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 调用识别服务的用户id，与使用ssdata.dataservice.risk.audio.set的creator一致
         /// </summary>
-        [XmlElement("checker")]
+        [Newtonsoft.Json.JsonProperty("checker")]
         public string Checker { get; set; }
 
         /// <summary>
         /// 用户音频请求唯一识别码
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
 
         /// <summary>

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 折扣预算ID
         /// </summary>
-        [XmlElement("budget_id")]
+        [Newtonsoft.Json.JsonProperty("budget_id")]
         public string BudgetId { get; set; }
 
         /// <summary>
@@ -26,13 +26,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 奖品id
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public string Id { get; set; }
 
         /// <summary>
         /// 单次优惠上限(元)
         /// </summary>
-        [XmlElement("max_discount_amt")]
+        [Newtonsoft.Json.JsonProperty("max_discount_amt")]
         public string MaxDiscountAmt { get; set; }
     }
 }

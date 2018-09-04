@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户在这个群里的昵称
         /// </summary>
-        [XmlElement("group_nickname")]
+        [Newtonsoft.Json.JsonProperty("group_nickname")]
         public string GroupNickname { get; set; }
 
         /// <summary>
         /// 个人昵称
         /// </summary>
-        [XmlElement("nickname")]
+        [Newtonsoft.Json.JsonProperty("nickname")]
         public string Nickname { get; set; }
 
         /// <summary>
         /// 用户的uid
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

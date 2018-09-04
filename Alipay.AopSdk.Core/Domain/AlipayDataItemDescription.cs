@@ -27,13 +27,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 描述标题，不得超过15个中文字符
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 套餐使用说明链接，必须是https的地址链接
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

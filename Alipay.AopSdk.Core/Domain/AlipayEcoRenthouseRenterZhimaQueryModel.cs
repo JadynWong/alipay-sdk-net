@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 身份证号
         /// </summary>
-        [XmlElement("card_no")]
+        [Newtonsoft.Json.JsonProperty("card_no")]
         public string CardNo { get; set; }
 
         /// <summary>
         /// 用户姓名
         /// </summary>
-        [XmlElement("user_name")]
+        [Newtonsoft.Json.JsonProperty("user_name")]
         public string UserName { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作员
         /// </summary>
-        [XmlElement("create_user")]
+        [Newtonsoft.Json.JsonProperty("create_user")]
         public string CreateUser { get; set; }
 
         /// <summary>
@@ -26,49 +26,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 组id
         /// </summary>
-        [XmlElement("group_id")]
+        [Newtonsoft.Json.JsonProperty("group_id")]
         public string GroupId { get; set; }
 
         /// <summary>
         /// 组名称
         /// </summary>
-        [XmlElement("group_name")]
+        [Newtonsoft.Json.JsonProperty("group_name")]
         public string GroupName { get; set; }
 
         /// <summary>
         /// 预留字段
         /// </summary>
-        [XmlElement("group_rule")]
+        [Newtonsoft.Json.JsonProperty("group_rule")]
         public string GroupRule { get; set; }
 
         /// <summary>
         /// 版本号 就是一个数据操作的时间戳
         /// </summary>
-        [XmlElement("group_version")]
+        [Newtonsoft.Json.JsonProperty("group_version")]
         public string GroupVersion { get; set; }
 
         /// <summary>
         /// 商户id
         /// </summary>
-        [XmlElement("merchant_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_id")]
         public string MerchantId { get; set; }
 
         /// <summary>
         /// open 启动 stop 停用
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 份数限制
         /// </summary>
-        [XmlElement("unit_count_limit")]
+        [Newtonsoft.Json.JsonProperty("unit_count_limit")]
         public string UnitCountLimit { get; set; }
 
         /// <summary>
         /// 修改操作小二
         /// </summary>
-        [XmlElement("update_user")]
+        [Newtonsoft.Json.JsonProperty("update_user")]
         public string UpdateUser { get; set; }
     }
 }

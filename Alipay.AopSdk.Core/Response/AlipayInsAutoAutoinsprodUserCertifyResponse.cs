@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 验证结果
         /// </summary>
-        [XmlElement("agent_cert_result")]
+        [Newtonsoft.Json.JsonProperty("agent_cert_result")]
         public string AgentCertResult { get; set; }
     }
 }

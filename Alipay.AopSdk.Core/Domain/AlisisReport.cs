@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 报表描述
         /// </summary>
-        [XmlElement("report_desc")]
+        [Newtonsoft.Json.JsonProperty("report_desc")]
         public string ReportDesc { get; set; }
 
         /// <summary>
         /// 报表名称
         /// </summary>
-        [XmlElement("report_name")]
+        [Newtonsoft.Json.JsonProperty("report_name")]
         public string ReportName { get; set; }
 
         /// <summary>
         /// 报表唯一标识
         /// </summary>
-        [XmlElement("report_uk")]
+        [Newtonsoft.Json.JsonProperty("report_uk")]
         public string ReportUk { get; set; }
     }
 }

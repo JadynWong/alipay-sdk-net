@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 描述营销活动涉及的业务类型  1：平台险业务
         /// </summary>
-        [XmlElement("business_type")]
+        [Newtonsoft.Json.JsonProperty("business_type")]
         public long BusinessType { get; set; }
 
         /// <summary>
@@ -26,19 +26,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保险营销平台营销标的标识
         /// </summary>
-        [XmlElement("mkt_obj_id")]
+        [Newtonsoft.Json.JsonProperty("mkt_obj_id")]
         public string MktObjId { get; set; }
 
         /// <summary>
         /// 保险营销平台的营销标的类型  1：淘宝商品
         /// </summary>
-        [XmlElement("mkt_obj_type")]
+        [Newtonsoft.Json.JsonProperty("mkt_obj_type")]
         public long MktObjType { get; set; }
 
         /// <summary>
         /// 请求流水id
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

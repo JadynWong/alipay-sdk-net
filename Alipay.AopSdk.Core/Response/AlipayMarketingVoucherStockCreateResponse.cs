@@ -11,25 +11,25 @@ namespace Aop.Api.Response
         /// <summary>
         /// 本次重复导入数量
         /// </summary>
-        [XmlElement("duplicate_count")]
+        [Newtonsoft.Json.JsonProperty("duplicate_count")]
         public long DuplicateCount { get; set; }
 
         /// <summary>
         /// 本次导入失败数量
         /// </summary>
-        [XmlElement("fail_count")]
+        [Newtonsoft.Json.JsonProperty("fail_count")]
         public long FailCount { get; set; }
 
         /// <summary>
         /// 库存ID, 用于后续追加和查询库存
         /// </summary>
-        [XmlElement("stock_id")]
+        [Newtonsoft.Json.JsonProperty("stock_id")]
         public string StockId { get; set; }
 
         /// <summary>
         /// 本次导入成功数量
         /// </summary>
-        [XmlElement("success_count")]
+        [Newtonsoft.Json.JsonProperty("success_count")]
         public long SuccessCount { get; set; }
     }
 }

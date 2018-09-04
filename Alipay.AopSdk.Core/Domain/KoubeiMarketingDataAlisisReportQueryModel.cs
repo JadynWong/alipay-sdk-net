@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 报表唯一标识
         /// </summary>
-        [XmlElement("report_uk")]
+        [Newtonsoft.Json.JsonProperty("report_uk")]
         public string ReportUk { get; set; }
     }
 }

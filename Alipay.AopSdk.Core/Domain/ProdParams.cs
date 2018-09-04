@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 预授权业务信息
         /// </summary>
-        [XmlElement("auth_biz_params")]
+        [Newtonsoft.Json.JsonProperty("auth_biz_params")]
         public string AuthBizParams { get; set; }
     }
 }

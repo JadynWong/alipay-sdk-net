@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 是否已经授权,已授权:true,未授权:false
         /// </summary>
-        [XmlElement("authorized")]
+        [Newtonsoft.Json.JsonProperty("authorized")]
         public bool Authorized { get; set; }
     }
 }

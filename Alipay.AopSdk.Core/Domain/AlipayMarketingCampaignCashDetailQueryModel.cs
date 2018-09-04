@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 要查询的现金红包活动号
         /// </summary>
-        [XmlElement("crowd_no")]
+        [Newtonsoft.Json.JsonProperty("crowd_no")]
         public string CrowdNo { get; set; }
     }
 }

@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 总页数
         /// </summary>
-        [XmlElement("page_count")]
+        [Newtonsoft.Json.JsonProperty("page_count")]
         public long PageCount { get; set; }
 
         /// <summary>
         /// 当前页码
         /// </summary>
-        [XmlElement("page_number")]
+        [Newtonsoft.Json.JsonProperty("page_number")]
         public long PageNumber { get; set; }
 
         /// <summary>
         /// 每页显示记录数
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>
         /// 符合条件的记录总数
         /// </summary>
-        [XmlElement("total")]
+        [Newtonsoft.Json.JsonProperty("total")]
         public long Total { get; set; }
     }
 }

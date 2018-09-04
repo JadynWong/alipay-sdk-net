@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模型描述
         /// </summary>
-        [XmlElement("model_desc")]
+        [Newtonsoft.Json.JsonProperty("model_desc")]
         public string ModelDesc { get; set; }
 
         /// <summary>
         /// 模型名称
         /// </summary>
-        [XmlElement("model_name")]
+        [Newtonsoft.Json.JsonProperty("model_name")]
         public string ModelName { get; set; }
 
         /// <summary>
         /// 模型唯一查询标识符
         /// </summary>
-        [XmlElement("model_uk")]
+        [Newtonsoft.Json.JsonProperty("model_uk")]
         public string ModelUk { get; set; }
 
         /// <summary>

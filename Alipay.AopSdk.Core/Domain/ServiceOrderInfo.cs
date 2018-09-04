@@ -13,55 +13,55 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务总金额，单位为元
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 商品服务所在类目的id
         /// </summary>
-        [XmlElement("category_code")]
+        [Newtonsoft.Json.JsonProperty("category_code")]
         public string CategoryCode { get; set; }
 
         /// <summary>
         /// 订单创建时间，格式为  yyyy-MM-dd HH:mm:ss
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 订单修改时间，格式为  yyyy-MM-dd HH:mm:ss
         /// </summary>
-        [XmlElement("gmt_modified")]
+        [Newtonsoft.Json.JsonProperty("gmt_modified")]
         public string GmtModified { get; set; }
 
         /// <summary>
         /// 订单最后支付时间，格式：  yyyy-MM-dd HH:mm:ss
         /// </summary>
-        [XmlElement("gmt_payment")]
+        [Newtonsoft.Json.JsonProperty("gmt_payment")]
         public string GmtPayment { get; set; }
 
         /// <summary>
         /// 订单最后退款时间，格式：  yyyy-MM-dd HH:mm:ss
         /// </summary>
-        [XmlElement("gmt_refund")]
+        [Newtonsoft.Json.JsonProperty("gmt_refund")]
         public string GmtRefund { get; set; }
 
         /// <summary>
         /// 消费者标注订单备注
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 第三方服务id
         /// </summary>
-        [XmlElement("out_service_id")]
+        [Newtonsoft.Json.JsonProperty("out_service_id")]
         public string OutServiceId { get; set; }
 
         /// <summary>
         /// 商品的商家端端SKU ID
         /// </summary>
-        [XmlElement("out_sku_id")]
+        [Newtonsoft.Json.JsonProperty("out_sku_id")]
         public string OutSkuId { get; set; }
 
         /// <summary>
@@ -74,61 +74,61 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务已付金额，单位为元
         /// </summary>
-        [XmlElement("payment_amount")]
+        [Newtonsoft.Json.JsonProperty("payment_amount")]
         public string PaymentAmount { get; set; }
 
         /// <summary>
         /// 单价，单位为元
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public string Price { get; set; }
 
         /// <summary>
         /// 份数
         /// </summary>
-        [XmlElement("quantity")]
+        [Newtonsoft.Json.JsonProperty("quantity")]
         public long Quantity { get; set; }
 
         /// <summary>
         /// 服务实际金额，单位为元
         /// </summary>
-        [XmlElement("real_amount")]
+        [Newtonsoft.Json.JsonProperty("real_amount")]
         public string RealAmount { get; set; }
 
         /// <summary>
         /// 订单退款金额，单位为元
         /// </summary>
-        [XmlElement("refund_amount")]
+        [Newtonsoft.Json.JsonProperty("refund_amount")]
         public string RefundAmount { get; set; }
 
         /// <summary>
         /// 到位的服务id
         /// </summary>
-        [XmlElement("service_id")]
+        [Newtonsoft.Json.JsonProperty("service_id")]
         public string ServiceId { get; set; }
 
         /// <summary>
         /// 服务订单号
         /// </summary>
-        [XmlElement("service_order_no")]
+        [Newtonsoft.Json.JsonProperty("service_order_no")]
         public string ServiceOrderNo { get; set; }
 
         /// <summary>
         /// 商品的内部SKU ID
         /// </summary>
-        [XmlElement("sku_id")]
+        [Newtonsoft.Json.JsonProperty("sku_id")]
         public string SkuId { get; set; }
 
         /// <summary>
         /// 支付宝交易号
         /// </summary>
-        [XmlElement("trade_no")]
+        [Newtonsoft.Json.JsonProperty("trade_no")]
         public string TradeNo { get; set; }
 
         /// <summary>
         /// 商品价格单位
         /// </summary>
-        [XmlElement("unit")]
+        [Newtonsoft.Json.JsonProperty("unit")]
         public string Unit { get; set; }
     }
 }

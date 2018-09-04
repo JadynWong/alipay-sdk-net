@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 角度
         /// </summary>
-        [XmlElement("angle")]
+        [Newtonsoft.Json.JsonProperty("angle")]
         public long Angle { get; set; }
 
         /// <summary>
         /// 分数
         /// </summary>
-        [XmlElement("bill_score")]
+        [Newtonsoft.Json.JsonProperty("bill_score")]
         public long BillScore { get; set; }
 
         /// <summary>
         /// 算法版本
         /// </summary>
-        [XmlElement("bill_version")]
+        [Newtonsoft.Json.JsonProperty("bill_version")]
         public string BillVersion { get; set; }
 
         /// <summary>

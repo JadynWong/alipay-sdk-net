@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户自定义参数，用户授权后，重定向到redirect_uri时会原样回传给商户。 为防止CSRF攻击，建议开发者请求授权时传入state参数，该参数要做到既不可预测，又可以证明客户端和当前第三方网站的登录认证状态存在关联。  只允许base64字符（长度小于等于100）
         /// </summary>
-        [XmlElement("state")]
+        [Newtonsoft.Json.JsonProperty("state")]
         public string State { get; set; }
     }
 }

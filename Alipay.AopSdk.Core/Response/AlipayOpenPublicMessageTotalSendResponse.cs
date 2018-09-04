@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 消息ID
         /// </summary>
-        [XmlElement("message_id")]
+        [Newtonsoft.Json.JsonProperty("message_id")]
         public string MessageId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作人信息
         /// </summary>
-        [XmlElement("operate_context")]
+        [Newtonsoft.Json.JsonProperty("operate_context")]
         public OperateContext OperateContext { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 出库通知单主体
         /// </summary>
-        [XmlElement("outbound_order")]
+        [Newtonsoft.Json.JsonProperty("outbound_order")]
         public OutboundOrder OutboundOrder { get; set; }
     }
 }

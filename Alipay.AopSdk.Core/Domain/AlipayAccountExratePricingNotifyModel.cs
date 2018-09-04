@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 标识该汇率提供给哪个客户使用
         /// </summary>
-        [XmlElement("client_id")]
+        [Newtonsoft.Json.JsonProperty("client_id")]
         public string ClientId { get; set; }
 
         /// <summary>
         /// 源汇率机构
         /// </summary>
-        [XmlElement("inst")]
+        [Newtonsoft.Json.JsonProperty("inst")]
         public string Inst { get; set; }
 
         /// <summary>
@@ -32,13 +32,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 该汇率的使用场景
         /// </summary>
-        [XmlElement("segment_id")]
+        [Newtonsoft.Json.JsonProperty("segment_id")]
         public string SegmentId { get; set; }
 
         /// <summary>
         /// 所在时区，所有的时间都是该时区的时间  支持 GMT+8 UTC+0 Europe/London 的格式
         /// </summary>
-        [XmlElement("time_zone")]
+        [Newtonsoft.Json.JsonProperty("time_zone")]
         public string TimeZone { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 标签id
         /// </summary>
-        [XmlElement("label_id")]
+        [Newtonsoft.Json.JsonProperty("label_id")]
         public string LabelId { get; set; }
     }
 }

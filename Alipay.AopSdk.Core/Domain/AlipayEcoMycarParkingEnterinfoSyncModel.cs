@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车牌号
         /// </summary>
-        [XmlElement("car_number")]
+        [Newtonsoft.Json.JsonProperty("car_number")]
         public string CarNumber { get; set; }
 
         /// <summary>
         /// 车辆入场的时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制
         /// </summary>
-        [XmlElement("in_time")]
+        [Newtonsoft.Json.JsonProperty("in_time")]
         public string InTime { get; set; }
 
         /// <summary>
         /// 支付宝停车场ID ，系统唯一
         /// </summary>
-        [XmlElement("parking_id")]
+        [Newtonsoft.Json.JsonProperty("parking_id")]
         public string ParkingId { get; set; }
     }
 }

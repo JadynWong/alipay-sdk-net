@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 查询机构关键词
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
     }
 }

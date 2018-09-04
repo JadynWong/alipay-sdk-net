@@ -20,85 +20,85 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商户请求的批次流水号，同请求中的"batch_no"。
         /// </summary>
-        [XmlElement("batch_no")]
+        [Newtonsoft.Json.JsonProperty("batch_no")]
         public string BatchNo { get; set; }
 
         /// <summary>
         /// 批次状态。  INIT 批次已接收  WAIT_APPLY 批次资金准备中  DEALING 批次处理中  FINISH 批次处理完成  FAIL 全部处理失败  UNKNOWN 未知状态
         /// </summary>
-        [XmlElement("batch_status")]
+        [Newtonsoft.Json.JsonProperty("batch_status")]
         public string BatchStatus { get; set; }
 
         /// <summary>
         /// 支付宝系统内部批次请求id。
         /// </summary>
-        [XmlElement("batch_trans_id")]
+        [Newtonsoft.Json.JsonProperty("batch_trans_id")]
         public string BatchTransId { get; set; }
 
         /// <summary>
         /// 批量代发业务标识。    批量代发到支付宝账户：BATCH_TRANS_ACC  批量代发到银行账户：BATCH_TRANS_BC
         /// </summary>
-        [XmlElement("biz_code")]
+        [Newtonsoft.Json.JsonProperty("biz_code")]
         public string BizCode { get; set; }
 
         /// <summary>
         /// 批量代发业务场景。    GLOBAL：全球代发，多币种代发（包括除人民币以外的同币种代发），需要支付宝做货币兑换。  LOCAL：纯人民币代发，不需要支付宝做货币兑换。
         /// </summary>
-        [XmlElement("biz_scene")]
+        [Newtonsoft.Json.JsonProperty("biz_scene")]
         public string BizScene { get; set; }
 
         /// <summary>
         /// 批次失败错误码.   大部分情况是没有的. 只有余额不足超时关闭或者付款方账户状态不正常
         /// </summary>
-        [XmlElement("error_code")]
+        [Newtonsoft.Json.JsonProperty("error_code")]
         public string ErrorCode { get; set; }
 
         /// <summary>
         /// 批次失败错误原因
         /// </summary>
-        [XmlElement("fail_reason")]
+        [Newtonsoft.Json.JsonProperty("fail_reason")]
         public string FailReason { get; set; }
 
         /// <summary>
         /// 当前页数
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public long PageNum { get; set; }
 
         /// <summary>
         /// 当前记录数（默认500，达不到500按实际记录返回）。
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>
         /// 付款方需要支付的金额，受理成功（status为APPLIED）之后才会有值，受理成功之前是0。
         /// </summary>
-        [XmlElement("payment_amount")]
+        [Newtonsoft.Json.JsonProperty("payment_amount")]
         public string PaymentAmount { get; set; }
 
         /// <summary>
         /// 支付币种, 与代发请求的payment_currency相同.
         /// </summary>
-        [XmlElement("payment_currency")]
+        [Newtonsoft.Json.JsonProperty("payment_currency")]
         public string PaymentCurrency { get; set; }
 
         /// <summary>
         /// 签约了批量代发产品的支付宝账号。
         /// </summary>
-        [XmlElement("sign_principal")]
+        [Newtonsoft.Json.JsonProperty("sign_principal")]
         public string SignPrincipal { get; set; }
 
         /// <summary>
         /// 总记录数
         /// </summary>
-        [XmlElement("total_item_count")]
+        [Newtonsoft.Json.JsonProperty("total_item_count")]
         public long TotalItemCount { get; set; }
 
         /// <summary>
         /// 总页数
         /// </summary>
-        [XmlElement("total_page_count")]
+        [Newtonsoft.Json.JsonProperty("total_page_count")]
         public long TotalPageCount { get; set; }
     }
 }

@@ -13,43 +13,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 钉钉企业应用ID
         /// </summary>
-        [XmlElement("agent_id")]
+        [Newtonsoft.Json.JsonProperty("agent_id")]
         public string AgentId { get; set; }
 
         /// <summary>
         /// 消息类型为text时表示消息内容、消息类型为link时表示消息描述
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
 
         /// <summary>
         /// 消息类型为link时的消息点击链接地址
         /// </summary>
-        [XmlElement("goto_url")]
+        [Newtonsoft.Json.JsonProperty("goto_url")]
         public string GotoUrl { get; set; }
 
         /// <summary>
         /// 消息类型为link时的图片地址，支持jpg格式图片，大小不超过1MB
         /// </summary>
-        [XmlElement("image_url")]
+        [Newtonsoft.Json.JsonProperty("image_url")]
         public string ImageUrl { get; set; }
 
         /// <summary>
         /// 消息类型，文本为text；链接为link
         /// </summary>
-        [XmlElement("msg_type")]
+        [Newtonsoft.Json.JsonProperty("msg_type")]
         public string MsgType { get; set; }
 
         /// <summary>
         /// 接收者，个人为single；部门为department
         /// </summary>
-        [XmlElement("receiver")]
+        [Newtonsoft.Json.JsonProperty("receiver")]
         public string Receiver { get; set; }
 
         /// <summary>
         /// 消息类型为link时的消息标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>

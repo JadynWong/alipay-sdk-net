@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 扩展结果
         /// </summary>
-        [XmlElement("extern_info")]
+        [Newtonsoft.Json.JsonProperty("extern_info")]
         public string ExternInfo { get; set; }
 
         /// <summary>
         /// 刷脸认证的唯一标识
         /// </summary>
-        [XmlElement("zim_id")]
+        [Newtonsoft.Json.JsonProperty("zim_id")]
         public string ZimId { get; set; }
     }
 }

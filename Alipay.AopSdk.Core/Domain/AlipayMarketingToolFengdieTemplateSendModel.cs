@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 企业 VIP 用户的ID（以 2088 开头的ID）
         /// </summary>
-        [XmlElement("operator")]
+        [Newtonsoft.Json.JsonProperty("operator")]
         public string Operator { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 欲分配的站点模板的名称，可以在模板包的 package.json 文件中找到 name 字段
         /// </summary>
-        [XmlElement("template_name")]
+        [Newtonsoft.Json.JsonProperty("template_name")]
         public string TemplateName { get; set; }
     }
 }

@@ -20,25 +20,25 @@ namespace Aop.Api.Response
         /// <summary>
         /// 当前页码,页码从1开始
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public long PageNum { get; set; }
 
         /// <summary>
         /// 每页条数
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>
         /// 总页数
         /// </summary>
-        [XmlElement("total_pages")]
+        [Newtonsoft.Json.JsonProperty("total_pages")]
         public long TotalPages { get; set; }
 
         /// <summary>
         /// 总条数
         /// </summary>
-        [XmlElement("total_size")]
+        [Newtonsoft.Json.JsonProperty("total_size")]
         public long TotalSize { get; set; }
     }
 }

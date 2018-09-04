@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 操作返回码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 操作提示文案
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
     }
 }

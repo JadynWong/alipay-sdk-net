@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车主平台售后编号
         /// </summary>
-        [XmlElement("aftersale_no")]
+        [Newtonsoft.Json.JsonProperty("aftersale_no")]
         public string AftersaleNo { get; set; }
 
         /// <summary>
         /// 客服拒绝退款原因描述
         /// </summary>
-        [XmlElement("refuse_reason")]
+        [Newtonsoft.Json.JsonProperty("refuse_reason")]
         public string RefuseReason { get; set; }
 
         /// <summary>
         /// 1：受理 2：拒绝
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

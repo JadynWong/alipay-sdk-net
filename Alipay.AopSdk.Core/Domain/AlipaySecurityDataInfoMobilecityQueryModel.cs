@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 电话号码
         /// </summary>
-        [XmlElement("phone")]
+        [Newtonsoft.Json.JsonProperty("phone")]
         public string Phone { get; set; }
     }
 }

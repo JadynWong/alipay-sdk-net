@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 调用alipay.offline.material.image.upload接口将视频上传到素材中心后，生成的ID
         /// </summary>
-        [XmlElement("location")]
+        [Newtonsoft.Json.JsonProperty("location")]
         public string Location { get; set; }
 
         /// <summary>
         /// 视频名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
     }
 }

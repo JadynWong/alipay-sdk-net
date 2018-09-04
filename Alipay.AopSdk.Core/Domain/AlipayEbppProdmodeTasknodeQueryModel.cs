@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 任务编号
         /// </summary>
-        [XmlElement("task_id")]
+        [Newtonsoft.Json.JsonProperty("task_id")]
         public string TaskId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// sdafsdfsaf
         /// </summary>
-        [XmlElement("adsfghjf")]
+        [Newtonsoft.Json.JsonProperty("adsfghjf")]
         public AlipayItemVoucherTemplete Adsfghjf { get; set; }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// ghjkhg
         /// </summary>
-        [XmlElement("hjgdfs")]
+        [Newtonsoft.Json.JsonProperty("hjgdfs")]
         public string Hjgdfs { get; set; }
 
         /// <summary>

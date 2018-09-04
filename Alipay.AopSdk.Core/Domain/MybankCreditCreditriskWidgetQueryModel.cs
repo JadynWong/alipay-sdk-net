@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝userid
         /// </summary>
-        [XmlElement("alipay_user_id")]
+        [Newtonsoft.Json.JsonProperty("alipay_user_id")]
         public string AlipayUserId { get; set; }
     }
 }

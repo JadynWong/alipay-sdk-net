@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 车牌号
         /// </summary>
-        [XmlElement("car_no")]
+        [Newtonsoft.Json.JsonProperty("car_no")]
         public string CarNo { get; set; }
     }
 }

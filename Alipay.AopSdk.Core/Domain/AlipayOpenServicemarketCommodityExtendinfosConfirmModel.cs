@@ -20,25 +20,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务Id
         /// </summary>
-        [XmlElement("commodity_id")]
+        [Newtonsoft.Json.JsonProperty("commodity_id")]
         public string CommodityId { get; set; }
 
         /// <summary>
         /// status 为驳回时 必须输入驳回原因
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 公服BD审核结果：成功还是失败:  status 【0：表示不通过 ， 1：表示通过】
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 用户Id
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 服务窗菜单
         /// </summary>
-        [XmlElement("public_menu")]
+        [Newtonsoft.Json.JsonProperty("public_menu")]
         public string PublicMenu { get; set; }
     }
 }

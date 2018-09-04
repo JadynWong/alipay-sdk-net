@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 明细条目所归属的账期
         /// </summary>
-        [XmlElement("acct_period")]
+        [Newtonsoft.Json.JsonProperty("acct_period")]
         public string AcctPeriod { get; set; }
 
         /// <summary>
         /// 缴费明细项金额
         /// </summary>
-        [XmlElement("bill_entry_amount")]
+        [Newtonsoft.Json.JsonProperty("bill_entry_amount")]
         public string BillEntryAmount { get; set; }
 
         /// <summary>
         /// 用于标识该笔缴费对应的缴费明细项外部编号；如果是预存缴费，则为外部户号
         /// </summary>
-        [XmlElement("bill_entry_id")]
+        [Newtonsoft.Json.JsonProperty("bill_entry_id")]
         public string BillEntryId { get; set; }
 
         /// <summary>
         /// 缴费明细项类型
         /// </summary>
-        [XmlElement("cost_type")]
+        [Newtonsoft.Json.JsonProperty("cost_type")]
         public string CostType { get; set; }
     }
 }

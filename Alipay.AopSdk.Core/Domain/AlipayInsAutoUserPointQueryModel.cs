@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车险活动类型编码。  攒油活动：SAVE_OIL
         /// </summary>
-        [XmlElement("auto_campaign_type")]
+        [Newtonsoft.Json.JsonProperty("auto_campaign_type")]
         public string AutoCampaignType { get; set; }
 
         /// <summary>
         /// 蚂蚁统一会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

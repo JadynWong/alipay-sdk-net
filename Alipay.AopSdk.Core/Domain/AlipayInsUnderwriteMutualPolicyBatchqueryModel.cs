@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 渠道来源
         /// </summary>
-        [XmlElement("channel")]
+        [Newtonsoft.Json.JsonProperty("channel")]
         public string Channel { get; set; }
 
         /// <summary>
         /// 计划ID，宝贝计划(BAOBEI_PLAN)
         /// </summary>
-        [XmlElement("plan_no")]
+        [Newtonsoft.Json.JsonProperty("plan_no")]
         public string PlanNo { get; set; }
 
         /// <summary>
         /// 来源，如支付宝客户端(MOBILE_APP)
         /// </summary>
-        [XmlElement("source")]
+        [Newtonsoft.Json.JsonProperty("source")]
         public string Source { get; set; }
 
         /// <summary>
         /// 蚂蚁统一会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

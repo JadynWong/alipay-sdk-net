@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 社会信用代码
         /// </summary>
-        [XmlElement("creditcode")]
+        [Newtonsoft.Json.JsonProperty("creditcode")]
         public string Creditcode { get; set; }
 
         /// <summary>
         /// 公司名字
         /// </summary>
-        [XmlElement("entname")]
+        [Newtonsoft.Json.JsonProperty("entname")]
         public string Entname { get; set; }
     }
 }

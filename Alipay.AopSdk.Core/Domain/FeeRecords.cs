@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 费用余额，单位为元，小数点保留2位
         /// </summary>
-        [XmlElement("balance")]
+        [Newtonsoft.Json.JsonProperty("balance")]
         public string Balance { get; set; }
 
         /// <summary>
         /// 交易时间
         /// </summary>
-        [XmlElement("date")]
+        [Newtonsoft.Json.JsonProperty("date")]
         public string Date { get; set; }
 
         /// <summary>
         /// 费用交易流水备注
         /// </summary>
-        [XmlElement("remark")]
+        [Newtonsoft.Json.JsonProperty("remark")]
         public string Remark { get; set; }
 
         /// <summary>
         /// 费用交易额度
         /// </summary>
-        [XmlElement("total_amount")]
+        [Newtonsoft.Json.JsonProperty("total_amount")]
         public string TotalAmount { get; set; }
     }
 }

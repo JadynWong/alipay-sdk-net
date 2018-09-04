@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 分组ID，整型值
         /// </summary>
-        [XmlElement("group_id")]
+        [Newtonsoft.Json.JsonProperty("group_id")]
         public string GroupId { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 分组名称，仅支持中文、字母、数字、下划线的组合。
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
     }
 }

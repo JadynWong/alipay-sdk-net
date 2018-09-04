@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车主平台生成的订单号。
         /// </summary>
-        [XmlElement("order_no")]
+        [Newtonsoft.Json.JsonProperty("order_no")]
         public string OrderNo { get; set; }
     }
 }

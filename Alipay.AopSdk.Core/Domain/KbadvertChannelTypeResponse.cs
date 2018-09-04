@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 渠道描述
         /// </summary>
-        [XmlElement("desc")]
+        [Newtonsoft.Json.JsonProperty("desc")]
         public string Desc { get; set; }
 
         /// <summary>
         /// 排序，暂时无用
         /// </summary>
-        [XmlElement("order")]
+        [Newtonsoft.Json.JsonProperty("order")]
         public string Order { get; set; }
 
         /// <summary>
         /// 类型
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

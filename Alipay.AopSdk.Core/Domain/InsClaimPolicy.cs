@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保单号
         /// </summary>
-        [XmlElement("policy_no")]
+        [Newtonsoft.Json.JsonProperty("policy_no")]
         public string PolicyNo { get; set; }
     }
 }

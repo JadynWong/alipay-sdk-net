@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品详情-套餐标题。最多不超过15个汉字，30个字符
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模板参数信息
         /// </summary>
-        [XmlElement("context")]
+        [Newtonsoft.Json.JsonProperty("context")]
         public string Context { get; set; }
 
         /// <summary>
         /// 模板ID
         /// </summary>
-        [XmlElement("templateid")]
+        [Newtonsoft.Json.JsonProperty("templateid")]
         public string Templateid { get; set; }
     }
 }

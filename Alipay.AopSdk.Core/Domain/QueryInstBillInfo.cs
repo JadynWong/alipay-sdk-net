@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账单金额
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 余额
         /// </summary>
-        [XmlElement("balance")]
+        [Newtonsoft.Json.JsonProperty("balance")]
         public string Balance { get; set; }
 
         /// <summary>
         /// 账单日期
         /// </summary>
-        [XmlElement("bill_date")]
+        [Newtonsoft.Json.JsonProperty("bill_date")]
         public string BillDate { get; set; }
 
         /// <summary>
@@ -38,73 +38,73 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 滞纳金
         /// </summary>
-        [XmlElement("bill_fines")]
+        [Newtonsoft.Json.JsonProperty("bill_fines")]
         public string BillFines { get; set; }
 
         /// <summary>
         /// 账单流水
         /// </summary>
-        [XmlElement("bill_key")]
+        [Newtonsoft.Json.JsonProperty("bill_key")]
         public string BillKey { get; set; }
 
         /// <summary>
         /// 户名
         /// </summary>
-        [XmlElement("bill_user_name")]
+        [Newtonsoft.Json.JsonProperty("bill_user_name")]
         public string BillUserName { get; set; }
 
         /// <summary>
         /// JDBXINHUI
         /// </summary>
-        [XmlElement("charge_inst")]
+        [Newtonsoft.Json.JsonProperty("charge_inst")]
         public string ChargeInst { get; set; }
 
         /// <summary>
         /// 查询欠费单的惟一标识
         /// </summary>
-        [XmlElement("charge_uniq_id")]
+        [Newtonsoft.Json.JsonProperty("charge_uniq_id")]
         public string ChargeUniqId { get; set; }
 
         /// <summary>
         /// 销账机构
         /// </summary>
-        [XmlElement("chargeoff_inst")]
+        [Newtonsoft.Json.JsonProperty("chargeoff_inst")]
         public string ChargeoffInst { get; set; }
 
         /// <summary>
         /// 销账机构给出账机构分配的ID
         /// </summary>
-        [XmlElement("company_id")]
+        [Newtonsoft.Json.JsonProperty("company_id")]
         public string CompanyId { get; set; }
 
         /// <summary>
         /// 扩展属性
         /// </summary>
-        [XmlElement("extend")]
+        [Newtonsoft.Json.JsonProperty("extend")]
         public string Extend { get; set; }
 
         /// <summary>
         /// 业务类型
         /// </summary>
-        [XmlElement("order_type")]
+        [Newtonsoft.Json.JsonProperty("order_type")]
         public string OrderType { get; set; }
 
         /// <summary>
         /// 外部流水号
         /// </summary>
-        [XmlElement("out_id")]
+        [Newtonsoft.Json.JsonProperty("out_id")]
         public string OutId { get; set; }
 
         /// <summary>
         /// 错误信息
         /// </summary>
-        [XmlElement("return_message")]
+        [Newtonsoft.Json.JsonProperty("return_message")]
         public string ReturnMessage { get; set; }
 
         /// <summary>
         /// 子业务类型
         /// </summary>
-        [XmlElement("sub_order_type")]
+        [Newtonsoft.Json.JsonProperty("sub_order_type")]
         public string SubOrderType { get; set; }
     }
 }

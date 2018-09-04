@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 机具编号
         /// </summary>
-        [XmlElement("device_id")]
+        [Newtonsoft.Json.JsonProperty("device_id")]
         public string DeviceId { get; set; }
 
         /// <summary>
         /// 解绑时间
         /// </summary>
-        [XmlElement("unbind_time")]
+        [Newtonsoft.Json.JsonProperty("unbind_time")]
         public string UnbindTime { get; set; }
     }
 }

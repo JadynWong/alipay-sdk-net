@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 文本或图片对应的请求唯一值，用于标识文本或图片内容
         /// </summary>
-        [XmlElement("data_id")]
+        [Newtonsoft.Json.JsonProperty("data_id")]
         public string DataId { get; set; }
 
         /// <summary>
         /// 数据来源类型:TEXT--文本，IMAGE--图片
         /// </summary>
-        [XmlElement("scene_type")]
+        [Newtonsoft.Json.JsonProperty("scene_type")]
         public string SceneType { get; set; }
 
         /// <summary>
         /// 待校验的文本数据(如果包含富文本，请一起传入)
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>

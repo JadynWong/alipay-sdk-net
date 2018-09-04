@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 码类型，可空，默认为吱口令类型『share_code』
         /// </summary>
-        [XmlElement("code_type")]
+        [Newtonsoft.Json.JsonProperty("code_type")]
         public string CodeType { get; set; }
 
         /// <summary>
         /// 扩展属性，key-value json串
         /// </summary>
-        [XmlElement("ext_data")]
+        [Newtonsoft.Json.JsonProperty("ext_data")]
         public string ExtData { get; set; }
 
         /// <summary>
         /// 8位吱口令token
         /// </summary>
-        [XmlElement("token")]
+        [Newtonsoft.Json.JsonProperty("token")]
         public string Token { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 发票抬头
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public InvoiceTitleModel Title { get; set; }
     }
 }

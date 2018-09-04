@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 授权码
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
         /// 当前页码，从1开始
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public long PageNum { get; set; }
 
         /// <summary>
         /// 分页大小
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>

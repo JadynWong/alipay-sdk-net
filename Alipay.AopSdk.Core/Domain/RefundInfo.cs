@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 退款金额
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 商品单ID
         /// </summary>
-        [XmlElement("item_order_no")]
+        [Newtonsoft.Json.JsonProperty("item_order_no")]
         public string ItemOrderNo { get; set; }
     }
 }

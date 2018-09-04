@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 支付宝交易号
         /// </summary>
-        [XmlElement("trade_no")]
+        [Newtonsoft.Json.JsonProperty("trade_no")]
         public string TradeNo { get; set; }
     }
 }

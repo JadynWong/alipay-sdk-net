@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 不存在记录的报关请求号。多个值用逗号分隔，单次最多10个;每个报关请求号String(32)
         /// </summary>
-        [XmlElement("not_found")]
+        [Newtonsoft.Json.JsonProperty("not_found")]
         public string NotFound { get; set; }
 
         /// <summary>

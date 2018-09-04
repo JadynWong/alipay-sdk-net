@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 外部单品的描述信息（此字段暂时无用）
         /// </summary>
-        [XmlElement("desc")]
+        [Newtonsoft.Json.JsonProperty("desc")]
         public string Desc { get; set; }
 
         /// <summary>

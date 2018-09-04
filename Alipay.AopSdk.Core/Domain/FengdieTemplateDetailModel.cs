@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模板 id
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public long Id { get; set; }
 
         /// <summary>
@@ -26,37 +26,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模板名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 模板包拥有者
         /// </summary>
-        [XmlElement("owner")]
+        [Newtonsoft.Json.JsonProperty("owner")]
         public string Owner { get; set; }
 
         /// <summary>
         /// 模板包预览图，开发者在模板根目录放置的一张命名为snapshot.png的图片
         /// </summary>
-        [XmlElement("snapshot")]
+        [Newtonsoft.Json.JsonProperty("snapshot")]
         public string Snapshot { get; set; }
 
         /// <summary>
         /// 模板包描述，开发者在package.json里指定
         /// </summary>
-        [XmlElement("summary")]
+        [Newtonsoft.Json.JsonProperty("summary")]
         public string Summary { get; set; }
 
         /// <summary>
         /// 模板标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 模板版本号
         /// </summary>
-        [XmlElement("ver")]
+        [Newtonsoft.Json.JsonProperty("ver")]
         public string Ver { get; set; }
     }
 }

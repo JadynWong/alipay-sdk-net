@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 文本消息的内容
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
 
         /// <summary>
         /// 文本消息的标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

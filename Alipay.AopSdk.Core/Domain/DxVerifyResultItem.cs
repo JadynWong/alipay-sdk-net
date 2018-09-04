@@ -12,49 +12,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 错误码
         /// </summary>
-        [XmlElement("error_code")]
+        [Newtonsoft.Json.JsonProperty("error_code")]
         public string ErrorCode { get; set; }
 
         /// <summary>
         /// 错误信息
         /// </summary>
-        [XmlElement("error_msg")]
+        [Newtonsoft.Json.JsonProperty("error_msg")]
         public string ErrorMsg { get; set; }
 
         /// <summary>
         /// 验证的输入参数，map的json格式序列化传递
         /// </summary>
-        [XmlElement("input")]
+        [Newtonsoft.Json.JsonProperty("input")]
         public string Input { get; set; }
 
         /// <summary>
         /// 行号
         /// </summary>
-        [XmlElement("line")]
+        [Newtonsoft.Json.JsonProperty("line")]
         public long Line { get; set; }
 
         /// <summary>
         /// 输出值，map的json格式序列化传递
         /// </summary>
-        [XmlElement("output")]
+        [Newtonsoft.Json.JsonProperty("output")]
         public string Output { get; set; }
 
         /// <summary>
         /// 预测的结果值，map的json 格式序列化传递
         /// </summary>
-        [XmlElement("predict")]
+        [Newtonsoft.Json.JsonProperty("predict")]
         public string Predict { get; set; }
 
         /// <summary>
         /// 验证是否成功
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
 
         /// <summary>
         /// 验证路径
         /// </summary>
-        [XmlElement("trace")]
+        [Newtonsoft.Json.JsonProperty("trace")]
         public string Trace { get; set; }
     }
 }

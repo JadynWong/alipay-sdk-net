@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 查询主键类型(枚举值key对应于请求对象中查询主键列表的key)  advert-推广  mission-分佣任务  voucher-券
         /// </summary>
-        [XmlElement("identify_type")]
+        [Newtonsoft.Json.JsonProperty("identify_type")]
         public string IdentifyType { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 广告ID
         /// </summary>
-        [XmlElement("adv_id")]
+        [Newtonsoft.Json.JsonProperty("adv_id")]
         public string AdvId { get; set; }
 
         /// <summary>

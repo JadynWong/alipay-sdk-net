@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务logo
         /// </summary>
-        [XmlElement("logo")]
+        [Newtonsoft.Json.JsonProperty("logo")]
         public string Logo { get; set; }
 
         /// <summary>
         /// 服务备注
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 服务名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 服务地址
         /// </summary>
-        [XmlElement("service_url")]
+        [Newtonsoft.Json.JsonProperty("service_url")]
         public string ServiceUrl { get; set; }
     }
 }

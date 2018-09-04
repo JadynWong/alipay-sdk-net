@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 渠道id
         /// </summary>
-        [XmlElement("channel_id")]
+        [Newtonsoft.Json.JsonProperty("channel_id")]
         public string ChannelId { get; set; }
 
         /// <summary>
         /// 渠道名称
         /// </summary>
-        [XmlElement("channel_name")]
+        [Newtonsoft.Json.JsonProperty("channel_name")]
         public string ChannelName { get; set; }
 
         /// <summary>
         /// 查询时间段内的推广数据
         /// </summary>
-        [XmlElement("part_promote_data")]
+        [Newtonsoft.Json.JsonProperty("part_promote_data")]
         public PromoteDataModel PartPromoteData { get; set; }
 
         /// <summary>
         /// 总推广数据
         /// </summary>
-        [XmlElement("total_promote_data")]
+        [Newtonsoft.Json.JsonProperty("total_promote_data")]
         public PromoteDataModel TotalPromoteData { get; set; }
     }
 }

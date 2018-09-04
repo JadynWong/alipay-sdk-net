@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账期(格式为yyyyMM)
         /// </summary>
-        [XmlElement("date")]
+        [Newtonsoft.Json.JsonProperty("date")]
         public string Date { get; set; }
 
         /// <summary>
         /// 账单类型  deal-交易账单  settle-结算账单
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

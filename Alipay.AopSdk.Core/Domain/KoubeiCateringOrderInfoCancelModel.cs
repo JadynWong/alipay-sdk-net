@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 关单时间,格式yyyy-mm-dd
         /// </summary>
-        [XmlElement("close_time")]
+        [Newtonsoft.Json.JsonProperty("close_time")]
         public string CloseTime { get; set; }
 
         /// <summary>
         /// pos业务订单外部主键信息
         /// </summary>
-        [XmlElement("pos_order_key")]
+        [Newtonsoft.Json.JsonProperty("pos_order_key")]
         public PosOrderKey PosOrderKey { get; set; }
     }
 }

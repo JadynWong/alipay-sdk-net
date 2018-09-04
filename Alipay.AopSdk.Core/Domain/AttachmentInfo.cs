@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝返回的图片在文件存储平台的标识
         /// </summary>
-        [XmlElement("atta_url")]
+        [Newtonsoft.Json.JsonProperty("atta_url")]
         public string AttaUrl { get; set; }
 
         /// <summary>
         /// 图片名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 附件类型,PROMO_PIC:营销物料照
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

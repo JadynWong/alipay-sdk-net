@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// sdfghsgafds
         /// </summary>
-        [XmlElement("wasfdasdf")]
+        [Newtonsoft.Json.JsonProperty("wasfdasdf")]
         public string Wasfdasdf { get; set; }
     }
 }

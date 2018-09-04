@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 获取云凤蝶站点列表返回值模型
         /// </summary>
-        [XmlElement("data")]
+        [Newtonsoft.Json.JsonProperty("data")]
         public FengdieSitesListRespModel Data { get; set; }
     }
 }

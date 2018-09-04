@@ -11,19 +11,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 授权码
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
         /// appid
         /// </summary>
-        [XmlElement("requst_app_id")]
+        [Newtonsoft.Json.JsonProperty("requst_app_id")]
         public string RequstAppId { get; set; }
 
         /// <summary>
         /// scope
         /// </summary>
-        [XmlElement("scope")]
+        [Newtonsoft.Json.JsonProperty("scope")]
         public string Scope { get; set; }
     }
 }

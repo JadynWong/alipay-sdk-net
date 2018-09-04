@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 芝麻分分段 Z0-Z7
         /// </summary>
-        [XmlElement("zrank")]
+        [Newtonsoft.Json.JsonProperty("zrank")]
         public string Zrank { get; set; }
     }
 }

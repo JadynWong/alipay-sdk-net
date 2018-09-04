@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 备注信息
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号
         /// </summary>
-        [XmlElement("sub_merchant_id")]
+        [Newtonsoft.Json.JsonProperty("sub_merchant_id")]
         public string SubMerchantId { get; set; }
     }
 }

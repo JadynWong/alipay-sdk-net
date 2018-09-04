@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 省市编号
         /// </summary>
-        [XmlElement("adcode")]
+        [Newtonsoft.Json.JsonProperty("adcode")]
         public string Adcode { get; set; }
 
         /// <summary>
         /// 查询类型，queryType=1,查询省下面的市信息
         /// </summary>
-        [XmlElement("query_type")]
+        [Newtonsoft.Json.JsonProperty("query_type")]
         public string QueryType { get; set; }
     }
 }

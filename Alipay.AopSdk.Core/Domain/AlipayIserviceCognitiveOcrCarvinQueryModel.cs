@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 汽车VIN 图片base64 encode内容
         /// </summary>
-        [XmlElement("image_content")]
+        [Newtonsoft.Json.JsonProperty("image_content")]
         public string ImageContent { get; set; }
     }
 }

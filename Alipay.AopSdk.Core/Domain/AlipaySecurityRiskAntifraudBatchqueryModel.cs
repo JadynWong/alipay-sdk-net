@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// partner_name+唯一+作为标识调用者身份的字段+用户填入
         /// </summary>
-        [XmlElement("partner_name")]
+        [Newtonsoft.Json.JsonProperty("partner_name")]
         public string PartnerName { get; set; }
 
         /// <summary>

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 还款学生的身份证号码
         /// </summary>
-        [XmlElement("cert_no")]
+        [Newtonsoft.Json.JsonProperty("cert_no")]
         public string CertNo { get; set; }
 
         /// <summary>
         /// 还款学生的支付宝账号
         /// </summary>
-        [XmlElement("logon_id")]
+        [Newtonsoft.Json.JsonProperty("logon_id")]
         public string LogonId { get; set; }
     }
 }

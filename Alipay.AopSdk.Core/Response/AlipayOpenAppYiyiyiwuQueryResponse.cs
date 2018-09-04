@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 12
         /// </summary>
-        [XmlElement("chucan")]
+        [Newtonsoft.Json.JsonProperty("chucan")]
         public string Chucan { get; set; }
     }
 }

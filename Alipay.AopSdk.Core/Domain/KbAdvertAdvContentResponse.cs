@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 二维码类型的内容模型（当content_type为codec时，返回该模型）
         /// </summary>
-        [XmlElement("content_codec")]
+        [Newtonsoft.Json.JsonProperty("content_codec")]
         public KbAdvertContentCodec ContentCodec { get; set; }
 
         /// <summary>
         /// 口令红包类型的内容模型（当content_type为passwordRed时，返回该模型）
         /// </summary>
-        [XmlElement("content_password")]
+        [Newtonsoft.Json.JsonProperty("content_password")]
         public KbAdvertContentPassword ContentPassword { get; set; }
 
         /// <summary>
@@ -32,13 +32,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 短链接类型的内容模型（当content_type为shortLink时，返回该模型）
         /// </summary>
-        [XmlElement("content_short_link")]
+        [Newtonsoft.Json.JsonProperty("content_short_link")]
         public KbAdvertContentShortLink ContentShortLink { get; set; }
 
         /// <summary>
         /// 广告内容类型；  shortLink：短链接；  codec：二维码；  passwordRed：口令红包；  shareCode：吱口令；
         /// </summary>
-        [XmlElement("content_type")]
+        [Newtonsoft.Json.JsonProperty("content_type")]
         public string ContentType { get; set; }
     }
 }

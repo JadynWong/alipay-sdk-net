@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 二次确认参数，防止篡改
         /// </summary>
-        [XmlElement("confirm_params")]
+        [Newtonsoft.Json.JsonProperty("confirm_params")]
         public string ConfirmParams { get; set; }
 
         /// <summary>
         /// 安全请求生成的唯一ID
         /// </summary>
-        [XmlElement("security_id")]
+        [Newtonsoft.Json.JsonProperty("security_id")]
         public string SecurityId { get; set; }
     }
 }

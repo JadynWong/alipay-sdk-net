@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 该型号所属类目的类目id
         /// </summary>
-        [XmlElement("category_id")]
+        [Newtonsoft.Json.JsonProperty("category_id")]
         public string CategoryId { get; set; }
 
         /// <summary>
@@ -26,37 +26,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 配网链接地址
         /// </summary>
-        [XmlElement("connection_url")]
+        [Newtonsoft.Json.JsonProperty("connection_url")]
         public string ConnectionUrl { get; set; }
 
         /// <summary>
         /// 关于型号的描述信息
         /// </summary>
-        [XmlElement("decription")]
+        [Newtonsoft.Json.JsonProperty("decription")]
         public string Decription { get; set; }
 
         /// <summary>
         /// 型号的图标图片地址
         /// </summary>
-        [XmlElement("icon")]
+        [Newtonsoft.Json.JsonProperty("icon")]
         public string Icon { get; set; }
 
         /// <summary>
         /// 制造商
         /// </summary>
-        [XmlElement("manufacturer")]
+        [Newtonsoft.Json.JsonProperty("manufacturer")]
         public string Manufacturer { get; set; }
 
         /// <summary>
         /// 协议服务商用于唯一标识一个设备型号的型号id
         /// </summary>
-        [XmlElement("model_id")]
+        [Newtonsoft.Json.JsonProperty("model_id")]
         public string ModelId { get; set; }
 
         /// <summary>
         /// 设备型号的名称
         /// </summary>
-        [XmlElement("model_name")]
+        [Newtonsoft.Json.JsonProperty("model_name")]
         public string ModelName { get; set; }
     }
 }

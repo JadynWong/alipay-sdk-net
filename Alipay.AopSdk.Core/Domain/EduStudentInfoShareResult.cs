@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 教育分类
         /// </summary>
-        [XmlElement("biz_type")]
+        [Newtonsoft.Json.JsonProperty("biz_type")]
         public string BizType { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户的userid
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

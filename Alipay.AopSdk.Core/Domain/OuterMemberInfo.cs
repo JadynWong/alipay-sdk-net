@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户记录的用户信息
         /// </summary>
-        [XmlElement("user_info")]
+        [Newtonsoft.Json.JsonProperty("user_info")]
         public string UserInfo { get; set; }
     }
 }

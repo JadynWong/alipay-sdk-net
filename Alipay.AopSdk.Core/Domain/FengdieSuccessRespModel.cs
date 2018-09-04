@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 判断请求操作是否成功，值为 true 或者 false
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// ddd
         /// </summary>
-        [XmlElement("admin")]
+        [Newtonsoft.Json.JsonProperty("admin")]
         public string Admin { get; set; }
     }
 }

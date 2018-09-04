@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保险营销账号Id
         /// </summary>
-        [XmlElement("account_id")]
+        [Newtonsoft.Json.JsonProperty("account_id")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// 保险营销账号类型
         /// </summary>
-        [XmlElement("account_type")]
+        [Newtonsoft.Json.JsonProperty("account_type")]
         public long AccountType { get; set; }
 
         /// <summary>
         /// 保险营销业务类型
         /// </summary>
-        [XmlElement("business_type")]
+        [Newtonsoft.Json.JsonProperty("business_type")]
         public long BusinessType { get; set; }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 请求流水id
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

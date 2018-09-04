@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 具体描述信息列表
         /// </summary>
-        [XmlElement("details")]
+        [Newtonsoft.Json.JsonProperty("details")]
         public string Details { get; set; }
 
         /// <summary>
         /// 图片描述信息
         /// </summary>
-        [XmlElement("images")]
+        [Newtonsoft.Json.JsonProperty("images")]
         public string Images { get; set; }
 
         /// <summary>
         /// 券说明的标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 券外部详情描述
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

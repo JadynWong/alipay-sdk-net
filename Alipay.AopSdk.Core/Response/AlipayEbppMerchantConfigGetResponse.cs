@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商户的用户ID
         /// </summary>
-        [XmlElement("merchant_user_id")]
+        [Newtonsoft.Json.JsonProperty("merchant_user_id")]
         public string MerchantUserId { get; set; }
     }
 }

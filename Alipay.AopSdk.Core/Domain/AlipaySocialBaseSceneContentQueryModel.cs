@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 城市id
         /// </summary>
-        [XmlElement("city_id")]
+        [Newtonsoft.Json.JsonProperty("city_id")]
         public string CityId { get; set; }
 
         /// <summary>
         /// 内容中台提供的运营后台配置场景id
         /// </summary>
-        [XmlElement("scene_id")]
+        [Newtonsoft.Json.JsonProperty("scene_id")]
         public string SceneId { get; set; }
 
         /// <summary>
         /// 返回文章列表的个数，目前最多10条
         /// </summary>
-        [XmlElement("top_size")]
+        [Newtonsoft.Json.JsonProperty("top_size")]
         public long TopSize { get; set; }
 
         /// <summary>
         /// 蚂蚁统一会员ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

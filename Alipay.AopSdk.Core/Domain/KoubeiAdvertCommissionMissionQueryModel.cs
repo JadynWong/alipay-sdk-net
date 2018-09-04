@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 主键类型  activity_id：运营活动ID  voucher：商品ID  mission：分佣任务ID
         /// </summary>
-        [XmlElement("identify_type")]
+        [Newtonsoft.Json.JsonProperty("identify_type")]
         public string IdentifyType { get; set; }
     }
 }

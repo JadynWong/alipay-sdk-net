@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保险公司定损单号，同之前调用的“提交车险图像定损请求”接口中的定损单号。
         /// </summary>
-        [XmlElement("estimate_no")]
+        [Newtonsoft.Json.JsonProperty("estimate_no")]
         public string EstimateNo { get; set; }
     }
 }

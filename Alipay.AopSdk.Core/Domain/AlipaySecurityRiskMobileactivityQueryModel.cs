@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账户绑定手机号
         /// </summary>
-        [XmlElement("mobile")]
+        [Newtonsoft.Json.JsonProperty("mobile")]
         public string Mobile { get; set; }
 
         /// <summary>
         /// 场景名称
         /// </summary>
-        [XmlElement("scene_id")]
+        [Newtonsoft.Json.JsonProperty("scene_id")]
         public string SceneId { get; set; }
 
         /// <summary>
         /// 支付宝userId
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

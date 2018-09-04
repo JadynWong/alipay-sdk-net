@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 受理的还款申请单号
         /// </summary>
-        [XmlElement("loan_repay_no")]
+        [Newtonsoft.Json.JsonProperty("loan_repay_no")]
         public string LoanRepayNo { get; set; }
     }
 }

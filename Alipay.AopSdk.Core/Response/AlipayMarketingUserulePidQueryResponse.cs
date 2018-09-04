@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 满足条件的所有pid，多个pid使用英文逗号隔开
         /// </summary>
-        [XmlElement("pids")]
+        [Newtonsoft.Json.JsonProperty("pids")]
         public string Pids { get; set; }
     }
 }

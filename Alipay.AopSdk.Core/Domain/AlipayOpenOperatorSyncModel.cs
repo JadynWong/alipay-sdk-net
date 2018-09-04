@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 主账号的userId
         /// </summary>
-        [XmlElement("master_user_id")]
+        [Newtonsoft.Json.JsonProperty("master_user_id")]
         public string MasterUserId { get; set; }
 
         /// <summary>
         /// 产品code，FINCLOUD=金融云，CSC=云客服
         /// </summary>
-        [XmlElement("product_code")]
+        [Newtonsoft.Json.JsonProperty("product_code")]
         public string ProductCode { get; set; }
     }
 }

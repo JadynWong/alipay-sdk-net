@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保额key
         /// </summary>
-        [XmlElement("coverage")]
+        [Newtonsoft.Json.JsonProperty("coverage")]
         public string Coverage { get; set; }
 
         /// <summary>
         /// 保额value
         /// </summary>
-        [XmlElement("coverage_text")]
+        [Newtonsoft.Json.JsonProperty("coverage_text")]
         public string CoverageText { get; set; }
     }
 }

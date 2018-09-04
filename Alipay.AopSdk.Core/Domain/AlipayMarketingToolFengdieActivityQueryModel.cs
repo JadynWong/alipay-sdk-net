@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// H5应用的唯一id，调用alipay.marketing.tool.fengdie.activity.create获得
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public long ActivityId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// isv回传的auth_code，通过auth_code校验当前操作人与商户的关系
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 与principal_type配合使用，当principal_type为ROLE时，principal_id为角色id，当principal_type为OPERATOR时，principal_id为操作员id
         /// </summary>
-        [XmlElement("principal_id")]
+        [Newtonsoft.Json.JsonProperty("principal_id")]
         public string PrincipalId { get; set; }
 
         /// <summary>
         /// 与principal_id配合使用，当principal_type为ROLE时，principal_id为角色id，当principal_type为OPERATOR时，principal_id为操作员id
         /// </summary>
-        [XmlElement("principal_type")]
+        [Newtonsoft.Json.JsonProperty("principal_type")]
         public string PrincipalType { get; set; }
     }
 }

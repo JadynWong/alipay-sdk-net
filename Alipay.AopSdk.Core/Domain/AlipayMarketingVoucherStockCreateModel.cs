@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 外部单据号, 请保持唯一, 如果重复则认为重复请求, 可以使用uuid生成或使用商户自己的单据号
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 库存ID, 首次创建请填写空, 追加库存请填原始库存ID
         /// </summary>
-        [XmlElement("stock_id")]
+        [Newtonsoft.Json.JsonProperty("stock_id")]
         public string StockId { get; set; }
     }
 }

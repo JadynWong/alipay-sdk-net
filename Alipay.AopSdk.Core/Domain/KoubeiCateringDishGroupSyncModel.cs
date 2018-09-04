@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 口碑菜品套餐项目组
         /// </summary>
-        [XmlElement("kb_dish_group")]
+        [Newtonsoft.Json.JsonProperty("kb_dish_group")]
         public KbdishGroupInfo KbDishGroup { get; set; }
 
         /// <summary>
         /// 同步类型: add 新增;update 修改;stateChange 状态变更,del 删除
         /// </summary>
-        [XmlElement("syn_type")]
+        [Newtonsoft.Json.JsonProperty("syn_type")]
         public string SynType { get; set; }
     }
 }

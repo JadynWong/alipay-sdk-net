@@ -12,67 +12,67 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝订单号
         /// </summary>
-        [XmlElement("alipay_order_no")]
+        [Newtonsoft.Json.JsonProperty("alipay_order_no")]
         public string AlipayOrderNo { get; set; }
 
         /// <summary>
         /// 当时账户的余额
         /// </summary>
-        [XmlElement("balance")]
+        [Newtonsoft.Json.JsonProperty("balance")]
         public string Balance { get; set; }
 
         /// <summary>
         /// 业务类型
         /// </summary>
-        [XmlElement("business_type")]
+        [Newtonsoft.Json.JsonProperty("business_type")]
         public string BusinessType { get; set; }
 
         /// <summary>
         /// 创建时间
         /// </summary>
-        [XmlElement("create_time")]
+        [Newtonsoft.Json.JsonProperty("create_time")]
         public string CreateTime { get; set; }
 
         /// <summary>
         /// 收入金额
         /// </summary>
-        [XmlElement("in_amount")]
+        [Newtonsoft.Json.JsonProperty("in_amount")]
         public string InAmount { get; set; }
 
         /// <summary>
         /// 账务备注说明
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 商户订单号
         /// </summary>
-        [XmlElement("merchant_order_no")]
+        [Newtonsoft.Json.JsonProperty("merchant_order_no")]
         public string MerchantOrderNo { get; set; }
 
         /// <summary>
         /// 对方支付宝账户ID
         /// </summary>
-        [XmlElement("opt_user_id")]
+        [Newtonsoft.Json.JsonProperty("opt_user_id")]
         public string OptUserId { get; set; }
 
         /// <summary>
         /// 支出金额
         /// </summary>
-        [XmlElement("out_amount")]
+        [Newtonsoft.Json.JsonProperty("out_amount")]
         public string OutAmount { get; set; }
 
         /// <summary>
         /// 本方支付宝账户ID
         /// </summary>
-        [XmlElement("self_user_id")]
+        [Newtonsoft.Json.JsonProperty("self_user_id")]
         public string SelfUserId { get; set; }
 
         /// <summary>
         /// 账务类型
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

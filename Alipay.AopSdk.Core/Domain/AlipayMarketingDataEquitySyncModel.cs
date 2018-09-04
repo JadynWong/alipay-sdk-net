@@ -12,55 +12,55 @@ namespace Aop.Api.Domain
         /// <summary>
         /// biz_time
         /// </summary>
-        [XmlElement("biz_time")]
+        [Newtonsoft.Json.JsonProperty("biz_time")]
         public string BizTime { get; set; }
 
         /// <summary>
         /// equity_code
         /// </summary>
-        [XmlElement("equity_code")]
+        [Newtonsoft.Json.JsonProperty("equity_code")]
         public string EquityCode { get; set; }
 
         /// <summary>
         /// equity_from
         /// </summary>
-        [XmlElement("equity_from")]
+        [Newtonsoft.Json.JsonProperty("equity_from")]
         public string EquityFrom { get; set; }
 
         /// <summary>
         /// equity_id
         /// </summary>
-        [XmlElement("equity_id")]
+        [Newtonsoft.Json.JsonProperty("equity_id")]
         public string EquityId { get; set; }
 
         /// <summary>
         /// equity_info
         /// </summary>
-        [XmlElement("equity_info")]
+        [Newtonsoft.Json.JsonProperty("equity_info")]
         public EquityInfo EquityInfo { get; set; }
 
         /// <summary>
         /// original_biz_no
         /// </summary>
-        [XmlElement("original_biz_no")]
+        [Newtonsoft.Json.JsonProperty("original_biz_no")]
         public string OriginalBizNo { get; set; }
 
         /// <summary>
         /// original_biz_type
         /// </summary>
-        [XmlElement("original_biz_type")]
+        [Newtonsoft.Json.JsonProperty("original_biz_type")]
         public string OriginalBizType { get; set; }
 
         /// <summary>
         /// out_biz_no
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 支付宝userid
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

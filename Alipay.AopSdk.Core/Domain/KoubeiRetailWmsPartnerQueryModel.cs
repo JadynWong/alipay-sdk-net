@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作上下文
         /// </summary>
-        [XmlElement("operate_context")]
+        [Newtonsoft.Json.JsonProperty("operate_context")]
         public OperateContext OperateContext { get; set; }
 
         /// <summary>

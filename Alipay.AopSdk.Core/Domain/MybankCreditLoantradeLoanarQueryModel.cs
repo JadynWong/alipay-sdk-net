@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 客户的角色编号
         /// </summary>
-        [XmlElement("iproleid")]
+        [Newtonsoft.Json.JsonProperty("iproleid")]
         public string Iproleid { get; set; }
 
         /// <summary>
         /// 合约编号
         /// </summary>
-        [XmlElement("loanarno")]
+        [Newtonsoft.Json.JsonProperty("loanarno")]
         public string Loanarno { get; set; }
     }
 }

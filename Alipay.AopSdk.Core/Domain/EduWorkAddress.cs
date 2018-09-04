@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 地址
         /// </summary>
-        [XmlElement("address")]
+        [Newtonsoft.Json.JsonProperty("address")]
         public string Address { get; set; }
 
         /// <summary>
         /// 城市
         /// </summary>
-        [XmlElement("city")]
+        [Newtonsoft.Json.JsonProperty("city")]
         public string City { get; set; }
 
         /// <summary>
         /// 区
         /// </summary>
-        [XmlElement("district_name")]
+        [Newtonsoft.Json.JsonProperty("district_name")]
         public string DistrictName { get; set; }
 
         /// <summary>
         /// 北京市
         /// </summary>
-        [XmlElement("province")]
+        [Newtonsoft.Json.JsonProperty("province")]
         public string Province { get; set; }
 
         /// <summary>
         /// 街道
         /// </summary>
-        [XmlElement("street_name")]
+        [Newtonsoft.Json.JsonProperty("street_name")]
         public string StreetName { get; set; }
     }
 }

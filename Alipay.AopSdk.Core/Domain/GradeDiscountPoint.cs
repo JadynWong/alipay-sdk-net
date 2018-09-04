@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 蚂蚁会员权益配置的ID
         /// </summary>
-        [XmlElement("benefit_id")]
+        [Newtonsoft.Json.JsonProperty("benefit_id")]
         public long BenefitId { get; set; }
 
         /// <summary>
         /// 各个等级的等级折扣后的积分
         /// </summary>
-        [XmlElement("discount_point")]
+        [Newtonsoft.Json.JsonProperty("discount_point")]
         public string DiscountPoint { get; set; }
 
         /// <summary>
         /// 蚂蚁会员等级
         /// </summary>
-        [XmlElement("grade")]
+        [Newtonsoft.Json.JsonProperty("grade")]
         public string Grade { get; set; }
     }
 }

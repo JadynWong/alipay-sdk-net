@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝端生成的发票id，该字段可从发票详情查询接口获得
         /// </summary>
-        [XmlElement("invoice_id")]
+        [Newtonsoft.Json.JsonProperty("invoice_id")]
         public string InvoiceId { get; set; }
     }
 }

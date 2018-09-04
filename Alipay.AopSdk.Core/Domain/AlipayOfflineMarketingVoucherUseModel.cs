@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 约定的扩展参数
         /// </summary>
-        [XmlElement("extend_params")]
+        [Newtonsoft.Json.JsonProperty("extend_params")]
         public string ExtendParams { get; set; }
 
         /// <summary>
         /// 外部活动id
         /// </summary>
-        [XmlElement("external_id")]
+        [Newtonsoft.Json.JsonProperty("external_id")]
         public string ExternalId { get; set; }
 
         /// <summary>
         /// 外部交易信息
         /// </summary>
-        [XmlElement("external_trade_info")]
+        [Newtonsoft.Json.JsonProperty("external_trade_info")]
         public VoucherUserExternalTradeInfo ExternalTradeInfo { get; set; }
 
         /// <summary>
         /// 外部券码
         /// </summary>
-        [XmlElement("external_voucher_code")]
+        [Newtonsoft.Json.JsonProperty("external_voucher_code")]
         public string ExternalVoucherCode { get; set; }
     }
 }

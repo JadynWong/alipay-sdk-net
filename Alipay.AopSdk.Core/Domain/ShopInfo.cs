@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 企业门店名称
         /// </summary>
-        [XmlElement("shop_name")]
+        [Newtonsoft.Json.JsonProperty("shop_name")]
         public string ShopName { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 店铺门头照图片
         /// </summary>
-        [XmlElement("shop_sign_board_pic")]
+        [Newtonsoft.Json.JsonProperty("shop_sign_board_pic")]
         public string ShopSignBoardPic { get; set; }
     }
 }

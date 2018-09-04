@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 人群组的唯一标识ID
         /// </summary>
-        [XmlElement("crowd_group_id")]
+        [Newtonsoft.Json.JsonProperty("crowd_group_id")]
         public string CrowdGroupId { get; set; }
     }
 }

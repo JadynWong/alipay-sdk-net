@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 空间创建时间
         /// </summary>
-        [XmlElement("gmt_create")]
+        [Newtonsoft.Json.JsonProperty("gmt_create")]
         public string GmtCreate { get; set; }
 
         /// <summary>
         /// 空间 ID
         /// </summary>
-        [XmlElement("space_id")]
+        [Newtonsoft.Json.JsonProperty("space_id")]
         public string SpaceId { get; set; }
 
         /// <summary>
         /// 空间标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

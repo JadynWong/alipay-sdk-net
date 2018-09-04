@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 测试测试测试
         /// </summary>
-        [XmlElement("testtesttest")]
+        [Newtonsoft.Json.JsonProperty("testtesttest")]
         public string Testtesttest { get; set; }
     }
 }

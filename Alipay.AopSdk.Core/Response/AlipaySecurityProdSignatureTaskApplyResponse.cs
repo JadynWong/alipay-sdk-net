@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 签约订单id，关联了若干个签约任务id。
         /// </summary>
-        [XmlElement("order_id")]
+        [Newtonsoft.Json.JsonProperty("order_id")]
         public string OrderId { get; set; }
 
         /// <summary>

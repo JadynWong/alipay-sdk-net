@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户充值金额，单位为元
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 充值时间：YYYY-MM-DD hh:mm:ss
         /// </summary>
-        [XmlElement("deposit_time")]
+        [Newtonsoft.Json.JsonProperty("deposit_time")]
         public string DepositTime { get; set; }
 
         /// <summary>
         /// Transfer：待圈存  Success：圈存成功  Fail：圈存失败
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 支付宝订单号
         /// </summary>
-        [XmlElement("trade_no")]
+        [Newtonsoft.Json.JsonProperty("trade_no")]
         public string TradeNo { get; set; }
     }
 }

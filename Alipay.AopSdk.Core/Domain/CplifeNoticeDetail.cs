@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 通告公告的具体内容
         /// </summary>
-        [XmlElement("content")]
+        [Newtonsoft.Json.JsonProperty("content")]
         public string Content { get; set; }
 
         /// <summary>
         /// 通知的下线时间.
         /// </summary>
-        [XmlElement("end_time")]
+        [Newtonsoft.Json.JsonProperty("end_time")]
         public string EndTime { get; set; }
 
         /// <summary>
@@ -32,25 +32,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 通知的上线时间，该时刻之后，用户才能在支付宝客户端看到该通知。
         /// </summary>
-        [XmlElement("start_time")]
+        [Newtonsoft.Json.JsonProperty("start_time")]
         public string StartTime { get; set; }
 
         /// <summary>
         /// 通知是否置顶，默认为false.
         /// </summary>
-        [XmlElement("stickied")]
+        [Newtonsoft.Json.JsonProperty("stickied")]
         public bool Stickied { get; set; }
 
         /// <summary>
         /// 通知(公告)的标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 通告公告的具体类型.通知：“01” ,公告：“02”
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

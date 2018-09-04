@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 芝麻分
         /// </summary>
-        [XmlElement("score")]
+        [Newtonsoft.Json.JsonProperty("score")]
         public long Score { get; set; }
     }
 }

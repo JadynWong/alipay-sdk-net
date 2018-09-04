@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 券模板ID
         /// </summary>
-        [XmlElement("template_id")]
+        [Newtonsoft.Json.JsonProperty("template_id")]
         public string TemplateId { get; set; }
     }
 }

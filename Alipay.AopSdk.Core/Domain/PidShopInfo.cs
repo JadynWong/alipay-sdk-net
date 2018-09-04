@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户pid
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
 
         /// <summary>

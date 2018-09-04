@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户生成的批改请求单号【幂等字段】
         /// </summary>
-        [XmlElement("out_request_no")]
+        [Newtonsoft.Json.JsonProperty("out_request_no")]
         public string OutRequestNo { get; set; }
 
         /// <summary>
         /// 保单凭证号;蚂蚁保险平台生成的保单凭证号,用户可以通过此单号去保险公司查询保单信息.
         /// </summary>
-        [XmlElement("policy_no")]
+        [Newtonsoft.Json.JsonProperty("policy_no")]
         public string PolicyNo { get; set; }
 
         /// <summary>
         /// 批单来源
         /// </summary>
-        [XmlElement("source")]
+        [Newtonsoft.Json.JsonProperty("source")]
         public string Source { get; set; }
     }
 }

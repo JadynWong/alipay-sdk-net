@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品简述：对商品的简要说明，吸引顾客的描述（非必填）
         /// </summary>
-        [XmlElement("brief")]
+        [Newtonsoft.Json.JsonProperty("brief")]
         public string Brief { get; set; }
 
         /// <summary>
@@ -33,55 +33,55 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 入数，必须为整数
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public long Count { get; set; }
 
         /// <summary>
         /// 产地
         /// </summary>
-        [XmlElement("country")]
+        [Newtonsoft.Json.JsonProperty("country")]
         public string Country { get; set; }
 
         /// <summary>
         /// 币种，采用ISO 4217 Currency Codes编码，表示该商品售价对应的货币种类：CNY/USD 等
         /// </summary>
-        [XmlElement("currency")]
+        [Newtonsoft.Json.JsonProperty("currency")]
         public string Currency { get; set; }
 
         /// <summary>
         /// 商品描述
         /// </summary>
-        [XmlElement("description")]
+        [Newtonsoft.Json.JsonProperty("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// 商品编码
         /// </summary>
-        [XmlElement("goods_id")]
+        [Newtonsoft.Json.JsonProperty("goods_id")]
         public string GoodsId { get; set; }
 
         /// <summary>
         /// 商品名称
         /// </summary>
-        [XmlElement("goods_name")]
+        [Newtonsoft.Json.JsonProperty("goods_name")]
         public string GoodsName { get; set; }
 
         /// <summary>
         /// 店内货号：商户店铺内自行对商品的编码
         /// </summary>
-        [XmlElement("inner_goods_id")]
+        [Newtonsoft.Json.JsonProperty("inner_goods_id")]
         public string InnerGoodsId { get; set; }
 
         /// <summary>
         /// 商品规格:900ml/500克/12瓶装
         /// </summary>
-        [XmlElement("item_format")]
+        [Newtonsoft.Json.JsonProperty("item_format")]
         public string ItemFormat { get; set; }
 
         /// <summary>
         /// 包装：描述该商品的包装形式：盒装/瓶装/袋装/散装
         /// </summary>
-        [XmlElement("pack")]
+        [Newtonsoft.Json.JsonProperty("pack")]
         public string Pack { get; set; }
 
         /// <summary>
@@ -94,19 +94,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 参考价格，单位（分），必须为整数
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public long Price { get; set; }
 
         /// <summary>
         /// 商品描述
         /// </summary>
-        [XmlElement("specification")]
+        [Newtonsoft.Json.JsonProperty("specification")]
         public string Specification { get; set; }
 
         /// <summary>
         /// 表示该商品的售卖单位，对单价的补充说明个/箱/盒/克/公斤 等
         /// </summary>
-        [XmlElement("unit")]
+        [Newtonsoft.Json.JsonProperty("unit")]
         public string Unit { get; set; }
     }
 }

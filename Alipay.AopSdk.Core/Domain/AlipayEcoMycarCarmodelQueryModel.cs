@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝车型库车型编号,系统唯一。
         /// </summary>
-        [XmlElement("model_id")]
+        [Newtonsoft.Json.JsonProperty("model_id")]
         public string ModelId { get; set; }
     }
 }

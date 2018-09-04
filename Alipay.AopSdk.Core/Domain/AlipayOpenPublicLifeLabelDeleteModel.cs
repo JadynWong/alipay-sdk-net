@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 标签id, 只支持生活号自定义标签
         /// </summary>
-        [XmlElement("label_id")]
+        [Newtonsoft.Json.JsonProperty("label_id")]
         public string LabelId { get; set; }
     }
 }

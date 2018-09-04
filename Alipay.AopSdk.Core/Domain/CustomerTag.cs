@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 字段名称
         /// </summary>
-        [XmlElement("col_name")]
+        [Newtonsoft.Json.JsonProperty("col_name")]
         public string ColName { get; set; }
 
         /// <summary>
         /// column_type字段类型
         /// </summary>
-        [XmlElement("column_type")]
+        [Newtonsoft.Json.JsonProperty("column_type")]
         public string ColumnType { get; set; }
 
         /// <summary>
         /// id
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public string Id { get; set; }
 
         /// <summary>
         /// 标签名
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
     }
 }

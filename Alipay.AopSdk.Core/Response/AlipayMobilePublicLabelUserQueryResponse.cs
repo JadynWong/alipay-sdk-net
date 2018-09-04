@@ -11,19 +11,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 结果码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 标签编号，英文逗号分隔。
         /// </summary>
-        [XmlElement("label_ids")]
+        [Newtonsoft.Json.JsonProperty("label_ids")]
         public string LabelIds { get; set; }
 
         /// <summary>
         /// 结果信息
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
     }
 }

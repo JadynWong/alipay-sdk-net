@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 凭证批次名称
         /// </summary>
-        [XmlElement("cert_name")]
+        [Newtonsoft.Json.JsonProperty("cert_name")]
         public string CertName { get; set; }
 
         /// <summary>
         /// 拓展信息
         /// </summary>
-        [XmlElement("extend_info")]
+        [Newtonsoft.Json.JsonProperty("extend_info")]
         public string ExtendInfo { get; set; }
 
         /// <summary>
         /// 备注
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 凭证有效次数，数值(最大为10000)
         /// </summary>
-        [XmlElement("valid_count")]
+        [Newtonsoft.Json.JsonProperty("valid_count")]
         public string ValidCount { get; set; }
     }
 }

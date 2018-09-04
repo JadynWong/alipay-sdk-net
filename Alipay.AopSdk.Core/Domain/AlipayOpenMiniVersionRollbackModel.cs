@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 小程序版本号
         /// </summary>
-        [XmlElement("app_version")]
+        [Newtonsoft.Json.JsonProperty("app_version")]
         public string AppVersion { get; set; }
     }
 }

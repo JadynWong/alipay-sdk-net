@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 学生信息
         /// </summary>
-        [XmlElement("student_info_share_result")]
+        [Newtonsoft.Json.JsonProperty("student_info_share_result")]
         public EduStudentInfoShareResult StudentInfoShareResult { get; set; }
     }
 }

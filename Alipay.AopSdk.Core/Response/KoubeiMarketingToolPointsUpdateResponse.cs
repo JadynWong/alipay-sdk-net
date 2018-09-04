@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 集点变更流水号
         /// </summary>
-        [XmlElement("point_log_no")]
+        [Newtonsoft.Json.JsonProperty("point_log_no")]
         public string PointLogNo { get; set; }
     }
 }

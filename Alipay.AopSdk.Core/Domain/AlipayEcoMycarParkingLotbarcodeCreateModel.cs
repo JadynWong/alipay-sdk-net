@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 停车场编号
         /// </summary>
-        [XmlElement("parking_id")]
+        [Newtonsoft.Json.JsonProperty("parking_id")]
         public string ParkingId { get; set; }
     }
 }

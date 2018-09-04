@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务类型
         /// </summary>
-        [XmlElement("biz_type")]
+        [Newtonsoft.Json.JsonProperty("biz_type")]
         public string BizType { get; set; }
     }
 }

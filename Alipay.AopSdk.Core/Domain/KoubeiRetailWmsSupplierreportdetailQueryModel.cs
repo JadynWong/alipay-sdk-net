@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 供货商盘点单id
         /// </summary>
-        [XmlElement("supplier_report_id")]
+        [Newtonsoft.Json.JsonProperty("supplier_report_id")]
         public string SupplierReportId { get; set; }
     }
 }

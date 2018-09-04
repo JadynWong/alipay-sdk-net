@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 定损单号
         /// </summary>
-        [XmlElement("estimate_no")]
+        [Newtonsoft.Json.JsonProperty("estimate_no")]
         public string EstimateNo { get; set; }
 
         /// <summary>
         /// 车架号
         /// </summary>
-        [XmlElement("frame_no")]
+        [Newtonsoft.Json.JsonProperty("frame_no")]
         public string FrameNo { get; set; }
 
         /// <summary>
         /// 车牌号
         /// </summary>
-        [XmlElement("license_no")]
+        [Newtonsoft.Json.JsonProperty("license_no")]
         public string LicenseNo { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户在isv界面通过扫一扫传入的url文本
         /// </summary>
-        [XmlElement("url_context")]
+        [Newtonsoft.Json.JsonProperty("url_context")]
         public string UrlContext { get; set; }
     }
 }

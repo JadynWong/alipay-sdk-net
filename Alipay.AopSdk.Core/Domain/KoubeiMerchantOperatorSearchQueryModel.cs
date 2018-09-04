@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// isv回传的auth_code，通过auth_code校验当前操作人与商户的关系
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前查询页数
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public long PageNum { get; set; }
 
         /// <summary>
         /// 分页大小，每页10条
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public string PageSize { get; set; }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模糊查询字段，支持操作员的姓名，别名，手机模糊查询
         /// </summary>
-        [XmlElement("search_key")]
+        [Newtonsoft.Json.JsonProperty("search_key")]
         public string SearchKey { get; set; }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 是否查询的是待分配列表，商户的存量数据没有部门关联，设置unassign为true，可以把存量的操作员查出来
         /// </summary>
-        [XmlElement("unassign")]
+        [Newtonsoft.Json.JsonProperty("unassign")]
         public bool Unassign { get; set; }
     }
 }

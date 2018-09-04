@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务类型唯一标识。调用前联系支付宝服务提供方，由电子签名平台统一分配。
         /// </summary>
-        [XmlElement("biz_product")]
+        [Newtonsoft.Json.JsonProperty("biz_product")]
         public string BizProduct { get; set; }
 
         /// <summary>
         /// 查询订单编号，参考alipay.security.prod.signature.task.apply接口返回的order_id。
         /// </summary>
-        [XmlElement("order_id")]
+        [Newtonsoft.Json.JsonProperty("order_id")]
         public string OrderId { get; set; }
 
         /// <summary>
         /// 调用前联系支付宝服务提供方，由电子签名平台统一分配。
         /// </summary>
-        [XmlElement("service_version")]
+        [Newtonsoft.Json.JsonProperty("service_version")]
         public string ServiceVersion { get; set; }
 
         /// <summary>

@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户简称
         /// </summary>
-        [XmlElement("alias_name")]
+        [Newtonsoft.Json.JsonProperty("alias_name")]
         public string AliasName { get; set; }
 
         /// <summary>
         /// 签约受理机构pid
         /// </summary>
-        [XmlElement("bank_pid")]
+        [Newtonsoft.Json.JsonProperty("bank_pid")]
         public string BankPid { get; set; }
 
         /// <summary>
@@ -39,13 +39,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户证件编号（企业或者个体工商户提供营业执照，事业单位提供事证号）
         /// </summary>
-        [XmlElement("business_license")]
+        [Newtonsoft.Json.JsonProperty("business_license")]
         public string BusinessLicense { get; set; }
 
         /// <summary>
         /// 商户证件类型，取值范围：NATIONAL_LEGAL：营业执照；NATIONAL_LEGAL_MERGE:营业执照(多证合一)；INST_RGST_CTF：事业单位法人证书
         /// </summary>
-        [XmlElement("business_license_type")]
+        [Newtonsoft.Json.JsonProperty("business_license_type")]
         public string BusinessLicenseType { get; set; }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付机构pid/source id；服务商PID；
         /// </summary>
-        [XmlElement("isv_pid")]
+        [Newtonsoft.Json.JsonProperty("isv_pid")]
         public string IsvPid { get; set; }
 
         /// <summary>
@@ -71,19 +71,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// mcc编码
         /// </summary>
-        [XmlElement("mcc")]
+        [Newtonsoft.Json.JsonProperty("mcc")]
         public string Mcc { get; set; }
 
         /// <summary>
         /// 商户特殊资质等
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 商户名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -96,13 +96,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户客服电话
         /// </summary>
-        [XmlElement("service_phone")]
+        [Newtonsoft.Json.JsonProperty("service_phone")]
         public string ServicePhone { get; set; }
 
         /// <summary>
         /// 商户在银行端的签约时间
         /// </summary>
-        [XmlElement("sign_bank_time")]
+        [Newtonsoft.Json.JsonProperty("sign_bank_time")]
         public string SignBankTime { get; set; }
 
         /// <summary>
@@ -115,19 +115,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户在支付宝入驻成功后，生成的支付宝内全局唯一的商户编号
         /// </summary>
-        [XmlElement("sub_merchant_id")]
+        [Newtonsoft.Json.JsonProperty("sub_merchant_id")]
         public string SubMerchantId { get; set; }
 
         /// <summary>
         /// 商户在受理机构的唯一代码，该代号在该机构下保持唯一；extenalID；
         /// </summary>
-        [XmlElement("unique_id_by_bank")]
+        [Newtonsoft.Json.JsonProperty("unique_id_by_bank")]
         public string UniqueIdByBank { get; set; }
 
         /// <summary>
         /// 商户在支付机构的的唯一代码；服务商对该商户分配的ID；
         /// </summary>
-        [XmlElement("unique_id_by_isv")]
+        [Newtonsoft.Json.JsonProperty("unique_id_by_isv")]
         public string UniqueIdByIsv { get; set; }
     }
 }

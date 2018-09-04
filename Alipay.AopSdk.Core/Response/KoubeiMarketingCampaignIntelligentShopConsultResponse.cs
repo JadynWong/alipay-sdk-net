@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 总共项数
         /// </summary>
-        [XmlElement("items")]
+        [Newtonsoft.Json.JsonProperty("items")]
         public string Items { get; set; }
 
         /// <summary>

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 包管理ID，用于查询打包状态
         /// </summary>
-        [XmlElement("build_package_id")]
+        [Newtonsoft.Json.JsonProperty("build_package_id")]
         public string BuildPackageId { get; set; }
 
         /// <summary>
         /// 小程序版本
         /// </summary>
-        [XmlElement("build_version")]
+        [Newtonsoft.Json.JsonProperty("build_version")]
         public string BuildVersion { get; set; }
 
         /// <summary>
         /// 小程序ID
         /// </summary>
-        [XmlElement("mini_app_id")]
+        [Newtonsoft.Json.JsonProperty("mini_app_id")]
         public string MiniAppId { get; set; }
     }
 }

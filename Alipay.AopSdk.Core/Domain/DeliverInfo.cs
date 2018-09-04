@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保单寄送地址的住址
         /// </summary>
-        [XmlElement("recipients_address")]
+        [Newtonsoft.Json.JsonProperty("recipients_address")]
         public string RecipientsAddress { get; set; }
 
         /// <summary>
         /// 配送地址行政区划代码
         /// </summary>
-        [XmlElement("recipients_address_code")]
+        [Newtonsoft.Json.JsonProperty("recipients_address_code")]
         public string RecipientsAddressCode { get; set; }
 
         /// <summary>
         /// 收件人姓名
         /// </summary>
-        [XmlElement("recipients_name")]
+        [Newtonsoft.Json.JsonProperty("recipients_name")]
         public string RecipientsName { get; set; }
 
         /// <summary>
         /// 收件人电话
         /// </summary>
-        [XmlElement("recipients_phone")]
+        [Newtonsoft.Json.JsonProperty("recipients_phone")]
         public string RecipientsPhone { get; set; }
     }
 }

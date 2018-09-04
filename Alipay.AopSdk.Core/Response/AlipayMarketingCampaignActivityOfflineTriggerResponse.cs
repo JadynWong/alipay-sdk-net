@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 外部奖品ID
         /// </summary>
-        [XmlElement("out_prize_id")]
+        [Newtonsoft.Json.JsonProperty("out_prize_id")]
         public string OutPrizeId { get; set; }
     }
 }

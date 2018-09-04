@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 消息模板上下文，即模板中定义的参数及参数值
         /// </summary>
-        [XmlElement("context")]
+        [Newtonsoft.Json.JsonProperty("context")]
         public Context Context { get; set; }
 
         /// <summary>
         /// 消息模板ID
         /// </summary>
-        [XmlElement("template_id")]
+        [Newtonsoft.Json.JsonProperty("template_id")]
         public string TemplateId { get; set; }
     }
 }

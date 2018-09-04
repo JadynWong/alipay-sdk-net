@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝账单流水号（取自创建账单接口返回的alipay_order_no字段）
         /// </summary>
-        [XmlElement("bill_no")]
+        [Newtonsoft.Json.JsonProperty("bill_no")]
         public string BillNo { get; set; }
     }
 }

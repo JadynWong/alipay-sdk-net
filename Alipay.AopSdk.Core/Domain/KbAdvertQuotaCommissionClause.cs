@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 固定金额
         /// </summary>
-        [XmlElement("quota_amount")]
+        [Newtonsoft.Json.JsonProperty("quota_amount")]
         public string QuotaAmount { get; set; }
     }
 }

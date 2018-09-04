@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 入库通知单主体
         /// </summary>
-        [XmlElement("inbound_order")]
+        [Newtonsoft.Json.JsonProperty("inbound_order")]
         public InboundOrder InboundOrder { get; set; }
 
         /// <summary>
         /// 操作人信息
         /// </summary>
-        [XmlElement("operate_context")]
+        [Newtonsoft.Json.JsonProperty("operate_context")]
         public OperateContext OperateContext { get; set; }
 
         /// <summary>

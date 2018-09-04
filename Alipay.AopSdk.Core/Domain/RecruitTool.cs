@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 招商结束时间
         /// </summary>
-        [XmlElement("end_time")]
+        [Newtonsoft.Json.JsonProperty("end_time")]
         public string EndTime { get; set; }
 
         /// <summary>
         /// 如果这个值是true,那么活动的参与门店不需要招商
         /// </summary>
-        [XmlElement("exclude_constraint_shops")]
+        [Newtonsoft.Json.JsonProperty("exclude_constraint_shops")]
         public bool ExcludeConstraintShops { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 招商开始时间
         /// </summary>
-        [XmlElement("start_time")]
+        [Newtonsoft.Json.JsonProperty("start_time")]
         public string StartTime { get; set; }
     }
 }

@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 已确认还是未确认
         /// </summary>
-        [XmlElement("confirm_status")]
+        [Newtonsoft.Json.JsonProperty("confirm_status")]
         public string ConfirmStatus { get; set; }
 
         /// <summary>
         /// 一级和二级类目名称
         /// </summary>
-        [XmlElement("shop_category")]
+        [Newtonsoft.Json.JsonProperty("shop_category")]
         public string ShopCategory { get; set; }
 
         /// <summary>
         /// 店铺id
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
 
         /// <summary>
         /// 店铺名称
         /// </summary>
-        [XmlElement("shop_name")]
+        [Newtonsoft.Json.JsonProperty("shop_name")]
         public string ShopName { get; set; }
     }
 }

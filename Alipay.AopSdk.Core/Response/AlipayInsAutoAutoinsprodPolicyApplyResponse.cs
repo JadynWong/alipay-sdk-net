@@ -13,13 +13,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 车险询价申请号
         /// </summary>
-        [XmlElement("enquiry_biz_id")]
+        [Newtonsoft.Json.JsonProperty("enquiry_biz_id")]
         public string EnquiryBizId { get; set; }
 
         /// <summary>
         /// 报价ID
         /// </summary>
-        [XmlElement("quote_biz_id")]
+        [Newtonsoft.Json.JsonProperty("quote_biz_id")]
         public string QuoteBizId { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 吱口令
         /// </summary>
-        [XmlElement("zhi_link")]
+        [Newtonsoft.Json.JsonProperty("zhi_link")]
         public string ZhiLink { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，默认有效期24小时；isv自身角色操作的时候，无需传该参数
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>
@@ -33,31 +33,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 页码，大于0，最大为int的最大值
         /// </summary>
-        [XmlElement("page_no")]
+        [Newtonsoft.Json.JsonProperty("page_no")]
         public string PageNo { get; set; }
 
         /// <summary>
         /// 每页的条数，大于0，最大不超过100条
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public string PageSize { get; set; }
 
         /// <summary>
         /// 手艺人码对应的门店，只有指定了码门店字段，才会返回手艺人码信息
         /// </summary>
-        [XmlElement("qr_code_shop_id")]
+        [Newtonsoft.Json.JsonProperty("qr_code_shop_id")]
         public string QrCodeShopId { get; set; }
 
         /// <summary>
         /// 是否推荐 (true 返回在c端展示的手艺人，false 返回c端隐藏的手艺人，不传表示不过滤）
         /// </summary>
-        [XmlElement("recommend")]
+        [Newtonsoft.Json.JsonProperty("recommend")]
         public bool Recommend { get; set; }
 
         /// <summary>
         /// 口碑门店id（不能与craftsman_ids和out_craftsman_ids同时为空）
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
     }
 }

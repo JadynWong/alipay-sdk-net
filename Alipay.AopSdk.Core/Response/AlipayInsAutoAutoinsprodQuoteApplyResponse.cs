@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 车险询价申请号
         /// </summary>
-        [XmlElement("enquiry_biz_id")]
+        [Newtonsoft.Json.JsonProperty("enquiry_biz_id")]
         public string EnquiryBizId { get; set; }
 
         /// <summary>

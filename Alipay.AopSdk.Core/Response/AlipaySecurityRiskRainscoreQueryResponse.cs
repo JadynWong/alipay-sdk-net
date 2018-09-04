@@ -27,13 +27,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 风险评分，范围为[0,100]，评分越高风险越大
         /// </summary>
-        [XmlElement("score")]
+        [Newtonsoft.Json.JsonProperty("score")]
         public string Score { get; set; }
 
         /// <summary>
         /// 调用订单号
         /// </summary>
-        [XmlElement("unique_id")]
+        [Newtonsoft.Json.JsonProperty("unique_id")]
         public string UniqueId { get; set; }
     }
 }

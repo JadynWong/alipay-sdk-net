@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 机构编号
         /// </summary>
-        [XmlElement("orgcode")]
+        [Newtonsoft.Json.JsonProperty("orgcode")]
         public string Orgcode { get; set; }
 
         /// <summary>
         /// 支付宝账号数字ID
         /// </summary>
-        [XmlElement("uid")]
+        [Newtonsoft.Json.JsonProperty("uid")]
         public string Uid { get; set; }
 
         /// <summary>
         /// 当前安装的支付宝钱包版本号
         /// </summary>
-        [XmlElement("version")]
+        [Newtonsoft.Json.JsonProperty("version")]
         public string Version { get; set; }
     }
 }

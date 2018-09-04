@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 分账类型  卖家的分账类型，目前只支持传入ROYALTY（普通分账类型）。
         /// </summary>
-        [XmlElement("royalty_type")]
+        [Newtonsoft.Json.JsonProperty("royalty_type")]
         public string RoyaltyType { get; set; }
     }
 }

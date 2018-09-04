@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 智能营销方案咨询的模型
         /// </summary>
-        [XmlElement("promo")]
+        [Newtonsoft.Json.JsonProperty("promo")]
         public IntelligentPromo Promo { get; set; }
     }
 }

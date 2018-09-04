@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 行动点业务CODE，商户自定义
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
         /// 行动点展示文案
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>
         /// 行动点跳转链接
         /// </summary>
-        [XmlElement("url")]
+        [Newtonsoft.Json.JsonProperty("url")]
         public string Url { get; set; }
     }
 }

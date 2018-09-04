@@ -12,43 +12,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 接入渠道
         /// </summary>
-        [XmlElement("access_channel")]
+        [Newtonsoft.Json.JsonProperty("access_channel")]
         public string AccessChannel { get; set; }
 
         /// <summary>
         /// 事件信息
         /// </summary>
-        [XmlElement("ctu_params")]
+        [Newtonsoft.Json.JsonProperty("ctu_params")]
         public string CtuParams { get; set; }
 
         /// <summary>
         /// 产品名称
         /// </summary>
-        [XmlElement("product_name")]
+        [Newtonsoft.Json.JsonProperty("product_name")]
         public string ProductName { get; set; }
 
         /// <summary>
         /// 产品节点
         /// </summary>
-        [XmlElement("product_node")]
+        [Newtonsoft.Json.JsonProperty("product_node")]
         public string ProductNode { get; set; }
 
         /// <summary>
         /// 扩展参数
         /// </summary>
-        [XmlElement("security_scene_params")]
+        [Newtonsoft.Json.JsonProperty("security_scene_params")]
         public string SecuritySceneParams { get; set; }
 
         /// <summary>
         /// 系统名称
         /// </summary>
-        [XmlElement("system_name")]
+        [Newtonsoft.Json.JsonProperty("system_name")]
         public string SystemName { get; set; }
 
         /// <summary>
         /// 总金额
         /// </summary>
-        [XmlElement("total_fee")]
+        [Newtonsoft.Json.JsonProperty("total_fee")]
         public string TotalFee { get; set; }
     }
 }

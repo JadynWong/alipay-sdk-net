@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 支付冻结金的地址
         /// </summary>
-        [XmlElement("pay_freeze_url")]
+        [Newtonsoft.Json.JsonProperty("pay_freeze_url")]
         public string PayFreezeUrl { get; set; }
     }
 }

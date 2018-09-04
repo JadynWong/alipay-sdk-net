@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 表示一行数据，每个对象是一列的数据
         /// </summary>
-        [XmlElement("row_data")]
+        [Newtonsoft.Json.JsonProperty("row_data")]
         public string RowData { get; set; }
     }
 }

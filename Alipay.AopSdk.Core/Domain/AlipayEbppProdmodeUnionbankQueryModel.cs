@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 银联编号
         /// </summary>
-        [XmlElement("bank_code")]
+        [Newtonsoft.Json.JsonProperty("bank_code")]
         public string BankCode { get; set; }
     }
 }

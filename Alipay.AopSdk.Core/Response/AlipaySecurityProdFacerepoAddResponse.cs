@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 扩展信息
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 对此次插入人脸库分组的人脸id标识
         /// </summary>
-        [XmlElement("face_id")]
+        [Newtonsoft.Json.JsonProperty("face_id")]
         public string FaceId { get; set; }
     }
 }

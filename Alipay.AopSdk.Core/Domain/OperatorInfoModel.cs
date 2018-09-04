@@ -13,67 +13,67 @@ namespace Aop.Api.Domain
         /// <summary>
         /// customerId
         /// </summary>
-        [XmlElement("cid")]
+        [Newtonsoft.Json.JsonProperty("cid")]
         public string Cid { get; set; }
 
         /// <summary>
         /// 邮件
         /// </summary>
-        [XmlElement("email")]
+        [Newtonsoft.Json.JsonProperty("email")]
         public string Email { get; set; }
 
         /// <summary>
         /// 部门ID
         /// </summary>
-        [XmlElement("job_id")]
+        [Newtonsoft.Json.JsonProperty("job_id")]
         public string JobId { get; set; }
 
         /// <summary>
         /// 部门树
         /// </summary>
-        [XmlElement("job_tree")]
+        [Newtonsoft.Json.JsonProperty("job_tree")]
         public string JobTree { get; set; }
 
         /// <summary>
         /// 手机号
         /// </summary>
-        [XmlElement("mobile")]
+        [Newtonsoft.Json.JsonProperty("mobile")]
         public string Mobile { get; set; }
 
         /// <summary>
         /// 操作员姓名
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 操作员别名
         /// </summary>
-        [XmlElement("nick_name")]
+        [Newtonsoft.Json.JsonProperty("nick_name")]
         public string NickName { get; set; }
 
         /// <summary>
         /// 操作员ID
         /// </summary>
-        [XmlElement("operator_id")]
+        [Newtonsoft.Json.JsonProperty("operator_id")]
         public string OperatorId { get; set; }
 
         /// <summary>
         /// 操作员类型
         /// </summary>
-        [XmlElement("operator_type")]
+        [Newtonsoft.Json.JsonProperty("operator_type")]
         public string OperatorType { get; set; }
 
         /// <summary>
         /// 角色ID
         /// </summary>
-        [XmlElement("role_id")]
+        [Newtonsoft.Json.JsonProperty("role_id")]
         public string RoleId { get; set; }
 
         /// <summary>
         /// 角色名字
         /// </summary>
-        [XmlElement("role_name")]
+        [Newtonsoft.Json.JsonProperty("role_name")]
         public string RoleName { get; set; }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// T
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

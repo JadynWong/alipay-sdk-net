@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 标签类型 : 如"菜属性"，"菜推荐"
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
 
         /// <summary>
         /// 标签值：如"重辣","中辣","招牌菜","创意菜"
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public string Value { get; set; }
     }
 }

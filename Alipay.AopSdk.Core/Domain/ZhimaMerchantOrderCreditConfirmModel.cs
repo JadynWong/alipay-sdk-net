@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户订单号，必需参数，用于确认芝麻订单，该参数必须与调用接口（zhima.merchant.order.credit.create）时传入的out_order_no一致
         /// </summary>
-        [XmlElement("out_order_no")]
+        [Newtonsoft.Json.JsonProperty("out_order_no")]
         public string OutOrderNo { get; set; }
 
         /// <summary>
         /// 芝麻订单号，必需参数，用于确认芝麻订单，通过调用接口（zhima.merchant.order.credit.create）后获取
         /// </summary>
-        [XmlElement("zm_order_no")]
+        [Newtonsoft.Json.JsonProperty("zm_order_no")]
         public string ZmOrderNo { get; set; }
     }
 }

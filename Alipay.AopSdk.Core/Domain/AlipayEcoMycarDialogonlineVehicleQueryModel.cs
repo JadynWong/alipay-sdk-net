@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 车辆ID
         /// </summary>
-        [XmlElement("vi_id")]
+        [Newtonsoft.Json.JsonProperty("vi_id")]
         public string ViId { get; set; }
     }
 }

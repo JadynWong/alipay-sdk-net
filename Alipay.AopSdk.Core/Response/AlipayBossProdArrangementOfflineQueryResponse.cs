@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 商户的签约状态
         /// </summary>
-        [XmlElement("sign_status")]
+        [Newtonsoft.Json.JsonProperty("sign_status")]
         public string SignStatus { get; set; }
     }
 }

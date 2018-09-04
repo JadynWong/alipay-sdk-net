@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 冻结订单详情结果
         /// </summary>
-        [XmlElement("unfreeze_order_detail")]
+        [Newtonsoft.Json.JsonProperty("unfreeze_order_detail")]
         public UnfreezeOrderDetail UnfreezeOrderDetail { get; set; }
     }
 }

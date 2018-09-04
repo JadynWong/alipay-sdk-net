@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 一套扩展区的key，删除默认扩展区时传入default ，查询扩展区列表可以获得每套扩展区的key
         /// </summary>
-        [XmlElement("extension_key")]
+        [Newtonsoft.Json.JsonProperty("extension_key")]
         public string ExtensionKey { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 图片base64加密后的内容，大小控制在1.5M
         /// </summary>
-        [XmlElement("image_content")]
+        [Newtonsoft.Json.JsonProperty("image_content")]
         public string ImageContent { get; set; }
     }
 }

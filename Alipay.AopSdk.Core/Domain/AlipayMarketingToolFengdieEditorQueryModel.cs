@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 凤蝶H5应用唯一id，通过alipay.marketing.tool.fengdie.activity.create接口时自动生成
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public long ActivityId { get; set; }
 
         /// <summary>
         /// 在凤蝶编辑器中点击“发布”按钮后，如果发布成功则跳转到该地址
         /// </summary>
-        [XmlElement("redirect_url")]
+        [Newtonsoft.Json.JsonProperty("redirect_url")]
         public string RedirectUrl { get; set; }
     }
 }

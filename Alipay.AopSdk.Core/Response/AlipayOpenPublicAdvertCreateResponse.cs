@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 广告位id
         /// </summary>
-        [XmlElement("advert_id")]
+        [Newtonsoft.Json.JsonProperty("advert_id")]
         public string AdvertId { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// sku属性key值,可发邮件到lei.mao@antfin.com,联系支付宝获取已支持的key.支付宝在收到邮件后三个工作日内回复
         /// </summary>
-        [XmlElement("key")]
+        [Newtonsoft.Json.JsonProperty("key")]
         public string Key { get; set; }
 
         /// <summary>

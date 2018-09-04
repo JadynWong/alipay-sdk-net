@@ -20,31 +20,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 会员卡图片url
         /// </summary>
-        [XmlElement("card_logo_url")]
+        [Newtonsoft.Json.JsonProperty("card_logo_url")]
         public string CardLogoUrl { get; set; }
 
         /// <summary>
         /// 扩展信息
         /// </summary>
-        [XmlElement("ext_info")]
+        [Newtonsoft.Json.JsonProperty("ext_info")]
         public string ExtInfo { get; set; }
 
         /// <summary>
         /// 等级展示名称
         /// </summary>
-        [XmlElement("level_show_name")]
+        [Newtonsoft.Json.JsonProperty("level_show_name")]
         public string LevelShowName { get; set; }
 
         /// <summary>
         /// 会员卡卡模版ID
         /// </summary>
-        [XmlElement("template_id")]
+        [Newtonsoft.Json.JsonProperty("template_id")]
         public string TemplateId { get; set; }
 
         /// <summary>
         /// 权益标题 多个权益用,分隔
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

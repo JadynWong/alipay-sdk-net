@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 图片特殊描述信息
         /// </summary>
-        [XmlElement("captcha_desc")]
+        [Newtonsoft.Json.JsonProperty("captcha_desc")]
         public string CaptchaDesc { get; set; }
 
         /// <summary>
         /// 图片内容，base64编码
         /// </summary>
-        [XmlElement("image_content")]
+        [Newtonsoft.Json.JsonProperty("image_content")]
         public string ImageContent { get; set; }
 
         /// <summary>
         /// 图片类型，jpeg|bmp
         /// </summary>
-        [XmlElement("image_type")]
+        [Newtonsoft.Json.JsonProperty("image_type")]
         public string ImageType { get; set; }
     }
 }

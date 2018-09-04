@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 核销数
         /// </summary>
-        [XmlElement("checked_voucher_num")]
+        [Newtonsoft.Json.JsonProperty("checked_voucher_num")]
         public long CheckedVoucherNum { get; set; }
 
         /// <summary>
         /// 领券数
         /// </summary>
-        [XmlElement("claim_voucher_num")]
+        [Newtonsoft.Json.JsonProperty("claim_voucher_num")]
         public long ClaimVoucherNum { get; set; }
 
         /// <summary>
         /// 分佣金额
         /// </summary>
-        [XmlElement("commission_amount")]
+        [Newtonsoft.Json.JsonProperty("commission_amount")]
         public string CommissionAmount { get; set; }
     }
 }

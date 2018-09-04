@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 房间参与免押金的到期日期YYYY-MM-dd
         /// </summary>
-        [XmlElement("deposit_end_time")]
+        [Newtonsoft.Json.JsonProperty("deposit_end_time")]
         public string DepositEndTime { get; set; }
 
         /// <summary>
         /// KA内部存储的房房间ID
         /// </summary>
-        [XmlElement("ka_room_id")]
+        [Newtonsoft.Json.JsonProperty("ka_room_id")]
         public string KaRoomId { get; set; }
 
         /// <summary>
         /// KA内部存储的房源编号
         /// </summary>
-        [XmlElement("room_code")]
+        [Newtonsoft.Json.JsonProperty("room_code")]
         public string RoomCode { get; set; }
 
         /// <summary>
         /// KA内部存储的房房间号
         /// </summary>
-        [XmlElement("room_num")]
+        [Newtonsoft.Json.JsonProperty("room_num")]
         public string RoomNum { get; set; }
     }
 }

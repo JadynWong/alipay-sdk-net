@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 秘钥id
         /// </summary>
-        [XmlElement("key_id")]
+        [Newtonsoft.Json.JsonProperty("key_id")]
         public long KeyId { get; set; }
 
         /// <summary>
         /// 支付宝脱机服务公钥
         /// </summary>
-        [XmlElement("public_key")]
+        [Newtonsoft.Json.JsonProperty("public_key")]
         public string PublicKey { get; set; }
     }
 }

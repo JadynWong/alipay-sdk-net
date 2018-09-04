@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保单邮寄地址
         /// </summary>
-        [XmlElement("addressee")]
+        [Newtonsoft.Json.JsonProperty("addressee")]
         public InsAddressee Addressee { get; set; }
 
         /// <summary>
         /// 投保人
         /// </summary>
-        [XmlElement("applicant")]
+        [Newtonsoft.Json.JsonProperty("applicant")]
         public InsPerson Applicant { get; set; }
 
         /// <summary>
         /// 投保参数;标准json 格式
         /// </summary>
-        [XmlElement("biz_data")]
+        [Newtonsoft.Json.JsonProperty("biz_data")]
         public string BizData { get; set; }
 
         /// <summary>
@@ -45,13 +45,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 保单失效时间
         /// </summary>
-        [XmlElement("effect_end_time")]
+        [Newtonsoft.Json.JsonProperty("effect_end_time")]
         public string EffectEndTime { get; set; }
 
         /// <summary>
         /// 保单生效时间
         /// </summary>
-        [XmlElement("effect_start_time")]
+        [Newtonsoft.Json.JsonProperty("effect_start_time")]
         public string EffectStartTime { get; set; }
 
         /// <summary>
@@ -71,67 +71,67 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 机构名称
         /// </summary>
-        [XmlElement("merchant_name")]
+        [Newtonsoft.Json.JsonProperty("merchant_name")]
         public string MerchantName { get; set; }
 
         /// <summary>
         /// 外部保单号
         /// </summary>
-        [XmlElement("out_policy_no")]
+        [Newtonsoft.Json.JsonProperty("out_policy_no")]
         public string OutPolicyNo { get; set; }
 
         /// <summary>
         /// 终缴时间，用于健康险、寿险等场景，用户需要按期缴费使用
         /// </summary>
-        [XmlElement("pay_end_time")]
+        [Newtonsoft.Json.JsonProperty("pay_end_time")]
         public string PayEndTime { get; set; }
 
         /// <summary>
         /// 缴至时间，用于健康险、寿险等场景，用户需要按期缴费使用
         /// </summary>
-        [XmlElement("pay_to_time")]
+        [Newtonsoft.Json.JsonProperty("pay_to_time")]
         public string PayToTime { get; set; }
 
         /// <summary>
         /// 保单凭证号;蚂蚁保险平台生成的保单凭证号,用户可以通过此单号去保险公司查询保单信息.
         /// </summary>
-        [XmlElement("policy_no")]
+        [Newtonsoft.Json.JsonProperty("policy_no")]
         public string PolicyNo { get; set; }
 
         /// <summary>
         /// 保单状态.INEFFECTIVE:未生效、GUARANTEE:保障中、EXPIRED:已失效、SURRENDER:已退保
         /// </summary>
-        [XmlElement("policy_status")]
+        [Newtonsoft.Json.JsonProperty("policy_status")]
         public string PolicyStatus { get; set; }
 
         /// <summary>
         /// 保费 ;单位分
         /// </summary>
-        [XmlElement("premium")]
+        [Newtonsoft.Json.JsonProperty("premium")]
         public long Premium { get; set; }
 
         /// <summary>
         /// 产品名称
         /// </summary>
-        [XmlElement("prod_name")]
+        [Newtonsoft.Json.JsonProperty("prod_name")]
         public string ProdName { get; set; }
 
         /// <summary>
         /// 保额 ;单位分
         /// </summary>
-        [XmlElement("sum_insured")]
+        [Newtonsoft.Json.JsonProperty("sum_insured")]
         public long SumInsured { get; set; }
 
         /// <summary>
         /// 退保金额
         /// </summary>
-        [XmlElement("surrender_fee")]
+        [Newtonsoft.Json.JsonProperty("surrender_fee")]
         public long SurrenderFee { get; set; }
 
         /// <summary>
         /// 退保时间
         /// </summary>
-        [XmlElement("surrender_time")]
+        [Newtonsoft.Json.JsonProperty("surrender_time")]
         public string SurrenderTime { get; set; }
     }
 }

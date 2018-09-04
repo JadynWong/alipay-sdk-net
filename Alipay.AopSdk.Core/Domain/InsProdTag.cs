@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务标记代码
         /// </summary>
-        [XmlElement("tag_code")]
+        [Newtonsoft.Json.JsonProperty("tag_code")]
         public string TagCode { get; set; }
 
         /// <summary>
         /// 业务标记值
         /// </summary>
-        [XmlElement("tag_value")]
+        [Newtonsoft.Json.JsonProperty("tag_value")]
         public string TagValue { get; set; }
     }
 }

@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 风险标签
         /// </summary>
-        [XmlElement("risk_code")]
+        [Newtonsoft.Json.JsonProperty("risk_code")]
         public string RiskCode { get; set; }
 
         /// <summary>
         /// 风险等级
         /// </summary>
-        [XmlElement("risk_level")]
+        [Newtonsoft.Json.JsonProperty("risk_level")]
         public long RiskLevel { get; set; }
     }
 }

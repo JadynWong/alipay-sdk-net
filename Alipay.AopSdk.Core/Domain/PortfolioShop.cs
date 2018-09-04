@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 展示权重；必须大于等于0；排序规则：权重倒叙
         /// </summary>
-        [XmlElement("display_weight")]
+        [Newtonsoft.Json.JsonProperty("display_weight")]
         public long DisplayWeight { get; set; }
 
         /// <summary>
         /// 门店id
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
     }
 }

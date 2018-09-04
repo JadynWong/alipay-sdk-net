@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// zzz
         /// </summary>
-        [XmlElement("xxxx")]
+        [Newtonsoft.Json.JsonProperty("xxxx")]
         public XXXXsdasdasd Xxxx { get; set; }
     }
 }

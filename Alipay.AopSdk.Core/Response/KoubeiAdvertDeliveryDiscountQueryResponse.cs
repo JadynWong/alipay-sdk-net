@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 广告投放出去的优惠信息
         /// </summary>
-        [XmlElement("discount")]
+        [Newtonsoft.Json.JsonProperty("discount")]
         public DiscountInfo Discount { get; set; }
     }
 }

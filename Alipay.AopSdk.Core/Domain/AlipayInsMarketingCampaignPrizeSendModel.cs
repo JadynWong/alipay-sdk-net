@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 账户id，如支付宝userId：2088102161835009
         /// </summary>
-        [XmlElement("account_id")]
+        [Newtonsoft.Json.JsonProperty("account_id")]
         public string AccountId { get; set; }
 
         /// <summary>
         /// 账号类型
         /// </summary>
-        [XmlElement("account_type")]
+        [Newtonsoft.Json.JsonProperty("account_type")]
         public long AccountType { get; set; }
 
         /// <summary>
         /// 营销保险活动Id
         /// </summary>
-        [XmlElement("campaign_id")]
+        [Newtonsoft.Json.JsonProperty("campaign_id")]
         public string CampaignId { get; set; }
 
         /// <summary>
@@ -38,13 +38,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 发奖接口幂等字段
         /// </summary>
-        [XmlElement("out_biz_no")]
+        [Newtonsoft.Json.JsonProperty("out_biz_no")]
         public string OutBizNo { get; set; }
 
         /// <summary>
         /// 请求流水Id
         /// </summary>
-        [XmlElement("request_id")]
+        [Newtonsoft.Json.JsonProperty("request_id")]
         public string RequestId { get; set; }
     }
 }

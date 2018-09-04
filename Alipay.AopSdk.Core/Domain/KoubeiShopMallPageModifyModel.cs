@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商圈id
         /// </summary>
-        [XmlElement("mall_id")]
+        [Newtonsoft.Json.JsonProperty("mall_id")]
         public string MallId { get; set; }
 
         /// <summary>
         /// 商圈访问地址
         /// </summary>
-        [XmlElement("mall_url")]
+        [Newtonsoft.Json.JsonProperty("mall_url")]
         public string MallUrl { get; set; }
 
         /// <summary>
         /// 废弃！，务传。
         /// </summary>
-        [XmlElement("out_biz_id")]
+        [Newtonsoft.Json.JsonProperty("out_biz_id")]
         public string OutBizId { get; set; }
     }
 }

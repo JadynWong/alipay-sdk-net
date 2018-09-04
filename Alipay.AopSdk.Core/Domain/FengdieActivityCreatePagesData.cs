@@ -27,13 +27,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 模板中页面的路径（相对于项目根目录）
         /// </summary>
-        [XmlElement("page_path")]
+        [Newtonsoft.Json.JsonProperty("page_path")]
         public string PagePath { get; set; }
 
         /// <summary>
         /// 站点标题，默认为“未命名标题”
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

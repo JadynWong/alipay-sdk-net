@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 接口调用返回结果信息
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public string Result { get; set; }
 
         /// <summary>
         /// 操作成功标识【true：成功；false：失败】
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public string Success { get; set; }
     }
 }

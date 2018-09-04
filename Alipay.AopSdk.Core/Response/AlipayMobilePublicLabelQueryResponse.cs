@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 结果码
         /// </summary>
-        [XmlElement("code")]
+        [Newtonsoft.Json.JsonProperty("code")]
         public string Code { get; set; }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 结果信息
         /// </summary>
-        [XmlElement("msg")]
+        [Newtonsoft.Json.JsonProperty("msg")]
         public string Msg { get; set; }
     }
 }

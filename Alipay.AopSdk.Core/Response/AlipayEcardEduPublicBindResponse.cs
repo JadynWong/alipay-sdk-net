@@ -11,19 +11,19 @@ namespace Aop.Api.Response
         /// <summary>
         /// 机构编码
         /// </summary>
-        [XmlElement("agent_code")]
+        [Newtonsoft.Json.JsonProperty("agent_code")]
         public string AgentCode { get; set; }
 
         /// <summary>
         /// 卡号
         /// </summary>
-        [XmlElement("card_no")]
+        [Newtonsoft.Json.JsonProperty("card_no")]
         public string CardNo { get; set; }
 
         /// <summary>
         /// 成功
         /// </summary>
-        [XmlElement("return_code")]
+        [Newtonsoft.Json.JsonProperty("return_code")]
         public string ReturnCode { get; set; }
     }
 }

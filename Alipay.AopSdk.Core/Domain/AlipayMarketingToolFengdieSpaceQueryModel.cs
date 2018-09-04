@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 作为当前操作者的空间成员用户名， 值为 origin_user_id
         /// </summary>
-        [XmlElement("operator")]
+        [Newtonsoft.Json.JsonProperty("operator")]
         public string Operator { get; set; }
 
         /// <summary>
         /// 欲查询的空间 ID
         /// </summary>
-        [XmlElement("space_id")]
+        [Newtonsoft.Json.JsonProperty("space_id")]
         public string SpaceId { get; set; }
     }
 }

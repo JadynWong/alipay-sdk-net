@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 证件号
         /// </summary>
-        [XmlElement("cert_no")]
+        [Newtonsoft.Json.JsonProperty("cert_no")]
         public string CertNo { get; set; }
 
         /// <summary>
         /// 证件类型，身份证
         /// </summary>
-        [XmlElement("cert_type")]
+        [Newtonsoft.Json.JsonProperty("cert_type")]
         public string CertType { get; set; }
     }
 }

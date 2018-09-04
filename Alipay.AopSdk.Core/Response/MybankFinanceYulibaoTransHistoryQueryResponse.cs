@@ -13,13 +13,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 历史交易记录查询的当前页码
         /// </summary>
-        [XmlElement("current_page")]
+        [Newtonsoft.Json.JsonProperty("current_page")]
         public long CurrentPage { get; set; }
 
         /// <summary>
         /// 当前查询是否具有下一页的数据，true-有，fasle-没有
         /// </summary>
-        [XmlElement("has_next_page")]
+        [Newtonsoft.Json.JsonProperty("has_next_page")]
         public bool HasNextPage { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 当前查询在不分页情况下的数据总数
         /// </summary>
-        [XmlElement("total_item_count")]
+        [Newtonsoft.Json.JsonProperty("total_item_count")]
         public string TotalItemCount { get; set; }
     }
 }

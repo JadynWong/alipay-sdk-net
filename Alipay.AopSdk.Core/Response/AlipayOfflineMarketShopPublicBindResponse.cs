@@ -19,13 +19,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 数字类型，标示总的绑定错误总数
         /// </summary>
-        [XmlElement("total_error")]
+        [Newtonsoft.Json.JsonProperty("total_error")]
         public long TotalError { get; set; }
 
         /// <summary>
         /// 绑定店铺总成功数
         /// </summary>
-        [XmlElement("total_success")]
+        [Newtonsoft.Json.JsonProperty("total_success")]
         public long TotalSuccess { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 蚂蚁会员权益配置的ID
         /// </summary>
-        [XmlElement("benefit_id")]
+        [Newtonsoft.Json.JsonProperty("benefit_id")]
         public string BenefitId { get; set; }
 
         /// <summary>
@@ -26,13 +26,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 蚂蚁会员权益配置的原始积分
         /// </summary>
-        [XmlElement("original_point")]
+        [Newtonsoft.Json.JsonProperty("original_point")]
         public string OriginalPoint { get; set; }
 
         /// <summary>
         /// 蚂蚁会员权益的专享等级列表
         /// </summary>
-        [XmlElement("own_grades")]
+        [Newtonsoft.Json.JsonProperty("own_grades")]
         public string OwnGrades { get; set; }
     }
 }

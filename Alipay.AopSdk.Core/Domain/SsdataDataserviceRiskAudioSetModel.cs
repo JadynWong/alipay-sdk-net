@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 关键词创建人，也即使用者
         /// </summary>
-        [XmlElement("creator")]
+        [Newtonsoft.Json.JsonProperty("creator")]
         public string Creator { get; set; }
 
         /// <summary>
@@ -33,31 +33,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 修改人，一般的修改指的是删除
         /// </summary>
-        [XmlElement("modifier")]
+        [Newtonsoft.Json.JsonProperty("modifier")]
         public string Modifier { get; set; }
 
         /// <summary>
         /// add 表示新增；delete 表示删除；query 表示查询；
         /// </summary>
-        [XmlElement("operate_type")]
+        [Newtonsoft.Json.JsonProperty("operate_type")]
         public string OperateType { get; set; }
 
         /// <summary>
         /// 页数
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public string PageNum { get; set; }
 
         /// <summary>
         /// 一页展示数量
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public string PageSize { get; set; }
 
         /// <summary>
         /// 关键词风险类型，批量增加时候，该批关键词为同一风险类型。1-涉政，2-涉黄
         /// </summary>
-        [XmlElement("risk_type")]
+        [Newtonsoft.Json.JsonProperty("risk_type")]
         public string RiskType { get; set; }
     }
 }

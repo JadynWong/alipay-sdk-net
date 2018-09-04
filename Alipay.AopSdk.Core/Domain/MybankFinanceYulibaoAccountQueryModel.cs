@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 基金代码，必填。目前默认填001529，代表余利宝
         /// </summary>
-        [XmlElement("fund_code")]
+        [Newtonsoft.Json.JsonProperty("fund_code")]
         public string FundCode { get; set; }
     }
 }

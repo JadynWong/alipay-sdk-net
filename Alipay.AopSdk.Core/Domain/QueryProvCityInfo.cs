@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 省市编号
         /// </summary>
-        [XmlElement("adcode")]
+        [Newtonsoft.Json.JsonProperty("adcode")]
         public string Adcode { get; set; }
 
         /// <summary>
         /// 城市名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
     }
 }

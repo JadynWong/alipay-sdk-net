@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 活动id
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public string ActivityId { get; set; }
 
         /// <summary>
         /// 批次id
         /// </summary>
-        [XmlElement("batch_id")]
+        [Newtonsoft.Json.JsonProperty("batch_id")]
         public string BatchId { get; set; }
 
         /// <summary>
         /// partener id
         /// </summary>
-        [XmlElement("pid")]
+        [Newtonsoft.Json.JsonProperty("pid")]
         public string Pid { get; set; }
 
         /// <summary>
         /// user id
         /// </summary>
-        [XmlElement("uid")]
+        [Newtonsoft.Json.JsonProperty("uid")]
         public string Uid { get; set; }
     }
 }

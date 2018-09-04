@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 还可以发放的集分宝个数
         /// </summary>
-        [XmlElement("budget_amount")]
+        [Newtonsoft.Json.JsonProperty("budget_amount")]
         public long BudgetAmount { get; set; }
     }
 }

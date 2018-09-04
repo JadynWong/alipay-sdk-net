@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 成员的角色类型，DEVELOPER-开发者，EXPERIENCER-体验者
         /// </summary>
-        [XmlElement("role")]
+        [Newtonsoft.Json.JsonProperty("role")]
         public string Role { get; set; }
     }
 }

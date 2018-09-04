@@ -13,25 +13,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 头图素材ID
         /// </summary>
-        [XmlElement("cover_media_id")]
+        [Newtonsoft.Json.JsonProperty("cover_media_id")]
         public string CoverMediaId { get; set; }
 
         /// <summary>
         /// 头图素材type,枚举(PICTURE/VIDEO),更改头图时必传
         /// </summary>
-        [XmlElement("cover_media_type")]
+        [Newtonsoft.Json.JsonProperty("cover_media_type")]
         public string CoverMediaType { get; set; }
 
         /// <summary>
         /// 作品集id
         /// </summary>
-        [XmlElement("portfolio_id")]
+        [Newtonsoft.Json.JsonProperty("portfolio_id")]
         public string PortfolioId { get; set; }
 
         /// <summary>
         /// 操作人信息
         /// </summary>
-        [XmlElement("portfolio_operator_info")]
+        [Newtonsoft.Json.JsonProperty("portfolio_operator_info")]
         public PortfolioOperatorInfo PortfolioOperatorInfo { get; set; }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 作品集标题
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

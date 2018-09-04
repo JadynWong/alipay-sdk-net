@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户简称
         /// </summary>
-        [XmlElement("alias_name")]
+        [Newtonsoft.Json.JsonProperty("alias_name")]
         public string AliasName { get; set; }
 
         /// <summary>
@@ -33,19 +33,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户证件编号（企业或者个体工商户提供营业执照，事业单位提供事证号）
         /// </summary>
-        [XmlElement("business_license")]
+        [Newtonsoft.Json.JsonProperty("business_license")]
         public string BusinessLicense { get; set; }
 
         /// <summary>
         /// 商户证件类型，取值范围：NATIONAL_LEGAL：营业执照；NATIONAL_LEGAL_MERGE:营业执照(多证合一)；INST_RGST_CTF：事业单位法人证书
         /// </summary>
-        [XmlElement("business_license_type")]
+        [Newtonsoft.Json.JsonProperty("business_license_type")]
         public string BusinessLicenseType { get; set; }
 
         /// <summary>
         /// 商户经营类目，参考文档：https://doc.open.alipay.com/doc2/detail?&docType=1&articleId=105444
         /// </summary>
-        [XmlElement("category_id")]
+        [Newtonsoft.Json.JsonProperty("category_id")]
         public string CategoryId { get; set; }
 
         /// <summary>
@@ -58,7 +58,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户编号，由机构定义，需要保证在机构下唯一
         /// </summary>
-        [XmlElement("external_id")]
+        [Newtonsoft.Json.JsonProperty("external_id")]
         public string ExternalId { get; set; }
 
         /// <summary>
@@ -71,13 +71,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户备注，可填写额外信息。分支机构进件，需要按照要求填写“分支机构码”，方便进行入驻管控，分支机构码由支付宝指定编码值，具体编码值可联系对口BD获取。填写分支机构码的时候用“##”标识符括起来，放在整条备注信息的开头处。示例：若进件分支机构为吉林省，由于对应分支机构编码值为220000，那么进件的时候应填写备注信息为：##220000##其他备注信息。
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 商户名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -90,13 +90,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户客服电话
         /// </summary>
-        [XmlElement("service_phone")]
+        [Newtonsoft.Json.JsonProperty("service_phone")]
         public string ServicePhone { get; set; }
 
         /// <summary>
         /// 商户来源机构标识，填写机构在支付宝的pid
         /// </summary>
-        [XmlElement("source")]
+        [Newtonsoft.Json.JsonProperty("source")]
         public string Source { get; set; }
     }
 }

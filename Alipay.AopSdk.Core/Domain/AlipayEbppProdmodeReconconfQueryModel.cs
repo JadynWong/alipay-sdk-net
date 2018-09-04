@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 缴费业务类型
         /// </summary>
-        [XmlElement("biz_type")]
+        [Newtonsoft.Json.JsonProperty("biz_type")]
         public string BizType { get; set; }
 
         /// <summary>
         /// 销账机构编码
         /// </summary>
-        [XmlElement("chargeoff_code")]
+        [Newtonsoft.Json.JsonProperty("chargeoff_code")]
         public string ChargeoffCode { get; set; }
     }
 }

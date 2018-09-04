@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// H5应用详情
         /// </summary>
-        [XmlElement("activity")]
+        [Newtonsoft.Json.JsonProperty("activity")]
         public FengdieActivity Activity { get; set; }
     }
 }

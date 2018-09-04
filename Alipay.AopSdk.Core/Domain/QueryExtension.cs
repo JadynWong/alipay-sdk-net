@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 扩展区套id
         /// </summary>
-        [XmlElement("extension_key")]
+        [Newtonsoft.Json.JsonProperty("extension_key")]
         public string ExtensionKey { get; set; }
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 扩展区状态，"ON"代表上线，"OFF"代表下线，只有上线的扩展区才能被用户看到
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

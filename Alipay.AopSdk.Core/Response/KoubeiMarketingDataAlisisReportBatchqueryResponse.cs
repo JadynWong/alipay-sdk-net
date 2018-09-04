@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 总记录数
         /// </summary>
-        [XmlElement("total_count")]
+        [Newtonsoft.Json.JsonProperty("total_count")]
         public string TotalCount { get; set; }
     }
 }

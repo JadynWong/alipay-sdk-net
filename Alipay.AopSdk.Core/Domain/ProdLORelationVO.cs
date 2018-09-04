@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 区域编码
         /// </summary>
-        [XmlElement("lo_code")]
+        [Newtonsoft.Json.JsonProperty("lo_code")]
         public string LoCode { get; set; }
 
         /// <summary>
         /// 区域类型
         /// </summary>
-        [XmlElement("lo_type")]
+        [Newtonsoft.Json.JsonProperty("lo_type")]
         public string LoType { get; set; }
 
         /// <summary>
         /// 产品码
         /// </summary>
-        [XmlElement("prod_code")]
+        [Newtonsoft.Json.JsonProperty("prod_code")]
         public string ProdCode { get; set; }
 
         /// <summary>
         /// 产品版本
         /// </summary>
-        [XmlElement("prod_version")]
+        [Newtonsoft.Json.JsonProperty("prod_version")]
         public string ProdVersion { get; set; }
     }
 }

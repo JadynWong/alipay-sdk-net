@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 每页大小：最小1，最大100
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public string PageSize { get; set; }
     }
 }

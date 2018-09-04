@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 备用字段，json格式
         /// </summary>
-        [XmlElement("content_var")]
+        [Newtonsoft.Json.JsonProperty("content_var")]
         public string ContentVar { get; set; }
 
         /// <summary>
         /// 宣讲会来源方id
         /// </summary>
-        [XmlElement("talk_source_code")]
+        [Newtonsoft.Json.JsonProperty("talk_source_code")]
         public string TalkSourceCode { get; set; }
 
         /// <summary>
         /// 宣讲会在合作方的ID
         /// </summary>
-        [XmlElement("talk_source_id")]
+        [Newtonsoft.Json.JsonProperty("talk_source_id")]
         public string TalkSourceId { get; set; }
     }
 }

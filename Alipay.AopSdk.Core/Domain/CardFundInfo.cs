@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 消费资金账户
         /// </summary>
-        [XmlElement("fundaccount")]
+        [Newtonsoft.Json.JsonProperty("fundaccount")]
         public string Fundaccount { get; set; }
 
         /// <summary>
         /// 消费资金类型
         /// </summary>
-        [XmlElement("fundtype")]
+        [Newtonsoft.Json.JsonProperty("fundtype")]
         public string Fundtype { get; set; }
     }
 }

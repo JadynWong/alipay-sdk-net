@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 彩票系统支持的可用于赠送的彩种个数
         /// </summary>
-        [XmlElement("total_result")]
+        [Newtonsoft.Json.JsonProperty("total_result")]
         public long TotalResult { get; set; }
     }
 }

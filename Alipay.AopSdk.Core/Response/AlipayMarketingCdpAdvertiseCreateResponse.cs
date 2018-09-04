@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 创建广告唯一标识
         /// </summary>
-        [XmlElement("ad_id")]
+        [Newtonsoft.Json.JsonProperty("ad_id")]
         public string AdId { get; set; }
     }
 }

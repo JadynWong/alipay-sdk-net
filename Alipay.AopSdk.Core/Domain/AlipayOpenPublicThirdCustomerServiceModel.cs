@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务窗商户在渠道商处对应的用户id
         /// </summary>
-        [XmlElement("channel_uid")]
+        [Newtonsoft.Json.JsonProperty("channel_uid")]
         public string ChannelUid { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户标识
         /// </summary>
-        [XmlElement("merchantid")]
+        [Newtonsoft.Json.JsonProperty("merchantid")]
         public string Merchantid { get; set; }
 
         /// <summary>
         /// 商户uid
         /// </summary>
-        [XmlElement("merchantuid")]
+        [Newtonsoft.Json.JsonProperty("merchantuid")]
         public string Merchantuid { get; set; }
     }
 }

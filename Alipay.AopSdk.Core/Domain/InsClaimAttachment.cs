@@ -12,37 +12,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 材料描述
         /// </summary>
-        [XmlElement("description")]
+        [Newtonsoft.Json.JsonProperty("description")]
         public string Description { get; set; }
 
         /// <summary>
         /// 文件名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 附件对应的路径
         /// </summary>
-        [XmlElement("path")]
+        [Newtonsoft.Json.JsonProperty("path")]
         public string Path { get; set; }
 
         /// <summary>
         /// 审核理由
         /// </summary>
-        [XmlElement("reason")]
+        [Newtonsoft.Json.JsonProperty("reason")]
         public string Reason { get; set; }
 
         /// <summary>
         /// 材料审核状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
 
         /// <summary>
         /// 附件类型
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 品类编码
         /// </summary>
-        [XmlElement("category_code")]
+        [Newtonsoft.Json.JsonProperty("category_code")]
         public string CategoryCode { get; set; }
 
         /// <summary>
         /// 品类名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 父品类编码。顶级类目此值为0
         /// </summary>
-        [XmlElement("parent_id")]
+        [Newtonsoft.Json.JsonProperty("parent_id")]
         public string ParentId { get; set; }
     }
 }

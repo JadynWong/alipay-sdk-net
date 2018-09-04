@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 案件更新内容
         /// </summary>
-        [XmlElement("progress_update_content")]
+        [Newtonsoft.Json.JsonProperty("progress_update_content")]
         public string ProgressUpdateContent { get; set; }
 
         /// <summary>
         /// 案件更新进度时间
         /// </summary>
-        [XmlElement("progress_update_time")]
+        [Newtonsoft.Json.JsonProperty("progress_update_time")]
         public string ProgressUpdateTime { get; set; }
 
         /// <summary>
         /// 进度状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

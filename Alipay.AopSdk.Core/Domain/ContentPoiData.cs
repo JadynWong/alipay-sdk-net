@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// poi纬度
         /// </summary>
-        [XmlElement("latitude")]
+        [Newtonsoft.Json.JsonProperty("latitude")]
         public string Latitude { get; set; }
 
         /// <summary>
         /// poi经度
         /// </summary>
-        [XmlElement("longitude")]
+        [Newtonsoft.Json.JsonProperty("longitude")]
         public string Longitude { get; set; }
 
         /// <summary>
         /// 位置信息
         /// </summary>
-        [XmlElement("poi_name")]
+        [Newtonsoft.Json.JsonProperty("poi_name")]
         public string PoiName { get; set; }
     }
 }

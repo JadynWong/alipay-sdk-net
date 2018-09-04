@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 证件号-身份证号
         /// </summary>
-        [XmlElement("cert_no")]
+        [Newtonsoft.Json.JsonProperty("cert_no")]
         public string CertNo { get; set; }
 
         /// <summary>
         /// 租客用户Id
         /// </summary>
-        [XmlElement("rent_id")]
+        [Newtonsoft.Json.JsonProperty("rent_id")]
         public string RentId { get; set; }
     }
 }

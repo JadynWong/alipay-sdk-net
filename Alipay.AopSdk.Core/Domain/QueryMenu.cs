@@ -27,13 +27,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 菜单唯一id
         /// </summary>
-        [XmlElement("menu_key")]
+        [Newtonsoft.Json.JsonProperty("menu_key")]
         public string MenuKey { get; set; }
 
         /// <summary>
         /// 菜单类型，icon：icon型菜单，text：文本型菜单
         /// </summary>
-        [XmlElement("type")]
+        [Newtonsoft.Json.JsonProperty("type")]
         public string Type { get; set; }
     }
 }

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 地理信息
         /// </summary>
-        [XmlElement("ad_code")]
+        [Newtonsoft.Json.JsonProperty("ad_code")]
         public string AdCode { get; set; }
 
         /// <summary>
         /// 纬度 latitude（填写非0非1）
         /// </summary>
-        [XmlElement("lat")]
+        [Newtonsoft.Json.JsonProperty("lat")]
         public string Lat { get; set; }
 
         /// <summary>
         /// 经度 longitude（填写非0非1）
         /// </summary>
-        [XmlElement("lon")]
+        [Newtonsoft.Json.JsonProperty("lon")]
         public string Lon { get; set; }
     }
 }

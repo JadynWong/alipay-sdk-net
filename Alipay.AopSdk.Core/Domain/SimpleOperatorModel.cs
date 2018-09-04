@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作员id
         /// </summary>
-        [XmlElement("operator_id")]
+        [Newtonsoft.Json.JsonProperty("operator_id")]
         public string OperatorId { get; set; }
 
         /// <summary>
         /// 操作员类型，只区分收银员和非收银员  收银员为“RESTRICTED_CASHIER”，非收银员为“STANDARD_NORMAL”
         /// </summary>
-        [XmlElement("operator_type")]
+        [Newtonsoft.Json.JsonProperty("operator_type")]
         public string OperatorType { get; set; }
     }
 }

@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 活动id
         /// </summary>
-        [XmlElement("campaign_id")]
+        [Newtonsoft.Json.JsonProperty("campaign_id")]
         public string CampaignId { get; set; }
 
         /// <summary>
         /// 权益类型
         /// </summary>
-        [XmlElement("coupon_type")]
+        [Newtonsoft.Json.JsonProperty("coupon_type")]
         public string CouponType { get; set; }
 
         /// <summary>
         /// 权益盖帽值
         /// </summary>
-        [XmlElement("coupon_upper_value")]
+        [Newtonsoft.Json.JsonProperty("coupon_upper_value")]
         public string CouponUpperValue { get; set; }
 
         /// <summary>
         /// 权益值
         /// </summary>
-        [XmlElement("coupon_value")]
+        [Newtonsoft.Json.JsonProperty("coupon_value")]
         public string CouponValue { get; set; }
     }
 }

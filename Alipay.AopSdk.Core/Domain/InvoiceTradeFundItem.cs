@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当前支付工具支付的金额
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 支付宝支付工具描述
         /// </summary>
-        [XmlElement("payment_tool_name")]
+        [Newtonsoft.Json.JsonProperty("payment_tool_name")]
         public string PaymentToolName { get; set; }
 
         /// <summary>
         /// 支付宝支付工具类型
         /// </summary>
-        [XmlElement("payment_tool_type")]
+        [Newtonsoft.Json.JsonProperty("payment_tool_type")]
         public string PaymentToolType { get; set; }
     }
 }

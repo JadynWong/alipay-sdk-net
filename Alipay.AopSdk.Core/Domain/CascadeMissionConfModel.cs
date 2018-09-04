@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 二级分佣认领人类型  PROMOTER:第三方推广者  KOUBEI_PLATFORM：口碑平台推广
         /// </summary>
-        [XmlElement("commission_user_type")]
+        [Newtonsoft.Json.JsonProperty("commission_user_type")]
         public string CommissionUserType { get; set; }
     }
 }

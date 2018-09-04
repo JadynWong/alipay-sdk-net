@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户在芝麻端申请的appId
         /// </summary>
-        [XmlElement("buckle_app_id")]
+        [Newtonsoft.Json.JsonProperty("buckle_app_id")]
         public string BuckleAppId { get; set; }
 
         /// <summary>
         /// 商户在芝麻端申请的merchantId
         /// </summary>
-        [XmlElement("buckle_merchant_id")]
+        [Newtonsoft.Json.JsonProperty("buckle_merchant_id")]
         public string BuckleMerchantId { get; set; }
     }
 }

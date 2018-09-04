@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 标签id
         /// </summary>
-        [XmlElement("id")]
+        [Newtonsoft.Json.JsonProperty("id")]
         public string Id { get; set; }
     }
 }

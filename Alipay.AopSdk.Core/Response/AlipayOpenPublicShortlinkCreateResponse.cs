@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 生成的带参推广短链接
         /// </summary>
-        [XmlElement("shortlink")]
+        [Newtonsoft.Json.JsonProperty("shortlink")]
         public string Shortlink { get; set; }
     }
 }

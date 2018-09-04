@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 服务结束时间，格式为yyyy-MM-dd HH:mm（到分）
         /// </summary>
-        [XmlElement("gmt_end")]
+        [Newtonsoft.Json.JsonProperty("gmt_end")]
         public string GmtEnd { get; set; }
 
         /// <summary>
         /// 服务开始时间，格式为yyyy-MM-dd HH:mm（到分）
         /// </summary>
-        [XmlElement("gmt_start")]
+        [Newtonsoft.Json.JsonProperty("gmt_start")]
         public string GmtStart { get; set; }
     }
 }

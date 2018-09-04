@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 分组圈出的人群数量
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public string Count { get; set; }
     }
 }

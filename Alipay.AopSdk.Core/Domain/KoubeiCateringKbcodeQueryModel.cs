@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 创建口碑码时返回的批次号（batch_id和shop_id二者必填其一）
         /// </summary>
-        [XmlElement("batch_id")]
+        [Newtonsoft.Json.JsonProperty("batch_id")]
         public long BatchId { get; set; }
 
         /// <summary>
         /// 当前页码（大于0的整数）
         /// </summary>
-        [XmlElement("page_num")]
+        [Newtonsoft.Json.JsonProperty("page_num")]
         public long PageNum { get; set; }
 
         /// <summary>
         /// 每页返回的记录数（0~100的整数）
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
 
         /// <summary>
         /// 口碑店铺ID（batch_id和shop_id二者必填其一）
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
     }
 }

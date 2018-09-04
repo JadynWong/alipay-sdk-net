@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 真实资金，单位元
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public string Amount { get; set; }
 
         /// <summary>
         /// 面额，单位元
         /// </summary>
-        [XmlElement("assetamount")]
+        [Newtonsoft.Json.JsonProperty("assetamount")]
         public string Assetamount { get; set; }
 
         /// <summary>
         /// 内部订单号
         /// </summary>
-        [XmlElement("orderno")]
+        [Newtonsoft.Json.JsonProperty("orderno")]
         public string Orderno { get; set; }
 
         /// <summary>
         /// 外部订单号
         /// </summary>
-        [XmlElement("outorderno")]
+        [Newtonsoft.Json.JsonProperty("outorderno")]
         public string Outorderno { get; set; }
     }
 }

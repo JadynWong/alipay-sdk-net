@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 开票内容  注：json数组格式
         /// </summary>
-        [XmlElement("details")]
+        [Newtonsoft.Json.JsonProperty("details")]
         public string Details { get; set; }
 
         /// <summary>
         /// 开票关键信息
         /// </summary>
-        [XmlElement("key_info")]
+        [Newtonsoft.Json.JsonProperty("key_info")]
         public InvoiceKeyInfo KeyInfo { get; set; }
     }
 }

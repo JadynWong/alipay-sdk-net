@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 营业执照图片base64加密后内容
         /// </summary>
-        [XmlElement("image_content")]
+        [Newtonsoft.Json.JsonProperty("image_content")]
         public string ImageContent { get; set; }
     }
 }

@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 飞猪内容id
         /// </summary>
-        [XmlElement("content_id")]
+        [Newtonsoft.Json.JsonProperty("content_id")]
         public string ContentId { get; set; }
 
         /// <summary>
         /// 点赞数
         /// </summary>
-        [XmlElement("support_count")]
+        [Newtonsoft.Json.JsonProperty("support_count")]
         public long SupportCount { get; set; }
 
         /// <summary>
         /// 阅读数
         /// </summary>
-        [XmlElement("total_page_view_count")]
+        [Newtonsoft.Json.JsonProperty("total_page_view_count")]
         public long TotalPageViewCount { get; set; }
     }
 }

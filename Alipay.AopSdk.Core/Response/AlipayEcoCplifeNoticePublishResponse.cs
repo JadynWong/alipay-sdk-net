@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 支付宝平台统一生产的通知公告唯一ID标示.
         /// </summary>
-        [XmlElement("notice_id")]
+        [Newtonsoft.Json.JsonProperty("notice_id")]
         public string NoticeId { get; set; }
     }
 }

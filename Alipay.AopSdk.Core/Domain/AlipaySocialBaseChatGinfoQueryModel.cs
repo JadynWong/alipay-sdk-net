@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 群id
         /// </summary>
-        [XmlElement("group_id")]
+        [Newtonsoft.Json.JsonProperty("group_id")]
         public string GroupId { get; set; }
     }
 }

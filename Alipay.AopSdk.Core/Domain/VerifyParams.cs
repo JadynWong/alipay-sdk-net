@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户证件号后4位
         /// </summary>
-        [XmlElement("cert_no")]
+        [Newtonsoft.Json.JsonProperty("cert_no")]
         public string CertNo { get; set; }
     }
 }

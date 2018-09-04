@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户别名
         /// </summary>
-        [XmlElement("alias_name")]
+        [Newtonsoft.Json.JsonProperty("alias_name")]
         public string AliasName { get; set; }
 
         /// <summary>
         /// 商户支付宝账号（如果有）
         /// </summary>
-        [XmlElement("alipay_logon_id")]
+        [Newtonsoft.Json.JsonProperty("alipay_logon_id")]
         public string AlipayLogonId { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 经营地址。地址对象中省、市、区、地址必填，其余选填
         /// </summary>
-        [XmlElement("business_address")]
+        [Newtonsoft.Json.JsonProperty("business_address")]
         public AddressInfo BusinessAddress { get; set; }
 
         /// <summary>
@@ -45,61 +45,61 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户编号，由机构定义，需要保证在机构下唯一。与smid二选一必填
         /// </summary>
-        [XmlElement("external_id")]
+        [Newtonsoft.Json.JsonProperty("external_id")]
         public string ExternalId { get; set; }
 
         /// <summary>
         /// 开票资料信息
         /// </summary>
-        [XmlElement("invoice_info")]
+        [Newtonsoft.Json.JsonProperty("invoice_info")]
         public MerchantInvoiceInfo InvoiceInfo { get; set; }
 
         /// <summary>
         /// 法人身份证反面url，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。本业务接口中，如果是特殊行业必填
         /// </summary>
-        [XmlElement("legal_cert_back_image")]
+        [Newtonsoft.Json.JsonProperty("legal_cert_back_image")]
         public string LegalCertBackImage { get; set; }
 
         /// <summary>
         /// 法人身份证正面url，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。本业务接口中，如果是特殊行业必填
         /// </summary>
-        [XmlElement("legal_cert_front_image")]
+        [Newtonsoft.Json.JsonProperty("legal_cert_front_image")]
         public string LegalCertFrontImage { get; set; }
 
         /// <summary>
         /// 法人身份证号
         /// </summary>
-        [XmlElement("legal_cert_no")]
+        [Newtonsoft.Json.JsonProperty("legal_cert_no")]
         public string LegalCertNo { get; set; }
 
         /// <summary>
         /// 法人名称
         /// </summary>
-        [XmlElement("legal_name")]
+        [Newtonsoft.Json.JsonProperty("legal_name")]
         public string LegalName { get; set; }
 
         /// <summary>
         /// 营业执照授权函。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。当商户名与结算卡户名不一致时必填
         /// </summary>
-        [XmlElement("license_auth_letter_image")]
+        [Newtonsoft.Json.JsonProperty("license_auth_letter_image")]
         public string LicenseAuthLetterImage { get; set; }
 
         /// <summary>
         /// 商户类别码mcc，参见附件描述中的“类目code”  https://mif-pub.alipayobjects.com/AlipayMCC.xlsx
         /// </summary>
-        [XmlElement("mcc")]
+        [Newtonsoft.Json.JsonProperty("mcc")]
         public string Mcc { get; set; }
 
         /// <summary>
         /// 商家类型：01：企业；02：事业单位
         /// </summary>
-        [XmlElement("merchant_type")]
+        [Newtonsoft.Json.JsonProperty("merchant_type")]
         public string MerchantType { get; set; }
 
         /// <summary>
         /// 进件的二级商户名称
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -126,13 +126,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 客服电话
         /// </summary>
-        [XmlElement("service_phone")]
+        [Newtonsoft.Json.JsonProperty("service_phone")]
         public string ServicePhone { get; set; }
 
         /// <summary>
         /// 二级商户与服务商的签约时间
         /// </summary>
-        [XmlElement("sign_time_with_isv")]
+        [Newtonsoft.Json.JsonProperty("sign_time_with_isv")]
         public string SignTimeWithIsv { get; set; }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 二级商户id。与external_id二选一必填
         /// </summary>
-        [XmlElement("smid")]
+        [Newtonsoft.Json.JsonProperty("smid")]
         public string Smid { get; set; }
     }
 }

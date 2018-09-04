@@ -11,13 +11,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 30
         /// </summary>
-        [XmlElement("external_system_name")]
+        [Newtonsoft.Json.JsonProperty("external_system_name")]
         public string ExternalSystemName { get; set; }
 
         /// <summary>
         /// outter_response
         /// </summary>
-        [XmlElement("query_result")]
+        [Newtonsoft.Json.JsonProperty("query_result")]
         public string QueryResult { get; set; }
     }
 }

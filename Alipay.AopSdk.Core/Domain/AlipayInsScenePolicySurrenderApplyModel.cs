@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 退保扩展参数 ;标准json格式
         /// </summary>
-        [XmlElement("biz_data")]
+        [Newtonsoft.Json.JsonProperty("biz_data")]
         public string BizData { get; set; }
 
         /// <summary>
         /// 蚂蚁保险平台生成的保单号
         /// </summary>
-        [XmlElement("policy_no")]
+        [Newtonsoft.Json.JsonProperty("policy_no")]
         public string PolicyNo { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 口碑订单号
         /// </summary>
-        [XmlElement("order_no")]
+        [Newtonsoft.Json.JsonProperty("order_no")]
         public string OrderNo { get; set; }
     }
 }

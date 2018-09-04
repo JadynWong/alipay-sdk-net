@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 品牌名称
         /// </summary>
-        [XmlElement("brand_name")]
+        [Newtonsoft.Json.JsonProperty("brand_name")]
         public string BrandName { get; set; }
 
         /// <summary>
@@ -26,31 +26,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 背景图片
         /// </summary>
-        [XmlElement("cover")]
+        [Newtonsoft.Json.JsonProperty("cover")]
         public string Cover { get; set; }
 
         /// <summary>
         /// 日库存
         /// </summary>
-        [XmlElement("daily_inventory")]
+        [Newtonsoft.Json.JsonProperty("daily_inventory")]
         public string DailyInventory { get; set; }
 
         /// <summary>
         /// 结束时间
         /// </summary>
-        [XmlElement("gmt_end")]
+        [Newtonsoft.Json.JsonProperty("gmt_end")]
         public string GmtEnd { get; set; }
 
         /// <summary>
         /// 上架时间
         /// </summary>
-        [XmlElement("gmt_start")]
+        [Newtonsoft.Json.JsonProperty("gmt_start")]
         public string GmtStart { get; set; }
 
         /// <summary>
         /// logo图片
         /// </summary>
-        [XmlElement("logo")]
+        [Newtonsoft.Json.JsonProperty("logo")]
         public string Logo { get; set; }
 
         /// <summary>
@@ -63,19 +63,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商家名称
         /// </summary>
-        [XmlElement("merchant_name")]
+        [Newtonsoft.Json.JsonProperty("merchant_name")]
         public string MerchantName { get; set; }
 
         /// <summary>
         /// 商户ID
         /// </summary>
-        [XmlElement("partner_id")]
+        [Newtonsoft.Json.JsonProperty("partner_id")]
         public string PartnerId { get; set; }
 
         /// <summary>
         /// BUY：购买模式  OBTAIN：认领
         /// </summary>
-        [XmlElement("purchase_mode")]
+        [Newtonsoft.Json.JsonProperty("purchase_mode")]
         public string PurchaseMode { get; set; }
 
         /// <summary>
@@ -88,43 +88,43 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 起步金额
         /// </summary>
-        [XmlElement("threshold_amount")]
+        [Newtonsoft.Json.JsonProperty("threshold_amount")]
         public string ThresholdAmount { get; set; }
 
         /// <summary>
         /// 总库存
         /// </summary>
-        [XmlElement("total_inventory")]
+        [Newtonsoft.Json.JsonProperty("total_inventory")]
         public string TotalInventory { get; set; }
 
         /// <summary>
         /// 券ID
         /// </summary>
-        [XmlElement("voucher_id")]
+        [Newtonsoft.Json.JsonProperty("voucher_id")]
         public string VoucherId { get; set; }
 
         /// <summary>
         /// 券名称
         /// </summary>
-        [XmlElement("voucher_name")]
+        [Newtonsoft.Json.JsonProperty("voucher_name")]
         public string VoucherName { get; set; }
 
         /// <summary>
         /// 以元为单位
         /// </summary>
-        [XmlElement("voucher_org_value")]
+        [Newtonsoft.Json.JsonProperty("voucher_org_value")]
         public string VoucherOrgValue { get; set; }
 
         /// <summary>
         /// 券类型  LIMIT-单品券  NO_LIMIT_DISCOUNT-全场折扣券  NO_LIMIT_CASH-全场代金券
         /// </summary>
-        [XmlElement("voucher_type")]
+        [Newtonsoft.Json.JsonProperty("voucher_type")]
         public string VoucherType { get; set; }
 
         /// <summary>
         /// 券价值
         /// </summary>
-        [XmlElement("voucher_value")]
+        [Newtonsoft.Json.JsonProperty("voucher_value")]
         public string VoucherValue { get; set; }
     }
 }

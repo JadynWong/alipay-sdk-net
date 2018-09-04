@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 下架成功后返回的提示
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public string Result { get; set; }
     }
 }

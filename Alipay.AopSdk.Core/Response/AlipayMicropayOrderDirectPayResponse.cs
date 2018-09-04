@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 单笔直接支付返回结果
         /// </summary>
-        [XmlElement("single_pay_detail")]
+        [Newtonsoft.Json.JsonProperty("single_pay_detail")]
         public SinglePayDetail SinglePayDetail { get; set; }
     }
 }

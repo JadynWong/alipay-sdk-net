@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 权益结束时间
         /// </summary>
-        [XmlElement("end_date")]
+        [Newtonsoft.Json.JsonProperty("end_date")]
         public string EndDate { get; set; }
 
         /// <summary>
         /// 开始时间
         /// </summary>
-        [XmlElement("start_date")]
+        [Newtonsoft.Json.JsonProperty("start_date")]
         public string StartDate { get; set; }
 
         /// <summary>
         /// 权益描述
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
     }
 }

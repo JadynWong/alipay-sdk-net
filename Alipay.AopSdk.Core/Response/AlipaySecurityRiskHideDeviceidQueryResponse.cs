@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 设备指纹的apdid
         /// </summary>
-        [XmlElement("deviceid")]
+        [Newtonsoft.Json.JsonProperty("deviceid")]
         public string Deviceid { get; set; }
     }
 }

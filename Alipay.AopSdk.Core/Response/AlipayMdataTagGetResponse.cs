@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 查询到的标签值, JSON字符串
         /// </summary>
-        [XmlElement("tag_values")]
+        [Newtonsoft.Json.JsonProperty("tag_values")]
         public string TagValues { get; set; }
     }
 }

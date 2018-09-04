@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// httpRequest域白名单
         /// </summary>
-        [XmlElement("safe_domain")]
+        [Newtonsoft.Json.JsonProperty("safe_domain")]
         public string SafeDomain { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 活动id
         /// </summary>
-        [XmlElement("activity_id")]
+        [Newtonsoft.Json.JsonProperty("activity_id")]
         public string ActivityId { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 单品批次数
         /// </summary>
-        [XmlElement("batch_num")]
+        [Newtonsoft.Json.JsonProperty("batch_num")]
         public string BatchNum { get; set; }
     }
 }

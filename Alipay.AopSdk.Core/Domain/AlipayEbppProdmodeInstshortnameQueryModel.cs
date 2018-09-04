@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 出账机构中文名称
         /// </summary>
-        [XmlElement("chargeinst_cn_name")]
+        [Newtonsoft.Json.JsonProperty("chargeinst_cn_name")]
         public string ChargeinstCnName { get; set; }
     }
 }

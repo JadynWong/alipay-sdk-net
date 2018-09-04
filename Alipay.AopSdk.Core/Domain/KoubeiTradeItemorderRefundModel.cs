@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 口碑订单号
         /// </summary>
-        [XmlElement("order_no")]
+        [Newtonsoft.Json.JsonProperty("order_no")]
         public string OrderNo { get; set; }
 
         /// <summary>
         /// 标识一次退款请求，同一笔订单多次退款需要保证唯一
         /// </summary>
-        [XmlElement("out_request_no")]
+        [Newtonsoft.Json.JsonProperty("out_request_no")]
         public string OutRequestNo { get; set; }
 
         /// <summary>
         /// 退款原因描述
         /// </summary>
-        [XmlElement("reason")]
+        [Newtonsoft.Json.JsonProperty("reason")]
         public string Reason { get; set; }
 
         /// <summary>

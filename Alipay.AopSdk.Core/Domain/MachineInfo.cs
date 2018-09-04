@@ -12,19 +12,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 设备数量
         /// </summary>
-        [XmlElement("machine_count")]
+        [Newtonsoft.Json.JsonProperty("machine_count")]
         public long MachineCount { get; set; }
 
         /// <summary>
         /// 设备型号
         /// </summary>
-        [XmlElement("machine_model")]
+        [Newtonsoft.Json.JsonProperty("machine_model")]
         public string MachineModel { get; set; }
 
         /// <summary>
         /// 设备类型，由商户定义
         /// </summary>
-        [XmlElement("machine_type")]
+        [Newtonsoft.Json.JsonProperty("machine_type")]
         public string MachineType { get; set; }
     }
 }

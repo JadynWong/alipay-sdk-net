@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户的蚂蚁会员积分余额
         /// </summary>
-        [XmlElement("balance")]
+        [Newtonsoft.Json.JsonProperty("balance")]
         public long Balance { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户的蚂蚁会员等级
         /// </summary>
-        [XmlElement("grade")]
+        [Newtonsoft.Json.JsonProperty("grade")]
         public string Grade { get; set; }
     }
 }

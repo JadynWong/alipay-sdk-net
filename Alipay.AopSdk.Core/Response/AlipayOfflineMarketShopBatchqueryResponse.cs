@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 当前页码
         /// </summary>
-        [XmlElement("current_pageno")]
+        [Newtonsoft.Json.JsonProperty("current_pageno")]
         public string CurrentPageno { get; set; }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 总页码数目
         /// </summary>
-        [XmlElement("total_pageno")]
+        [Newtonsoft.Json.JsonProperty("total_pageno")]
         public string TotalPageno { get; set; }
     }
 }

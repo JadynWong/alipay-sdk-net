@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 是否允许超扣
         /// </summary>
-        [XmlElement("allowoverpay")]
+        [Newtonsoft.Json.JsonProperty("allowoverpay")]
         public string Allowoverpay { get; set; }
 
         /// <summary>
         /// 超扣额度
         /// </summary>
-        [XmlElement("creditquota")]
+        [Newtonsoft.Json.JsonProperty("creditquota")]
         public string Creditquota { get; set; }
     }
 }

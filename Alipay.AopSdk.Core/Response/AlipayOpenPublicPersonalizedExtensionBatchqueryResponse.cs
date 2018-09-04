@@ -13,7 +13,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 扩展区套数
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public long Count { get; set; }
 
         /// <summary>

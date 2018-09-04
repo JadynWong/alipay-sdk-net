@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 口碑码批次号
         /// </summary>
-        [XmlElement("batch_id")]
+        [Newtonsoft.Json.JsonProperty("batch_id")]
         public string BatchId { get; set; }
 
         /// <summary>
         /// 码url
         /// </summary>
-        [XmlElement("core_url")]
+        [Newtonsoft.Json.JsonProperty("core_url")]
         public string CoreUrl { get; set; }
 
         /// <summary>
         /// 生产单号
         /// </summary>
-        [XmlElement("produce_order_id")]
+        [Newtonsoft.Json.JsonProperty("produce_order_id")]
         public string ProduceOrderId { get; set; }
 
         /// <summary>
         /// 二维码编码
         /// </summary>
-        [XmlElement("qrcode")]
+        [Newtonsoft.Json.JsonProperty("qrcode")]
         public string Qrcode { get; set; }
     }
 }

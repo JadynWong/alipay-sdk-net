@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 时间维度,  W：表示 周[1,4,5]  MIOD：表示 每天X分钟[0,1439]
         /// </summary>
-        [XmlElement("dimension")]
+        [Newtonsoft.Json.JsonProperty("dimension")]
         public string Dimension { get; set; }
 
         /// <summary>

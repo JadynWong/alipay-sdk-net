@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 彩种ID
         /// </summary>
-        [XmlElement("lottery_type_id")]
+        [Newtonsoft.Json.JsonProperty("lottery_type_id")]
         public long LotteryTypeId { get; set; }
 
         /// <summary>
         /// 彩种名称
         /// </summary>
-        [XmlElement("lottery_type_name")]
+        [Newtonsoft.Json.JsonProperty("lottery_type_name")]
         public string LotteryTypeName { get; set; }
     }
 }

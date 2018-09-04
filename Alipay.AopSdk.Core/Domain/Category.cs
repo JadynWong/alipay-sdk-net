@@ -20,7 +20,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 美食/娱乐等分类条目
         /// </summary>
-        [XmlElement("shop_cate_name")]
+        [Newtonsoft.Json.JsonProperty("shop_cate_name")]
         public string ShopCateName { get; set; }
     }
 }

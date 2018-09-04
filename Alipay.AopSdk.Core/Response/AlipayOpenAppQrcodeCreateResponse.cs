@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 二维码图片链接地址
         /// </summary>
-        [XmlElement("qr_code_url")]
+        [Newtonsoft.Json.JsonProperty("qr_code_url")]
         public string QrCodeUrl { get; set; }
     }
 }

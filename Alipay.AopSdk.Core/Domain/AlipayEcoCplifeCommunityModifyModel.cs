@@ -20,19 +20,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 地级市编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
         /// </summary>
-        [XmlElement("city_code")]
+        [Newtonsoft.Json.JsonProperty("city_code")]
         public string CityCode { get; set; }
 
         /// <summary>
         /// 小区主要详细地址，不需要包含省市区名称。
         /// </summary>
-        [XmlElement("community_address")]
+        [Newtonsoft.Json.JsonProperty("community_address")]
         public string CommunityAddress { get; set; }
 
         /// <summary>
         /// 支付宝社区小区统一编号，必须在物业账号名下存在。
         /// </summary>
-        [XmlElement("community_id")]
+        [Newtonsoft.Json.JsonProperty("community_id")]
         public string CommunityId { get; set; }
 
         /// <summary>
@@ -45,31 +45,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 小区名称，最长不超过32个字符。
         /// </summary>
-        [XmlElement("community_name")]
+        [Newtonsoft.Json.JsonProperty("community_name")]
         public string CommunityName { get; set; }
 
         /// <summary>
         /// 区县编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
         /// </summary>
-        [XmlElement("district_code")]
+        [Newtonsoft.Json.JsonProperty("district_code")]
         public string DistrictCode { get; set; }
 
         /// <summary>
         /// 需要提供物业服务热线或联系电话，便于用户在需要时联系物业。
         /// </summary>
-        [XmlElement("hotline")]
+        [Newtonsoft.Json.JsonProperty("hotline")]
         public string Hotline { get; set; }
 
         /// <summary>
         /// 小区在物业系统中的唯一编号。
         /// </summary>
-        [XmlElement("out_community_id")]
+        [Newtonsoft.Json.JsonProperty("out_community_id")]
         public string OutCommunityId { get; set; }
 
         /// <summary>
         /// 省份编码，国标码，详见国家统计局数据 <a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/2016.xls">点此下载</a>。
         /// </summary>
-        [XmlElement("province_code")]
+        [Newtonsoft.Json.JsonProperty("province_code")]
         public string ProvinceCode { get; set; }
     }
 }

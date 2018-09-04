@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 活动id
         /// </summary>
-        [XmlElement("camp_id")]
+        [Newtonsoft.Json.JsonProperty("camp_id")]
         public string CampId { get; set; }
 
         /// <summary>
         /// 用户id
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

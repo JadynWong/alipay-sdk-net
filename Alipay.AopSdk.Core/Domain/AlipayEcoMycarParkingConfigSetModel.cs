@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 签约支付宝账号
         /// </summary>
-        [XmlElement("account_no")]
+        [Newtonsoft.Json.JsonProperty("account_no")]
         public string AccountNo { get; set; }
 
         /// <summary>
@@ -26,19 +26,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商户在停车平台首页露出的LOGO；注意：该图片为PNG格式内容为BASE64的字符串，若为空则停车平台首页将不露出商户LOGO。建议图片尺寸27px*27px，大小不要超过60K
         /// </summary>
-        [XmlElement("merchant_logo")]
+        [Newtonsoft.Json.JsonProperty("merchant_logo")]
         public string MerchantLogo { get; set; }
 
         /// <summary>
         /// 商户简称，由开发者提供
         /// </summary>
-        [XmlElement("merchant_name")]
+        [Newtonsoft.Json.JsonProperty("merchant_name")]
         public string MerchantName { get; set; }
 
         /// <summary>
         /// 商户客服电话
         /// </summary>
-        [XmlElement("merchant_service_phone")]
+        [Newtonsoft.Json.JsonProperty("merchant_service_phone")]
         public string MerchantServicePhone { get; set; }
     }
 }

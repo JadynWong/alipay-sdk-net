@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 券模板ID
         /// </summary>
-        [XmlElement("template_id")]
+        [Newtonsoft.Json.JsonProperty("template_id")]
         public string TemplateId { get; set; }
 
         /// <summary>
         /// 支付宝用户ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

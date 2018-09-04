@@ -12,49 +12,49 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 准驾车型
         /// </summary>
-        [XmlElement("clazz")]
+        [Newtonsoft.Json.JsonProperty("clazz")]
         public string Clazz { get; set; }
 
         /// <summary>
         /// 证号
         /// </summary>
-        [XmlElement("driving_license_no")]
+        [Newtonsoft.Json.JsonProperty("driving_license_no")]
         public string DrivingLicenseNo { get; set; }
 
         /// <summary>
         /// base64后的主页照片
         /// </summary>
-        [XmlElement("encoded_img_main")]
+        [Newtonsoft.Json.JsonProperty("encoded_img_main")]
         public string EncodedImgMain { get; set; }
 
         /// <summary>
         /// base64编码后的副页图片
         /// </summary>
-        [XmlElement("encoded_img_vice")]
+        [Newtonsoft.Json.JsonProperty("encoded_img_vice")]
         public string EncodedImgVice { get; set; }
 
         /// <summary>
         /// 失效日期
         /// </summary>
-        [XmlElement("expire_date")]
+        [Newtonsoft.Json.JsonProperty("expire_date")]
         public string ExpireDate { get; set; }
 
         /// <summary>
         /// 档案编号
         /// </summary>
-        [XmlElement("file_no")]
+        [Newtonsoft.Json.JsonProperty("file_no")]
         public string FileNo { get; set; }
 
         /// <summary>
         /// 姓名
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 生效日期
         /// </summary>
-        [XmlElement("valide_date")]
+        [Newtonsoft.Json.JsonProperty("valide_date")]
         public string ValideDate { get; set; }
     }
 }

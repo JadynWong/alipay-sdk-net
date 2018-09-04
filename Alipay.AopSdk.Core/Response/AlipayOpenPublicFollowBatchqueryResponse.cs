@@ -12,13 +12,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 本次调用获取的userId个数，最大值为10000
         /// </summary>
-        [XmlElement("count")]
+        [Newtonsoft.Json.JsonProperty("count")]
         public string Count { get; set; }
 
         /// <summary>
         /// 查询分组的userid
         /// </summary>
-        [XmlElement("next_user_id")]
+        [Newtonsoft.Json.JsonProperty("next_user_id")]
         public string NextUserId { get; set; }
 
         /// <summary>

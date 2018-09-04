@@ -20,7 +20,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 门店总量
         /// </summary>
-        [XmlElement("shop_count")]
+        [Newtonsoft.Json.JsonProperty("shop_count")]
         public string ShopCount { get; set; }
 
         /// <summary>

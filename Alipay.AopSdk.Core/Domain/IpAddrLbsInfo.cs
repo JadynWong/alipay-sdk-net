@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// IP地址归属地所以城市
         /// </summary>
-        [XmlElement("city")]
+        [Newtonsoft.Json.JsonProperty("city")]
         public string City { get; set; }
 
         /// <summary>
         /// IP归属地所在的省
         /// </summary>
-        [XmlElement("province")]
+        [Newtonsoft.Json.JsonProperty("province")]
         public string Province { get; set; }
     }
 }

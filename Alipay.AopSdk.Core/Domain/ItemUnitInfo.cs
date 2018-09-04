@@ -12,31 +12,31 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 商品详情-商品套餐内容-菜品数量
         /// </summary>
-        [XmlElement("amount")]
+        [Newtonsoft.Json.JsonProperty("amount")]
         public long Amount { get; set; }
 
         /// <summary>
         /// 商品详情-商品套餐内容-菜品价格。字符串，单位元，两位小数
         /// </summary>
-        [XmlElement("price")]
+        [Newtonsoft.Json.JsonProperty("price")]
         public string Price { get; set; }
 
         /// <summary>
         /// 商品详情-商品套餐内容-菜品规格
         /// </summary>
-        [XmlElement("spec")]
+        [Newtonsoft.Json.JsonProperty("spec")]
         public string Spec { get; set; }
 
         /// <summary>
         /// 商品详情-商品套餐内容-菜品名称。不得超过15个中文字符
         /// </summary>
-        [XmlElement("title")]
+        [Newtonsoft.Json.JsonProperty("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// 商品详情-商品套餐内容-菜品数量单位
         /// </summary>
-        [XmlElement("unit")]
+        [Newtonsoft.Json.JsonProperty("unit")]
         public string Unit { get; set; }
     }
 }

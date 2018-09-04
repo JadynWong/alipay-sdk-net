@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 会员级别 该级别和开卡接口中的level要一致
         /// </summary>
-        [XmlElement("level")]
+        [Newtonsoft.Json.JsonProperty("level")]
         public string Level { get; set; }
 
         /// <summary>
         /// 会员级别描述
         /// </summary>
-        [XmlElement("level_desc")]
+        [Newtonsoft.Json.JsonProperty("level_desc")]
         public string LevelDesc { get; set; }
 
         /// <summary>
         /// 会员级别对应icon， 通过接口（alipay.offline.material.image.upload）上传图片
         /// </summary>
-        [XmlElement("level_icon")]
+        [Newtonsoft.Json.JsonProperty("level_icon")]
         public string LevelIcon { get; set; }
 
         /// <summary>
         /// 会员级别显示名称
         /// </summary>
-        [XmlElement("level_show_name")]
+        [Newtonsoft.Json.JsonProperty("level_show_name")]
         public string LevelShowName { get; set; }
     }
 }

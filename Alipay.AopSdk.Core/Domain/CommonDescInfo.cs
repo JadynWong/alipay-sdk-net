@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 图片URL地址，最大不超过60K，必须使用https
         /// </summary>
-        [XmlElement("img")]
+        [Newtonsoft.Json.JsonProperty("img")]
         public string Img { get; set; }
 
         /// <summary>
         /// 文本描述
         /// </summary>
-        [XmlElement("text")]
+        [Newtonsoft.Json.JsonProperty("text")]
         public string Text { get; set; }
     }
 }

@@ -13,19 +13,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 出险地点
         /// </summary>
-        [XmlElement("accident_address")]
+        [Newtonsoft.Json.JsonProperty("accident_address")]
         public string AccidentAddress { get; set; }
 
         /// <summary>
         /// 出险事故描述
         /// </summary>
-        [XmlElement("accident_desc")]
+        [Newtonsoft.Json.JsonProperty("accident_desc")]
         public string AccidentDesc { get; set; }
 
         /// <summary>
         /// 出险时间
         /// </summary>
-        [XmlElement("accident_time")]
+        [Newtonsoft.Json.JsonProperty("accident_time")]
         public string AccidentTime { get; set; }
 
         /// <summary>
@@ -38,13 +38,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 业务字段
         /// </summary>
-        [XmlElement("biz_data")]
+        [Newtonsoft.Json.JsonProperty("biz_data")]
         public string BizData { get; set; }
 
         /// <summary>
         /// 报案号
         /// </summary>
-        [XmlElement("claim_report_no")]
+        [Newtonsoft.Json.JsonProperty("claim_report_no")]
         public string ClaimReportNo { get; set; }
 
         /// <summary>
@@ -64,19 +64,19 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 当status 值为不予受理:REJECTED时候返回
         /// </summary>
-        [XmlElement("report_reject_reason")]
+        [Newtonsoft.Json.JsonProperty("report_reject_reason")]
         public string ReportRejectReason { get; set; }
 
         /// <summary>
         /// 报案人
         /// </summary>
-        [XmlElement("reporter")]
+        [Newtonsoft.Json.JsonProperty("reporter")]
         public InsPerson Reporter { get; set; }
 
         /// <summary>
         /// 案件状态
         /// </summary>
-        [XmlElement("status")]
+        [Newtonsoft.Json.JsonProperty("status")]
         public string Status { get; set; }
     }
 }

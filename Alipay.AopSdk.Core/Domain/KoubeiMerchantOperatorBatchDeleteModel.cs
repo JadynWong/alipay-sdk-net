@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 授权码
         /// </summary>
-        [XmlElement("auth_code")]
+        [Newtonsoft.Json.JsonProperty("auth_code")]
         public string AuthCode { get; set; }
 
         /// <summary>

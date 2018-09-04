@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 最爱这家店的人
         /// </summary>
-        [XmlElement("crowd_group_id")]
+        [Newtonsoft.Json.JsonProperty("crowd_group_id")]
         public string CrowdGroupId { get; set; }
 
         /// <summary>
         /// 用户群组描述
         /// </summary>
-        [XmlElement("describe")]
+        [Newtonsoft.Json.JsonProperty("describe")]
         public string Describe { get; set; }
 
         /// <summary>

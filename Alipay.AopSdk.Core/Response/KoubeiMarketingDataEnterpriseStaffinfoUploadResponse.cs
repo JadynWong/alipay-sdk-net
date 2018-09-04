@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 人群ID
         /// </summary>
-        [XmlElement("crowd_id")]
+        [Newtonsoft.Json.JsonProperty("crowd_id")]
         public string CrowdId { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 页码，分页参数，默认1。
         /// </summary>
-        [XmlElement("page_no")]
+        [Newtonsoft.Json.JsonProperty("page_no")]
         public long PageNo { get; set; }
 
         /// <summary>
         /// 页面大小，分页参数，默认20
         /// </summary>
-        [XmlElement("page_size")]
+        [Newtonsoft.Json.JsonProperty("page_size")]
         public long PageSize { get; set; }
     }
 }

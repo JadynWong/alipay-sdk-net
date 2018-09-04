@@ -12,37 +12,37 @@ namespace Aop.Api.Response
         /// <summary>
         /// 小程序应用描述
         /// </summary>
-        [XmlElement("app_desc")]
+        [Newtonsoft.Json.JsonProperty("app_desc")]
         public string AppDesc { get; set; }
 
         /// <summary>
         /// 小程序应用英文名称
         /// </summary>
-        [XmlElement("app_english_name")]
+        [Newtonsoft.Json.JsonProperty("app_english_name")]
         public string AppEnglishName { get; set; }
 
         /// <summary>
         /// 小程序应用logo图标
         /// </summary>
-        [XmlElement("app_logo")]
+        [Newtonsoft.Json.JsonProperty("app_logo")]
         public string AppLogo { get; set; }
 
         /// <summary>
         /// 小程序应用名称
         /// </summary>
-        [XmlElement("app_name")]
+        [Newtonsoft.Json.JsonProperty("app_name")]
         public string AppName { get; set; }
 
         /// <summary>
         /// 小程序应用简介，一句话描述小程序功能
         /// </summary>
-        [XmlElement("app_slogan")]
+        [Newtonsoft.Json.JsonProperty("app_slogan")]
         public string AppSlogan { get; set; }
 
         /// <summary>
         /// 类目名称，格式为第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目;
         /// </summary>
-        [XmlElement("category_names")]
+        [Newtonsoft.Json.JsonProperty("category_names")]
         public string CategoryNames { get; set; }
 
         /// <summary>
@@ -62,13 +62,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 小程序客服邮箱
         /// </summary>
-        [XmlElement("service_email")]
+        [Newtonsoft.Json.JsonProperty("service_email")]
         public string ServiceEmail { get; set; }
 
         /// <summary>
         /// 小程序客服电话
         /// </summary>
-        [XmlElement("service_phone")]
+        [Newtonsoft.Json.JsonProperty("service_phone")]
         public string ServicePhone { get; set; }
     }
 }

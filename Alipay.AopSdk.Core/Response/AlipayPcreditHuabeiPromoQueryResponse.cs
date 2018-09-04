@@ -11,7 +11,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 花呗颜值分
         /// </summary>
-        [XmlElement("facescore")]
+        [Newtonsoft.Json.JsonProperty("facescore")]
         public string Facescore { get; set; }
     }
 }

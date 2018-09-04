@@ -20,13 +20,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 枚举的展示文本
         /// </summary>
-        [XmlElement("label")]
+        [Newtonsoft.Json.JsonProperty("label")]
         public string Label { get; set; }
 
         /// <summary>
         /// 自定义标签的枚举值
         /// </summary>
-        [XmlElement("value")]
+        [Newtonsoft.Json.JsonProperty("value")]
         public string Value { get; set; }
     }
 }

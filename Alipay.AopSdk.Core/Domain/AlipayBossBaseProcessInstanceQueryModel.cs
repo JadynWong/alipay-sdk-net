@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 流程全局唯一ID
         /// </summary>
-        [XmlElement("puid")]
+        [Newtonsoft.Json.JsonProperty("puid")]
         public string Puid { get; set; }
     }
 }

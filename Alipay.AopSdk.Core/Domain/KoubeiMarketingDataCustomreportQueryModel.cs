@@ -13,7 +13,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 规则KEY
         /// </summary>
-        [XmlElement("condition_key")]
+        [Newtonsoft.Json.JsonProperty("condition_key")]
         public string ConditionKey { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 一次拉多少条
         /// </summary>
-        [XmlElement("max_count")]
+        [Newtonsoft.Json.JsonProperty("max_count")]
         public string MaxCount { get; set; }
     }
 }

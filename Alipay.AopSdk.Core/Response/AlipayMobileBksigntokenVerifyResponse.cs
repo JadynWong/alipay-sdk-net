@@ -11,37 +11,37 @@ namespace Aop.Api.Response
         /// <summary>
         /// 返回值创建时间
         /// </summary>
-        [XmlElement("createtimestamp")]
+        [Newtonsoft.Json.JsonProperty("createtimestamp")]
         public string Createtimestamp { get; set; }
 
         /// <summary>
         /// 返回值logonId
         /// </summary>
-        [XmlElement("loginid")]
+        [Newtonsoft.Json.JsonProperty("loginid")]
         public string Loginid { get; set; }
 
         /// <summary>
         /// 结果说明
         /// </summary>
-        [XmlElement("memo")]
+        [Newtonsoft.Json.JsonProperty("memo")]
         public string Memo { get; set; }
 
         /// <summary>
         /// 结果状态码
         /// </summary>
-        [XmlElement("resultcode")]
+        [Newtonsoft.Json.JsonProperty("resultcode")]
         public long Resultcode { get; set; }
 
         /// <summary>
         /// 是否成功
         /// </summary>
-        [XmlElement("success")]
+        [Newtonsoft.Json.JsonProperty("success")]
         public bool Success { get; set; }
 
         /// <summary>
         /// 返回值userId
         /// </summary>
-        [XmlElement("userid")]
+        [Newtonsoft.Json.JsonProperty("userid")]
         public string Userid { get; set; }
     }
 }

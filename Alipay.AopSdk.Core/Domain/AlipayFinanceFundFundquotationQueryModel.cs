@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 基金编号：基金产品编号
         /// </summary>
-        [XmlElement("fund_code")]
+        [Newtonsoft.Json.JsonProperty("fund_code")]
         public string FundCode { get; set; }
     }
 }

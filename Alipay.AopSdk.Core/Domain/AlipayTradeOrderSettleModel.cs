@@ -13,13 +13,13 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 操作员id
         /// </summary>
-        [XmlElement("operator_id")]
+        [Newtonsoft.Json.JsonProperty("operator_id")]
         public string OperatorId { get; set; }
 
         /// <summary>
         /// 结算请求流水号 开发者自行生成并保证唯一性
         /// </summary>
-        [XmlElement("out_request_no")]
+        [Newtonsoft.Json.JsonProperty("out_request_no")]
         public string OutRequestNo { get; set; }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 支付宝订单号
         /// </summary>
-        [XmlElement("trade_no")]
+        [Newtonsoft.Json.JsonProperty("trade_no")]
         public string TradeNo { get; set; }
     }
 }

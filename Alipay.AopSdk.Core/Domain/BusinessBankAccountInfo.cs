@@ -12,25 +12,25 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 企业对公账户名称
         /// </summary>
-        [XmlElement("business_bank_account_name")]
+        [Newtonsoft.Json.JsonProperty("business_bank_account_name")]
         public string BusinessBankAccountName { get; set; }
 
         /// <summary>
         /// 企业对公银行账户号
         /// </summary>
-        [XmlElement("business_bank_card_no")]
+        [Newtonsoft.Json.JsonProperty("business_bank_card_no")]
         public string BusinessBankCardNo { get; set; }
 
         /// <summary>
         /// 企业对公账户开户行名称
         /// </summary>
-        [XmlElement("business_bank_name")]
+        [Newtonsoft.Json.JsonProperty("business_bank_name")]
         public string BusinessBankName { get; set; }
 
         /// <summary>
         /// 企业对公账户开户行支行全称
         /// </summary>
-        [XmlElement("business_bank_sub")]
+        [Newtonsoft.Json.JsonProperty("business_bank_sub")]
         public string BusinessBankSub { get; set; }
     }
 }

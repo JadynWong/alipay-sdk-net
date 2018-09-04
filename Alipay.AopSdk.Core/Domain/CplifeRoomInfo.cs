@@ -12,37 +12,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 房间的完整门牌地址
         /// </summary>
-        [XmlElement("address")]
+        [Newtonsoft.Json.JsonProperty("address")]
         public string Address { get; set; }
 
         /// <summary>
         /// 房屋所在楼栋名称。例如“1栋”，“1幢”等
         /// </summary>
-        [XmlElement("building")]
+        [Newtonsoft.Json.JsonProperty("building")]
         public string Building { get; set; }
 
         /// <summary>
         /// 房屋所在的组团名称。例如“一期”，“东区”，“香桂苑”等
         /// </summary>
-        [XmlElement("group")]
+        [Newtonsoft.Json.JsonProperty("group")]
         public string Group { get; set; }
 
         /// <summary>
         /// 商户系统小区房屋唯一ID标示.
         /// </summary>
-        [XmlElement("out_room_id")]
+        [Newtonsoft.Json.JsonProperty("out_room_id")]
         public string OutRoomId { get; set; }
 
         /// <summary>
         /// 房屋所在房号。例如“1101室”，“11B室”等
         /// </summary>
-        [XmlElement("room")]
+        [Newtonsoft.Json.JsonProperty("room")]
         public string Room { get; set; }
 
         /// <summary>
         /// 房屋所在单元名称。例如“一单元”，“二单元”等
         /// </summary>
-        [XmlElement("unit")]
+        [Newtonsoft.Json.JsonProperty("unit")]
         public string Unit { get; set; }
     }
 }

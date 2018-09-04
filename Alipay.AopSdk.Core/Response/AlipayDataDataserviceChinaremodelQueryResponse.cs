@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// <summary>
         /// 中再核保模型查询结果
         /// </summary>
-        [XmlElement("result")]
+        [Newtonsoft.Json.JsonProperty("result")]
         public AlipayChinareModelResult Result { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 用户的支付宝账户ID
         /// </summary>
-        [XmlElement("user_id")]
+        [Newtonsoft.Json.JsonProperty("user_id")]
         public string UserId { get; set; }
     }
 }

@@ -20,37 +20,37 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 主键ID，根据identify_type，设置相应的ID  activity_id:运营活动ID，可以通过koubei.marketing.campaign.activity.create获取  voucher：商品ID，可以在商家中心创建商品获得
         /// </summary>
-        [XmlElement("identify")]
+        [Newtonsoft.Json.JsonProperty("identify")]
         public string Identify { get; set; }
 
         /// <summary>
         /// 主键类型，需要配置分佣任务的标的ID，现在主要支持如下两种  activity_id：运营活动ID  voucher：商品ID
         /// </summary>
-        [XmlElement("identify_type")]
+        [Newtonsoft.Json.JsonProperty("identify_type")]
         public string IdentifyType { get; set; }
 
         /// <summary>
         /// 分佣任务名称，由于不在任何场景不显示，因此可ISV按自己需求自行定义
         /// </summary>
-        [XmlElement("name")]
+        [Newtonsoft.Json.JsonProperty("name")]
         public string Name { get; set; }
 
         /// <summary>
         /// 操作人id，必须和operator_type配对出现，不填时默认是商户ID  MERCHANT时填商户ID，同时服务商创建分佣任务，需要审批  PROVIDER时填写服务商ID
         /// </summary>
-        [XmlElement("operator_id")]
+        [Newtonsoft.Json.JsonProperty("operator_id")]
         public string OperatorId { get; set; }
 
         /// <summary>
         /// 操作人类型,有以下值可填选项（默认不需要填这个字段，默认为MERCHANT）：  MERCHANT：外部商户  PROVIDER：服务商
         /// </summary>
-        [XmlElement("operator_type")]
+        [Newtonsoft.Json.JsonProperty("operator_type")]
         public string OperatorType { get; set; }
 
         /// <summary>
         /// 智能营销信息  通过koubei.marketing.data.smartactivity.config接口ext_info字段获取  plan_id：为ext_info中的SMART_PROMO_PLAN_ID（方案ID）  group_id：为ext_info中的SMART_PROMO_GROUP_ID(方案组ID),  对于和智能营销无关的场景，可以不输入该字段
         /// </summary>
-        [XmlElement("smart_promo")]
+        [Newtonsoft.Json.JsonProperty("smart_promo")]
         public KbadvertSmartPromoRequest SmartPromo { get; set; }
     }
 }

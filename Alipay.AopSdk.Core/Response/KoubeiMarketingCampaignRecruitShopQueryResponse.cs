@@ -13,13 +13,13 @@ namespace Aop.Api.Response
         /// <summary>
         /// 招商活动id
         /// </summary>
-        [XmlElement("plan_id")]
+        [Newtonsoft.Json.JsonProperty("plan_id")]
         public string PlanId { get; set; }
 
         /// <summary>
         /// 总量
         /// </summary>
-        [XmlElement("shop_count")]
+        [Newtonsoft.Json.JsonProperty("shop_count")]
         public string ShopCount { get; set; }
 
         /// <summary>

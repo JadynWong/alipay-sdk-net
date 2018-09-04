@@ -12,109 +12,109 @@ namespace Aop.Api.Domain
         /// <summary>
         /// 仓库详细地址
         /// </summary>
-        [XmlElement("address")]
+        [Newtonsoft.Json.JsonProperty("address")]
         public string Address { get; set; }
 
         /// <summary>
         /// 区域编码
         /// </summary>
-        [XmlElement("area_code")]
+        [Newtonsoft.Json.JsonProperty("area_code")]
         public string AreaCode { get; set; }
 
         /// <summary>
         /// 区域名称
         /// </summary>
-        [XmlElement("area_name")]
+        [Newtonsoft.Json.JsonProperty("area_name")]
         public string AreaName { get; set; }
 
         /// <summary>
         /// 仓库的状态，EFFECTIVE：生效，INVALID：失效。
         /// </summary>
-        [XmlElement("biz_status")]
+        [Newtonsoft.Json.JsonProperty("biz_status")]
         public string BizStatus { get; set; }
 
         /// <summary>
         /// 菜鸟仓的编码
         /// </summary>
-        [XmlElement("cainiao_code")]
+        [Newtonsoft.Json.JsonProperty("cainiao_code")]
         public string CainiaoCode { get; set; }
 
         /// <summary>
         /// 城市编码
         /// </summary>
-        [XmlElement("city_code")]
+        [Newtonsoft.Json.JsonProperty("city_code")]
         public string CityCode { get; set; }
 
         /// <summary>
         /// 市的名称
         /// </summary>
-        [XmlElement("city_name")]
+        [Newtonsoft.Json.JsonProperty("city_name")]
         public string CityName { get; set; }
 
         /// <summary>
         /// 联系人
         /// </summary>
-        [XmlElement("contact")]
+        [Newtonsoft.Json.JsonProperty("contact")]
         public string Contact { get; set; }
 
         /// <summary>
         /// 维度
         /// </summary>
-        [XmlElement("lat")]
+        [Newtonsoft.Json.JsonProperty("lat")]
         public string Lat { get; set; }
 
         /// <summary>
         /// 经度
         /// </summary>
-        [XmlElement("lon")]
+        [Newtonsoft.Json.JsonProperty("lon")]
         public string Lon { get; set; }
 
         /// <summary>
         /// 归属人ID
         /// </summary>
-        [XmlElement("owner_id")]
+        [Newtonsoft.Json.JsonProperty("owner_id")]
         public string OwnerId { get; set; }
 
         /// <summary>
         /// 联系方式
         /// </summary>
-        [XmlElement("phone")]
+        [Newtonsoft.Json.JsonProperty("phone")]
         public string Phone { get; set; }
 
         /// <summary>
         /// 省的编码
         /// </summary>
-        [XmlElement("province_code")]
+        [Newtonsoft.Json.JsonProperty("province_code")]
         public string ProvinceCode { get; set; }
 
         /// <summary>
         /// 省的名称
         /// </summary>
-        [XmlElement("province_name")]
+        [Newtonsoft.Json.JsonProperty("province_name")]
         public string ProvinceName { get; set; }
 
         /// <summary>
         /// 对应的门店ID
         /// </summary>
-        [XmlElement("shop_id")]
+        [Newtonsoft.Json.JsonProperty("shop_id")]
         public string ShopId { get; set; }
 
         /// <summary>
         /// 仓库编码
         /// </summary>
-        [XmlElement("warehouse_code")]
+        [Newtonsoft.Json.JsonProperty("warehouse_code")]
         public string WarehouseCode { get; set; }
 
         /// <summary>
         /// 仓库名称
         /// </summary>
-        [XmlElement("warehouse_name")]
+        [Newtonsoft.Json.JsonProperty("warehouse_name")]
         public string WarehouseName { get; set; }
 
         /// <summary>
         /// 仓库类型，REAL：实仓
         /// </summary>
-        [XmlElement("warehouse_type")]
+        [Newtonsoft.Json.JsonProperty("warehouse_type")]
         public string WarehouseType { get; set; }
     }
 }
